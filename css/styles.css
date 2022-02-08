@@ -313,14 +313,23 @@ ul{
     align-items: center;
 }
 
+@media only screen and (min-width: 0px) and (max-width: 480px){
+    .main__calzado{
 
-.calzadoImagen{
-    overflow: hidden;
-    width: 90%;
-    height:400px;
-    margin-left:400px;
-    padding:25px;
-}
+        gap:10px;
+        padding:20px;
+        align-items: center;
+
+    }}
+
+@media only screen and (min-width: 0px) and (max-width: 480px){
+    .calzadoImagen{
+        overflow: hidden;
+        width: 200px;
+        height:200px;
+        margin-left:0px;
+        padding:0px;
+    }}
 
 /*HTML- SOBRE NOSOTROS*/
 @media (min-width:480px){
