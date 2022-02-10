@@ -14,6 +14,7 @@ h1,h2,h3,h4,p,a,legend{
 
 }
 
+
 .buscar{
     display: flex;
     justify-content: center;
@@ -34,12 +35,26 @@ h1,h2,h3,h4,p,a,legend{
     right:0px;
 }
 
+.header__icon a:hover{
+    padding:5px;
+}
+
+
 .header__navigation{
     top:0px;
     position: sticky;
     z-index: 1;
 }
 
+.header__navigation a{   
+    height: 30px;
+    padding:10px;
+    
+}
+
+.header__navigation a:hover{
+    background-color: #eb9012;
+}
 
 .headerNavigation{
     display: flex;
@@ -48,10 +63,11 @@ h1,h2,h3,h4,p,a,legend{
     border-style:solid;
     border-left: none;
     border-right: none;
-    padding:10px;
+    /* padding:10px; */
     margin-top:20px;
     background-color: #065e91;
 }
+
 
 @media (min-width: 768px) {
     .headerNavigation{
@@ -67,10 +83,7 @@ h1,h2,h3,h4,p,a,legend{
     }
     }
 
-a:hover{
 
-    padding:5px;
-}
 
 .header__navigation2{
     text-decoration: none;
@@ -82,6 +95,8 @@ a:hover{
     text-align: center;
 
 }
+
+
 
 ul{
     list-style: none;
@@ -225,6 +240,10 @@ ul{
     padding-bottom: 50px;
 }
 
+
+
+
+
 /********/
 
 /*HTML - ACCESORIOS*/
@@ -313,14 +332,32 @@ ul{
     align-items: center;
 }
 
+@media only screen and (min-width: 0px) and (max-width: 480px){
+    .main__calzado{
+
+        gap:10px;
+        padding:20px;
+        align-items: center;
+
+    }}
+
 
 .calzadoImagen{
-    overflow: hidden;
-    width: 90%;
-    height:400px;
-    margin-left:400px;
-    padding:25px;
-}
+        overflow: hidden;
+        width: 90%;
+        height:400px;
+        margin-left:400px;
+        padding:25px;
+    }
+
+@media only screen and (min-width: 0px) and (max-width: 480px){
+    .calzadoImagen{
+        overflow: hidden;
+        width: 200px;
+        height:200px;
+        margin-left:0px;
+        padding:0px;
+    }}
 
 /*HTML- SOBRE NOSOTROS*/
 @media (min-width:480px){
@@ -398,7 +435,7 @@ table{
         border-radius: 3rem;
         background-color: orange;
         align-items: center;
-        
+
     }}
 
 td{
@@ -502,7 +539,7 @@ td{
     text-transform: uppercase;
     font-size: 1.2rem;
     border:none;
-    
+
 }
 
 .boton__enviar{
@@ -517,7 +554,7 @@ td{
 
 .botonEnviar:hover{
     cursor:pointer;
-  
+
 }
 
 .campo textarea{
