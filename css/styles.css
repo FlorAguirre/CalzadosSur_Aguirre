@@ -1,32 +1,39 @@
 /*Globales - en todos los HTML*/
 
-body{
-    background-image: linear-gradient(to right bottom, #e7f336, #edda1f, #f0c10d, #efa809, #eb9012);
+.bodyColor{
+    /* background-image: linear-gradient(to right bottom, #e7f336, #edda1f, #f0c10d, #efa809, #eb9012); */
+    background-color: bisque;
     margin:0;
 
 }
 
 
-h1,h2,h3,h4,p,a,legend{
-    font-family: 'Domine', serif;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
+h1,h2,h3,h4,h5,p,a,legend{
+    font-family: 'Domine', serif !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: bold !important;
+    text-decoration: none;
 
 }
 
-
-.buscar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.decoration{
+    text-decoration: none;
+    color: black;
+   
 }
-
-
-
 .header__logo {
-    height:100px;
+    height:75px;
+   
 
 }
+
+.carrito{
+    color:white;
+    padding-right:20px;
+    font-size: 45px;
+}
+
+
 
 .header__icon{
     text-align: right;
@@ -39,86 +46,34 @@ h1,h2,h3,h4,p,a,legend{
     padding:5px;
 }
 
-
 .header__navigation{
     top:0px;
     position: sticky;
     z-index: 1;
 }
 
-.header__navigation a{   
-    height: 30px;
-    padding:10px;
-    
+.color{
+    color:white !important;
 }
 
-.header__navigation a:hover{
-    background-color: #eb9012;
+.size{
+    font-size: 1.5rem;
 }
 
-.headerNavigation{
-    display: flex;
-    flex-direction: column;
-    border-width: 5px;
-    border-style:solid;
-    border-left: none;
-    border-right: none;
-    /* padding:10px; */
-    margin-top:20px;
-    background-color: #065e91;
+.footerSize{
+    font-size: 1rem !important;
 }
 
+.iconos{
+    color:white; 
+    font-size: 30px;
+}
 
-@media (min-width: 768px) {
-    .headerNavigation{
-        flex-direction: row;
-
-    }
-    }
-
-@media (min-width: 480px) {
-    .headerNavigation{
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    }
-
-
-
-.header__navigation2{
-    text-decoration: none;
-    font-size: 25px;
-    font-family: 'Domine', serif;
-    font-family: 'Open Sans', sans-serif;
-    color:#d2edfc;
-    display:block;
-    text-align: center;
-
+.estiloBoton{
+    background-color: grey !important;
 }
 
 
-
-ul{
-    list-style: none;
-  }
-  #menu li>a{
-    color: white;
-    display: block;
-    text-decoration: none;
-    min-width: 100px;
-    font-size: 25px;
-  }
-
-  #menu>li{
-    /* float: left; */
-    text-align: left;
-  }
-  #menu>li>ul{
-    display: none;
-  }
-  #menu>li:hover>ul {
-    display:block;
-  }
 
 .main__titulo1{
     text-align: center;
@@ -147,20 +102,17 @@ ul{
 
 /*HTML - HOME*/
 
-
-.icon1{
-    position:absolute;
-    bottom:350px;
-    left:0px;
+.main__titulo1{
+   
+    padding-top:30px;
 }
 
-.icon2{
-    position:absolute;
-    bottom:350px;
-    right:0px;
+.titulo-gral{
+    text-align: center;
+    padding:20px;
+    padding-bottom: 50px;
+    font-size: 3rem;
 }
-
-
 
   @supports(object-fit: cover){
       .imagen__muestra{
@@ -172,9 +124,11 @@ ul{
 
   .imagen__muestra{
     width:100%;
-    height: 750px;
+    height: 500px;
     overflow: hidden;
     position: relative;
+    margin-bottom: 50px;
+    margin-top: 50px;
 
 }
 
@@ -197,48 +151,6 @@ ul{
 
 
 
-
-@supports(object-fit: cover){
-    .imagen__mujer, .imagen__hombre, .imagen__niño{
-      height: 50%;
-      object-fit: cover;
-      object-position: center center;
-    }
-
-    .imagen__mujer, .imagen__hombre, .imagen__niño{
-        text-align: center;
-        overflow: hidden;
-        width:45%;
-        height:500px;
-        position:relative;
-        padding:15px;
-        display: block;
-        margin:auto;
-    }}
-
-@media only screen and (min-width: 0px) and (max-width: 480px){
-    @supports(object-fit: cover){
-        .imagen__mujer, .imagen__hombre, .imagen__niño{
-          height: 50%;
-          object-fit: cover;
-          object-position: center center;
-        }
-
-        .imagen__mujer, .imagen__hombre, .imagen__niño{
-            text-align: center;
-            overflow: hidden;
-            width:80%;
-            height:300px;
-            position:relative;
-            padding:15px;
-            display: block;
-
-            margin:auto;
-        }}}
-
-.imagen__niño{
-    padding-bottom: 50px;
-}
 
 
 
