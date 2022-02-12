@@ -19,11 +19,11 @@ h1,h2,h3,h4,h5,p,a,legend{
 .decoration{
     text-decoration: none;
     color: black;
-   
+
 }
 .header__logo {
     height:75px;
-   
+
 
 }
 
@@ -65,7 +65,7 @@ h1,h2,h3,h4,h5,p,a,legend{
 }
 
 .iconos{
-    color:white; 
+    color:white;
     font-size: 30px;
 }
 
@@ -78,6 +78,8 @@ h1,h2,h3,h4,h5,p,a,legend{
 .main__titulo1{
     text-align: center;
     font-size: 50px;
+    margin-top: 100px;
+
 }
 
 .main__titulo2{
@@ -103,7 +105,7 @@ h1,h2,h3,h4,h5,p,a,legend{
 /*HTML - HOME*/
 
 .main__titulo1{
-   
+
     padding-top:30px;
 }
 
@@ -278,11 +280,11 @@ h1,h2,h3,h4,h5,p,a,legend{
     grid-template-columns: 1fr 1fr;
     padding:10px;
     column-gap: 2rem;
-
 }}
 
 .sobreNosotros{
     padding:10px;
+    margin-top:50px;
 }
 
 .sobreNosotros__imagen{
@@ -337,15 +339,15 @@ h1,h2,h3,h4,h5,p,a,legend{
 
 table{
     border:solid;
-    border-radius: 2rem;
-    background-color: orange;
+    /* border-radius: 2rem; */
+    background-color: grey;
+    margin-top: 50px;
 }
 
 @media only screen and (min-width: 0px) and (max-width: 480px){
     table{
         border:solid;
-        border-radius: 3rem;
-        background-color: orange;
+        background-color: grey;
         align-items: center;
 
     }}
@@ -371,11 +373,12 @@ td{
 /*HTML - CONTACTANOS*/
 
 .form{
-    background-color:#e69e05;
+    background-color:#3b3b3a;
     width:min(40rem,100%);
     margin:0 auto 150px;
     border-radius: 1rem;
     padding:2rem;
+    margin-top:90px;
 }
 
 .form fieldset{
@@ -384,13 +387,14 @@ td{
 
 @media only screen and (min-width: 0px) and (max-width: 480px){
     .form{
-        background-color:#e69e05;
+        background-color:#3b3b3a;
         width:80%;
         margin:0 auto 150px;
         border-radius: 1rem;
         padding:1rem;
         font-family: 'Domine', serif;
         font-family: 'Open Sans', sans-serif;
+        margin-top:45px;
     }}
 
 .campo{
@@ -398,7 +402,7 @@ td{
 }
 
 .campo label{
-    color:black;
+    color:white;
     font-weight: bold;
     margin-bottom: .5rem;
     display: block;
