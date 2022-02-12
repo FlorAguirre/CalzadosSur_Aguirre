@@ -4,58 +4,42 @@
     /* background-image: linear-gradient(to right bottom, #e7f336, #edda1f, #f0c10d, #efa809, #eb9012); */
     background-color: bisque;
     margin:0;
-
 }
-
-
 h1,h2,h3,h4,h5,p,a,legend{
     font-family: 'Domine', serif !important;
     font-family: 'Open Sans', sans-serif !important;
     font-weight: bold !important;
     text-decoration: none;
-
 }
-
 .decoration{
     text-decoration: none;
     color: black;
-
 }
 .header__logo {
     height:75px;
-
-
 }
-
 .carrito{
     color:white;
     padding-right:20px;
     font-size: 45px;
 }
-
-
-
 .header__icon{
     text-align: right;
     position: absolute;
     top:0px;
     right:0px;
 }
-
 .header__icon a:hover{
     padding:5px;
 }
-
 .header__navigation{
     top:0px;
     position: sticky;
     z-index: 1;
 }
-
 .color{
     color:white !important;
 }
-
 .size{
     font-size: 1.5rem;
 }
@@ -63,59 +47,46 @@ h1,h2,h3,h4,h5,p,a,legend{
 .footerSize{
     font-size: 1rem !important;
 }
-
 .iconos{
     color:white;
     font-size: 30px;
 }
-
 .estiloBoton{
     background-color: grey !important;
 }
-
-
-
 .main__titulo1{
     text-align: center;
     font-size: 50px;
     margin-top: 100px;
 
 }
-
 .main__titulo2{
     text-align: center;
     font-size: 50px;
 }
-
 .footer{
     border-style:solid;
     border-left: none;
     border-right: none;
     background-color: #DF711B;
     overflow: hidden;
-
 }
-
 .footer__navigation{
     text-align: right;
 }
-
 /********/
 
 /*HTML - HOME*/
 
 .main__titulo1{
-
-    padding-top:30px;
+     padding-top:30px;
 }
-
 .titulo-gral{
     text-align: center;
     padding:20px;
     padding-bottom: 50px;
     font-size: 3rem;
 }
-
   @supports(object-fit: cover){
       .imagen__muestra{
         height: 100%;
@@ -124,14 +95,13 @@ h1,h2,h3,h4,h5,p,a,legend{
       }
   }
 
-  .imagen__muestra{
+.imagen__muestra{
     width:100%;
     height: 500px;
     overflow: hidden;
     position: relative;
     margin-bottom: 50px;
     margin-top: 50px;
-
 }
 
 @media only screen and (min-width: 0px) and (max-width: 480px){
@@ -151,27 +121,18 @@ h1,h2,h3,h4,h5,p,a,legend{
 
   }}
 
-
-
-
-
-
-
-
 /********/
 
 /*HTML - ACCESORIOS*/
 .accesorio{
     margin-bottom: 100px;
 }
-
 .main__accesorios{
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     gap:10px;
     padding:20px;
     align-items: center;
-
 }
 
 @media only screen and (min-width: 0px) and (max-width: 480px){
@@ -230,8 +191,6 @@ h1,h2,h3,h4,h5,p,a,legend{
     margin-bottom: 50px;
 }
 
-
-
 /*HTML - CALZADOS*/
 
 .calzado{
@@ -248,14 +207,10 @@ h1,h2,h3,h4,h5,p,a,legend{
 
 @media only screen and (min-width: 0px) and (max-width: 480px){
     .main__calzado{
-
         gap:10px;
         padding:20px;
         align-items: center;
-
     }}
-
-
 .calzadoImagen{
         overflow: hidden;
         width: 90%;
@@ -365,10 +320,7 @@ td{
         padding-left: 4px;
     }}
 
-
-
 /*******/
-
 
 /*HTML - CONTACTANOS*/
 
@@ -443,7 +395,6 @@ td{
         padding:1rem;
     }}
 
-
 .botonEnviar{
     background-color: #065e91;
     color: whitesmoke;
@@ -455,7 +406,6 @@ td{
     text-transform: uppercase;
     font-size: 1.2rem;
     border:none;
-
 }
 
 .boton__enviar{
