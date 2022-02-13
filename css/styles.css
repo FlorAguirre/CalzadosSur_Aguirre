@@ -37,6 +37,9 @@ h1,h2,h3,h4,h5,p,a,legend{
     position: sticky;
     z-index: 1;
 }
+.bg-azulmarino{
+    background-color: #252440;
+}
 .color{
     color:white !important;
 }
@@ -74,6 +77,8 @@ h1,h2,h3,h4,h5,p,a,legend{
 .footer__navigation{
     text-align: right;
 }
+
+
 /********/
 
 /*HTML - HOME*/
@@ -121,15 +126,39 @@ h1,h2,h3,h4,h5,p,a,legend{
 
   }}
 
+  .imagen__home{
+    width:100%;
+    height: 250px;
+}
+
+.base{
+    margin-bottom: 30px;
+}
+
 /********/
 
 /*HTML - ACCESORIOS*/
+
 .accesorio{
+    padding-bottom: 40px;
+}
+
+.imagen__accesorio{
+    width:100%;
+    height: 250px;
+}
+
+.center{
+    display:flex ;
+    justify-content: center ;
+}
+
+/* .accesorio{
     margin-bottom: 100px;
 }
 .main__accesorios{
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     gap:10px;
     padding:20px;
     align-items: center;
@@ -146,7 +175,7 @@ h1,h2,h3,h4,h5,p,a,legend{
 
 .accesorioImagen{
     overflow: hidden;
-    width: 90%;
+    width: 50%;
     height:400px;
     margin-left:400px;
     padding:25px;
@@ -162,16 +191,16 @@ h1,h2,h3,h4,h5,p,a,legend{
     }}
 
 .botonOption{
-    height: 20px;
+    height: 40px;
     width: 200px;
-    margin-left:400px;
+    margin-left:50px;
 }
 
 @media only screen and (min-width: 0px) and (max-width: 480px){
     .botonOption{
-        height: 20px;
-        width: 100px;
-        margin-left:0px;
+        height: 40px;
+        width: 115px;
+        margin-right:10px;
     }}
 
 .botonCantidad{
@@ -189,7 +218,7 @@ h1,h2,h3,h4,h5,p,a,legend{
 
 .imagenIcon{
     margin-bottom: 50px;
-}
+} */
 
 /*HTML - CALZADOS*/
 
@@ -227,6 +256,13 @@ h1,h2,h3,h4,h5,p,a,legend{
         margin-left:0px;
         padding:0px;
     }}
+
+
+/* HTML - HOMBRES */
+.hombres{
+    padding-bottom:  80px;
+}
+
 
 /*HTML- SOBRE NOSOTROS*/
 @media (min-width:480px){
@@ -325,7 +361,7 @@ td{
 /*HTML - CONTACTANOS*/
 
 .form{
-    background-color:#3b3b3a;
+    background-color:#252440;
     width:min(40rem,100%);
     margin:0 auto 150px;
     border-radius: 1rem;
@@ -339,7 +375,7 @@ td{
 
 @media only screen and (min-width: 0px) and (max-width: 480px){
     .form{
-        background-color:#3b3b3a;
+        background-color:#252440;
         width:80%;
         margin:0 auto 150px;
         border-radius: 1rem;
