@@ -53,6 +53,7 @@ h1,h2,h3,h4,h5,p,a,legend{
 .iconos{
     color:white;
     font-size: 30px;
+    text-align: center;
 }
 .estiloBoton{
     background-color: grey !important;
@@ -77,8 +78,13 @@ h1,h2,h3,h4,h5,p,a,legend{
 .footer__navigation{
     text-align: right;
 }
+.pago{
+    color:white;
+}
 
-
+.mediodepago{
+    text-align: center;
+}
 /********/
 
 /*HTML - HOME*/
