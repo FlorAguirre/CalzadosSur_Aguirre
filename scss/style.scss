@@ -106,7 +106,7 @@ footer {
 /******/
 
 /*HTML - HOME*/
-
+main{
 .titulo-gral {
     text-align: center;
     padding: 20px;
@@ -151,11 +151,12 @@ footer {
 .base {
     margin-bottom: 30px;
 }
-
+}
 /********/
 
 /*HTML - ACCESORIOS*/
 
+main{
 .accesorio {
     padding-bottom: 40px;
 }
@@ -173,108 +174,6 @@ footer {
     display: flex;
     justify-content: center;
 }
-
-/* .accesorio{
-    margin-bottom: 100px;
-}
-.main__accesorios{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap:10px;
-    padding:20px;
-    align-items: center;
-}
-
-@media only screen and (min-width: 0px) and (max-width: 480px){
-    .main__accesorios{
-
-        gap:10px;
-        padding:20px;
-        align-items: center;
-
-    }}
-
-.accesorioImagen{
-    overflow: hidden;
-    width: 50%;
-    height:400px;
-    margin-left:400px;
-    padding:25px;
-}
-
-@media only screen and (min-width: 0px) and (max-width: 480px){
-    .accesorioImagen{
-        overflow: hidden;
-        width: 200px;
-        height:200px;
-        margin-left:0px;
-        padding:0px;
-    }}
-
-.botonOption{
-    height: 40px;
-    width: 200px;
-    margin-left:50px;
-}
-
-@media only screen and (min-width: 0px) and (max-width: 480px){
-    .botonOption{
-        height: 40px;
-        width: 115px;
-        margin-right:10px;
-    }}
-
-.botonCantidad{
-    height: 15px;
-    width: 50px;
-    margin-right:700px;
-}
-
-@media only screen and (min-width: 0px) and (max-width: 480px){
-    .botonCantidad{
-        height: 15px;
-        width: 25px;
-        margin-right:700px;
-    }}
-
-.imagenIcon{
-    margin-bottom: 50px;
-} */
-
-/*HTML - CALZADOS*/
-
-.calzado {
-    margin-bottom: 100px;
-}
-.main__calzado {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    gap: 10px;
-    padding: 20px;
-    align-items: center;
-}
-@media only screen and (min-width: 0px) and (max-width: 480px) {
-    .main__calzado {
-        gap: 10px;
-        padding: 20px;
-        align-items: center;
-    }
-}
-.calzadoImagen {
-    overflow: hidden;
-    width: 90%;
-    height: 400px;
-    margin-left: 400px;
-    padding: 25px;
-}
-@media only screen and (min-width: 0px) and (max-width: 480px) {
-    .calzadoImagen {
-        overflow: hidden;
-        width: 200px;
-        height: 200px;
-        margin-left: 0px;
-        padding: 0px;
-    }
 }
 
 /* HTML - HOMBRES */
@@ -287,6 +186,7 @@ footer {
 
 /*HTML- SOBRE NOSOTROS*/
 
+main{
 @media (min-width:480px) {
     .sobreNosotros {
         display: grid;
@@ -359,16 +259,15 @@ table {
 }
 
 td {
-    border: solid;
     border-radius: 1rem;
     padding: 5px;
 }
 @media only screen and (min-width: 0px) and (max-width: 480px) {
     td {
-        border: solid;
         border-radius: 1rem;
         padding-left: 4px;
     }
+}
 }
 
 /*******/
