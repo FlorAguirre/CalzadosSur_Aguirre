@@ -130,6 +130,9 @@ main .imagen__home {
 main .base {
   margin-bottom: 30px; }
 
+main .card-center {
+  text-align: center; }
+
 /********/
 /*HTML - ACCESORIOS*/
 main .accesorio {
