@@ -128,6 +128,7 @@ main {
         padding-bottom: 50px;
         font-size: 3rem;
     }
+
     @supports(object-fit: cover) {
         .imagen__muestra {
             height: 100%;
@@ -135,6 +136,7 @@ main {
             object-position: center center;
         }
     }
+
     .imagen__muestra {
         width: 100%;
         height: 500px;
@@ -143,6 +145,7 @@ main {
         margin-bottom: 50px;
         margin-top: 50px;
     }
+
     @media only screen and (min-width: 0px) and (max-width: 480px) {
         @supports(object-fit: cover) {
             .imagen__muestra {
@@ -160,14 +163,17 @@ main {
 
         }
     }
+
     .imagen__home {
         width: 100%;
         height: 250px;
     }
+
     .base {
         margin-bottom: 30px;
     }
-    .card-center{
+
+    .card-center {
         text-align: center;
     }
 
@@ -177,7 +183,7 @@ main {
 
 /********/
 
-/*HTML - ACCESORIOS*/
+/* HTML - ACCESORIOS */
 
 main {
     .accesorio {
@@ -189,10 +195,31 @@ main {
         height: 250px;
     }
 
+    @supports(object-fit: cover) {
+        .imagen__accesorio {
+            height: 250px;
+            object-fit: cover;
+            object-position: center bottom;
+        }
+    }
+
     @media only screen and (min-width: 0px) and (max-width: 480px) {
         .imagen__accesorio {
             width: 100%;
             height: 150px;
+        }
+    }
+    @supports(object-fit: fit) {
+        .imagen__accesorio {
+            height: 300px;
+            object-fit: fit;
+            object-position: center center;
+        }
+    }
+    @media (min-width:768px) {
+        .hombres {
+            padding-bottom: 193px;
+            padding-top: 70px;
         }
     }
 
@@ -201,6 +228,41 @@ main {
         justify-content: center;
     }
 }
+
+/* HTML - ACCESORIOS - BIJOUTERIE*/
+
+/* HTML - MARROQUINERIA  */
+
+main{
+    .imagen__accesorio__billeteras{
+     
+            width: 100%;
+            height: 250px;
+        }
+    
+        @supports(object-fit: cover) {
+            .imagen__accesorio__billeteras {
+                height: 250px;
+                object-fit: cover;
+                object-position: center center;
+            }
+        }
+    
+        @media only screen and (min-width: 0px) and (max-width: 480px) {
+            .imagen__accesorio__billeteras {
+                width: 100%;
+                height: 150px;
+            }
+        }
+        @supports(object-fit: fit) {
+            .imagen__accesorio__billeteras {
+                height: 300px;
+                object-fit: fit;
+                object-position: center center;
+            }
+        }
+    }
+
 
 /* HTML - HOMBRES */
 @media (min-width:768px) {

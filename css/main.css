@@ -134,7 +134,7 @@ main .card-center {
   text-align: center; }
 
 /********/
-/*HTML - ACCESORIOS*/
+/* HTML - ACCESORIOS */
 main .accesorio {
   padding-bottom: 40px; }
 
@@ -142,14 +142,54 @@ main .imagen__accesorio {
   width: 100%;
   height: 250px; }
 
+@supports (object-fit: cover) {
+  main .imagen__accesorio {
+    height: 250px;
+    object-fit: cover;
+    object-position: center bottom; } }
+
 @media only screen and (min-width: 0px) and (max-width: 480px) {
   main .imagen__accesorio {
     width: 100%;
     height: 150px; } }
 
+@supports (object-fit: fit) {
+  main .imagen__accesorio {
+    height: 300px;
+    object-fit: fit;
+    object-position: center center; } }
+
+@media (min-width: 768px) {
+  main .hombres {
+    padding-bottom: 193px;
+    padding-top: 70px; } }
+
 main .center {
   display: flex;
   justify-content: center; }
+
+/* HTML - ACCESORIOS - BIJOUTERIE*/
+/* HTML - MARROQUINERIA  */
+main .imagen__accesorio__billeteras {
+  width: 100%;
+  height: 250px; }
+
+@supports (object-fit: cover) {
+  main .imagen__accesorio__billeteras {
+    height: 250px;
+    object-fit: cover;
+    object-position: center center; } }
+
+@media only screen and (min-width: 0px) and (max-width: 480px) {
+  main .imagen__accesorio__billeteras {
+    width: 100%;
+    height: 150px; } }
+
+@supports (object-fit: fit) {
+  main .imagen__accesorio__billeteras {
+    height: 300px;
+    object-fit: fit;
+    object-position: center center; } }
 
 /* HTML - HOMBRES */
 @media (min-width: 768px) {
