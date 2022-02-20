@@ -1,8 +1,10 @@
+@import "variables";
+
 /*Globales - en todos los HTML*/
 
 .bodyColor {
     /* background-image: linear-gradient(to right bottom, #e7f336, #edda1f, #f0c10d, #efa809, #eb9012); */
-    background-color: bisque;
+    background-color: $backgroundcolorbody;
     margin: 0;
 }
 
@@ -22,7 +24,7 @@ legend {
 
 header {
     .header__logo {
-        height: 75px;
+        height: $alto - 25px;
     }
 
     .carrito {
