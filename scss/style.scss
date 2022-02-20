@@ -197,7 +197,7 @@ main {
 
     @supports(object-fit: cover) {
         .imagen__accesorio {
-            height: 250px;
+            height: 300px;
             object-fit: cover;
             object-position: center bottom;
         }
@@ -209,6 +209,7 @@ main {
             height: 150px;
         }
     }
+
     @supports(object-fit: fit) {
         .imagen__accesorio {
             height: 300px;
@@ -216,6 +217,7 @@ main {
             object-position: center center;
         }
     }
+
     @media (min-width:768px) {
         .hombres {
             padding-bottom: 193px;
@@ -233,45 +235,45 @@ main {
 
 /* HTML - MARROQUINERIA  */
 
-main{
-    .imagen__accesorio__billeteras , .imagen__accesorio__carteras{
-     
-            width: 100%;
-            height: 250px;
-        }
-    
-        @supports(object-fit: cover) {
-            .imagen__accesorio__billeteras, .imagen__accesorio__carteras {
-                height: 250px;
-                object-fit: cover;
-                object-position: center center;
-            }
-        }
-    
-        @media only screen and (min-width: 0px) and (max-width: 480px) {
-            .imagen__accesorio__billeteras, .imagen__accesorio__carteras {
-                width: 100%;
-                height: 150px;
-            }
-        }
-        @supports(object-fit: fit) {
-            .imagen__accesorio__billeteras, .imagen__accesorio__carteras {
-                height: 300px;
-                object-fit: fit;
-                object-position: center center;
-            }
-        }
+main {
 
-        .imagen__accesorio__cartera{
-            @supports(object-fit: cover) {
-                .imagen__accesorio__cartera{
-                    height: 300px;
-                    object-fit: fit;
-                    object-position: center center;
-                }
+    .imagen__accesorio__billeteras,
+    .imagen__accesorio__carteras {
+
+        width: 100%;
+        height: 250px;
+    }
+
+    @supports(object-fit: cover) {
+
+        .imagen__accesorio__billeteras,
+        .imagen__accesorio__carteras {
+            height: 250px;
+            object-fit: cover;
+            object-position: center center;
         }
-        }}
-    
+    }
+
+    @media only screen and (min-width: 0px) and (max-width: 480px) {
+
+        .imagen__accesorio__billeteras,
+        .imagen__accesorio__carteras {
+            width: 100%;
+            height: 150px;
+        }
+    }
+
+    @supports(object-fit: fit) {
+
+        .imagen__accesorio__billeteras,
+        .imagen__accesorio__carteras {
+            height: 300px;
+            object-fit: fit;
+            object-position: center center;
+        }
+    }
+}
+
 
 /* HTML - HOMBRES */
 @media (min-width:768px) {

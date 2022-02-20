@@ -144,7 +144,7 @@ main .imagen__accesorio {
 
 @supports (object-fit: cover) {
   main .imagen__accesorio {
-    height: 250px;
+    height: 300px;
     object-fit: cover;
     object-position: center bottom; } }
 
@@ -170,29 +170,27 @@ main .center {
 
 /* HTML - ACCESORIOS - BIJOUTERIE*/
 /* HTML - MARROQUINERIA  */
-main .imagen__accesorio__billeteras, main .imagen__accesorio__carteras {
+main .imagen__accesorio__billeteras,
+main .imagen__accesorio__carteras {
   width: 100%;
   height: 250px; }
 
 @supports (object-fit: cover) {
-  main .imagen__accesorio__billeteras, main .imagen__accesorio__carteras {
+  main .imagen__accesorio__billeteras,
+  main .imagen__accesorio__carteras {
     height: 250px;
     object-fit: cover;
     object-position: center center; } }
 
 @media only screen and (min-width: 0px) and (max-width: 480px) {
-  main .imagen__accesorio__billeteras, main .imagen__accesorio__carteras {
+  main .imagen__accesorio__billeteras,
+  main .imagen__accesorio__carteras {
     width: 100%;
     height: 150px; } }
 
 @supports (object-fit: fit) {
-  main .imagen__accesorio__billeteras, main .imagen__accesorio__carteras {
-    height: 300px;
-    object-fit: fit;
-    object-position: center center; } }
-
-@supports (object-fit: cover) {
-  main .imagen__accesorio__cartera .imagen__accesorio__cartera {
+  main .imagen__accesorio__billeteras,
+  main .imagen__accesorio__carteras {
     height: 300px;
     object-fit: fit;
     object-position: center center; } }
