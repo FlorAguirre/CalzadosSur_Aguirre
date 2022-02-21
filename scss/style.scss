@@ -141,7 +141,7 @@ main {
 
     .imagen__muestra {
         width: 100%;
-        height: 500px;
+        height: $ancho - 220px;
         overflow: hidden;
         position: relative;
         margin-bottom: 50px;
@@ -159,7 +159,7 @@ main {
 
         .imagen__muestra {
             width: 100%;
-            height: 400px;
+            height: $alto * 4px;
             overflow: hidden;
             position: relative;
 
@@ -168,7 +168,7 @@ main {
 
     .imagen__home {
         width: 100%;
-        height: 250px;
+        height: $alto + 150px;
     }
 
     .base {
