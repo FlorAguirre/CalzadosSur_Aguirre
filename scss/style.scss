@@ -159,7 +159,7 @@ main {
 
         .imagen__muestra {
             width: 100%;
-            height: $alto * 4px;
+            height: ($alto * 4);
             overflow: hidden;
             position: relative;
 
