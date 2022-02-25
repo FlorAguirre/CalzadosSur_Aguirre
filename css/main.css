@@ -20,7 +20,7 @@ legend {
 header .header__logo {
   height: 75px; }
 
-header .carrito {
+header .header__carrito {
   color: white;
   padding-right: 20px;
   font-size: 45px; }
@@ -39,10 +39,10 @@ header .header__navigation {
   position: sticky;
   z-index: 1; }
 
-header .size {
+header .header__size {
   font-size: 1.5rem; }
 
-header .estiloBoton {
+header .header__boton {
   background-color: grey !important; }
 
 main .main__titulo1 {
@@ -60,22 +60,24 @@ main .main__titulo2 {
 footer .footer__navigation {
   text-align: right; }
 
-footer .pago {
+footer .footer__pago {
   color: white; }
 
-footer .mediodepago {
+footer .footer__mediodepago {
   text-align: center; }
 
-footer .iconos {
+footer .footer__iconos {
   color: white;
   font-size: 30px;
   text-align: center;
   text-decoration: none; }
 
-footer .footerSize {
+footer .footer__size {
   font-size: 1rem !important; }
 
-/*Globales para header y footer*/
+footer .footer__iconos a {
+  text-decoration: none; }
+
 .decoration {
   text-decoration: none;
   color: black; }
@@ -86,24 +88,20 @@ footer .footerSize {
 .color {
   color: white !important; }
 
-.iconos a {
-  text-decoration: none; }
-
-/******/
 /*HTML - HOME*/
-main .titulo-gral {
+main .main__section2__titulo {
   text-align: center;
   padding: 20px;
   padding-bottom: 50px;
   font-size: 3rem; }
 
 @supports (object-fit: cover) {
-  main .imagen__muestra {
+  main .main__imagen {
     height: 100%;
     object-fit: cover;
     object-position: center center; } }
 
-main .imagen__muestra {
+main .main__imagen {
   width: 100%;
   height: 500px;
   overflow: hidden;
@@ -113,124 +111,56 @@ main .imagen__muestra {
 
 @media only screen and (min-width: 0px) and (max-width: 480px) {
   @supports (object-fit: cover) {
-    main .imagen__muestra {
+    main .main__imagen {
       height: 50%;
       object-fit: cover;
       object-position: center center; } }
-  main .imagen__muestra {
+  main .main__imagen {
     width: 100%;
     height: 400px;
     overflow: hidden;
     position: relative; } }
 
-main .imagen__home {
+main .main__imagenhome {
   width: 100%;
   height: 250px; }
 
-main .base {
+main .main__base {
   margin-bottom: 30px; }
 
-main .card-center {
+main .main__card-center {
   text-align: center; }
-
-/********/
-/* HTML - ACCESORIOS */
-main .accesorio {
-  padding-bottom: 40px; }
-
-main .imagen__accesorio {
-  width: 100%;
-  height: 250px; }
-
-@supports (object-fit: cover) {
-  main .imagen__accesorio {
-    height: 300px;
-    object-fit: cover;
-    object-position: center bottom; } }
-
-@media only screen and (min-width: 0px) and (max-width: 480px) {
-  main .imagen__accesorio {
-    width: 100%;
-    height: 150px; } }
-
-@supports (object-fit: fit) {
-  main .imagen__accesorio {
-    height: 300px;
-    object-fit: fit;
-    object-position: center center; } }
-
-@media (min-width: 768px) {
-  main .hombres {
-    padding-bottom: 193px;
-    padding-top: 70px; } }
-
-main .center {
-  display: flex;
-  justify-content: center; }
-
-/* HTML - ACCESORIOS - BIJOUTERIE*/
-/* HTML - MARROQUINERIA  */
-main .imagen__accesorio__billeteras,
-main .imagen__accesorio__carteras {
-  width: 100%;
-  height: 250px; }
-
-@supports (object-fit: cover) {
-  main .imagen__accesorio__billeteras,
-  main .imagen__accesorio__carteras {
-    height: 250px;
-    object-fit: cover;
-    object-position: center center; } }
-
-@media only screen and (min-width: 0px) and (max-width: 480px) {
-  main .imagen__accesorio__billeteras,
-  main .imagen__accesorio__carteras {
-    width: 100%;
-    height: 150px; } }
-
-@supports (object-fit: fit) {
-  main .imagen__accesorio__billeteras,
-  main .imagen__accesorio__carteras {
-    height: 300px;
-    object-fit: fit;
-    object-position: center center; } }
-
-/* HTML - HOMBRES */
-@media (min-width: 768px) {
-  .hombres {
-    padding-bottom: 193px;
-    padding-top: 70px; } }
 
 /*HTML- SOBRE NOSOTROS*/
 @media (min-width: 480px) {
-  main .sobreNosotros {
+  main .main__sobrenosotros {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 10px;
     column-gap: 2rem; } }
 
-main .sobreNosotros {
+main .main__sobrenosotros {
   padding: 10px;
   margin-top: 50px; }
 
-main .sobreNosotros__imagen {
+main .main__sobrenosotros__imagen {
   margin-left: 300px;
   width: 500px;
   height: 300px; }
 
 @media only screen and (min-width: 0px) and (max-width: 480px) {
-  main .sobreNosotros__imagen {
+  main .main__sobrenosotros__imagen {
     width: 300px;
     height: 200px;
     padding: 25px;
     margin: 10px; } }
 
 @media (min-width: 480px) {
-  main .sobreNosotros__texto {
+  main .main__sobrenosotros__texto {
     margin-right: 100px; } }
 
 @media only screen and (min-width: 0px) and (max-width: 480px) {
-  main .sobreNosotros__texto {
+  main .main__sobrenosotros__texto {
     margin-left: 10px;
     margin-right: 10px; } }
 
@@ -336,7 +266,7 @@ main .campo label {
     border-radius: .5rem;
     padding: 1rem; } }
 
-main .botonEnviar {
+main .boton__enviar-estilo {
   background-color: #065e91;
   color: whitesmoke;
   margin-top: .5rem;
@@ -355,8 +285,73 @@ main .boton__enviar {
   main .boton__enviar {
     text-align: center; } }
 
-main .botonEnviar:hover {
+main .boton__enviar-estilo:hover {
   cursor: pointer; }
 
 main .campo textarea {
   height: 10rem; }
+
+/********/
+/* HTML - PRODUCTOS - CALZADOS*/
+main .accesorio {
+  padding-bottom: 40px; }
+
+main .imagen__accesorio {
+  width: 100%;
+  height: 250px; }
+
+@supports (object-fit: cover) {
+  main .imagen__accesorio {
+    height: 300px;
+    object-fit: cover;
+    object-position: center bottom; } }
+
+@media only screen and (min-width: 0px) and (max-width: 480px) {
+  main .imagen__accesorio {
+    width: 100%;
+    height: 150px; } }
+
+@supports (object-fit: fit) {
+  main .imagen__accesorio {
+    height: 300px;
+    object-fit: fit;
+    object-position: center center; } }
+
+@media (min-width: 768px) {
+  main .hombres {
+    padding-bottom: 193px;
+    padding-top: 70px; } }
+
+main .center {
+  display: flex;
+  justify-content: center; }
+
+main .imagen__accesorio__billeteras,
+main .imagen__accesorio__carteras {
+  width: 100%;
+  height: 250px; }
+
+@supports (object-fit: cover) {
+  main .imagen__accesorio__billeteras,
+  main .imagen__accesorio__carteras {
+    height: 250px;
+    object-fit: cover;
+    object-position: center center; } }
+
+@media only screen and (min-width: 0px) and (max-width: 480px) {
+  main .imagen__accesorio__billeteras,
+  main .imagen__accesorio__carteras {
+    width: 100%;
+    height: 150px; } }
+
+@supports (object-fit: fit) {
+  main .imagen__accesorio__billeteras,
+  main .imagen__accesorio__carteras {
+    height: 300px;
+    object-fit: fit;
+    object-position: center center; } }
+
+@media (min-width: 768px) {
+  main .hombres {
+    padding-bottom: 193px;
+    padding-top: 70px; } }

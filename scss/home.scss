@@ -1,0 +1,58 @@
+/*HTML - HOME*/
+main {
+    .main__section2__titulo {
+        text-align: center;
+        padding: 20px;
+        padding-bottom: 50px;
+        font-size: 3rem;
+    }
+
+    @supports(object-fit: cover) {
+        .main__imagen {
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;
+        }
+    }
+
+    .main__imagen {
+        width: 100%;
+        height: $ancho - 220px;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+
+    @media only screen and (min-width: 0px) and (max-width: 480px) {
+        @supports(object-fit: cover) {
+            .main__imagen {
+                height: 50%;
+                object-fit: cover;
+                object-position: center center;
+            }
+        }
+
+        .main__imagen {
+            width: 100%;
+            height: ($alto * 4);
+            overflow: hidden;
+            position: relative;
+
+        }
+    }
+
+    .main__imagenhome {
+        width: 100%;
+        height: $alto + 150px;
+    }
+
+     .main__base {
+        margin-bottom: 30px;
+    }
+
+    .main__card-center {
+        text-align: center;
+    }
+
+}
