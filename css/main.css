@@ -1,99 +1,9 @@
-/*Globales - en todos los HTML*/
-.body__color {
-  /* background-image: linear-gradient(to right bottom, #e7f336, #edda1f, #f0c10d, #efa809, #eb9012); */
-  background-color: bisque;
-  margin: 0; }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-p,
-a,
-legend {
-  font-family: 'Domine', serif !important;
-  font-family: 'Open Sans', sans-serif !important;
-  font-weight: bold !important;
-  text-decoration: none; }
-
-header .header__logo {
-  height: 75px; }
-
-header .header__carrito {
-  color: white;
-  padding-right: 20px;
-  font-size: 45px; }
-
-header .header__icon {
-  text-align: right;
-  position: absolute;
-  top: 0px;
-  right: 0px; }
-
-header .header__icon a:hover {
-  padding: 5px; }
-
-header .header__navigation {
-  top: 0px;
-  position: sticky;
-  z-index: 1; }
-
-header .header__size {
-  font-size: 1.5rem; }
-
-header .header__boton {
-  background-color: grey !important; }
-
-main .main__titulo1 {
-  text-align: center;
-  font-size: 50px;
-  margin-top: 100px;
-  text-decoration: none;
-  color: black;
-  padding-top: 30px; }
-
-main .main__titulo2 {
-  text-align: center;
-  font-size: 50px; }
-
-footer .footer__navigation {
-  text-align: right; }
-
-footer .footer__pago {
-  color: white; }
-
-footer .footer__mediodepago {
-  text-align: center; }
-
-footer .footer__iconos {
-  color: white;
-  font-size: 30px;
-  text-align: center;
-  text-decoration: none; }
-
-footer .footer__size {
-  font-size: 1rem !important; }
-
-footer .footer__iconos a {
-  text-decoration: none; }
-
-.decoration {
-  text-decoration: none;
-  color: black; }
-
-.bg-azulmarino {
-  background-color: #252440; }
-
-.color {
-  color: white !important; }
-
+/*maps*/
 /*HTML - HOME*/
 main .main__section2__titulo {
   text-align: center;
   padding: 20px;
-  padding-bottom: 50px;
-  font-size: 3rem; }
+  padding-bottom: 50px; }
 
 @supports (object-fit: cover) {
   main .main__imagen {
@@ -241,7 +151,6 @@ main .campo label {
   main .contenedor-campos {
     font-family: 'Domine', serif;
     font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
     margin-bottom: .5rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -275,7 +184,6 @@ main .boton__enviar-estilo {
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 1.2rem;
   border: none; }
 
 main .boton__enviar {
@@ -291,14 +199,13 @@ main .boton__enviar-estilo:hover {
 main .campo textarea {
   height: 10rem; }
 
-/********/
 /* HTML - PRODUCTOS - CALZADOS*/
 main .accesorio {
   padding-bottom: 40px; }
 
 main .imagen__accesorio {
-  width: 100%;
-  height: 250px; }
+  height: 250px;
+  width: 100%; }
 
 @supports (object-fit: cover) {
   main .imagen__accesorio {
@@ -355,3 +262,117 @@ main .imagen__accesorio__carteras {
   main .hombres {
     padding-bottom: 193px;
     padding-top: 70px; } }
+
+/*Globales - en todos los HTML*/
+.body__color {
+  /* background-image: linear-gradient(to right bottom, #e7f336, #edda1f, #f0c10d, #efa809, #eb9012); */
+  background-color: bisque;
+  margin: 0; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a,
+legend {
+  font-family: 'Domine', serif !important;
+  font-family: 'Open Sans', sans-serif !important;
+  font-weight: bold !important;
+  text-decoration: none; }
+
+header .header__logo {
+  height: 75px; }
+
+header .header__carrito {
+  color: white;
+  padding-right: 20px;
+  font-size: 45px; }
+
+header .header__icon {
+  text-align: right;
+  position: absolute;
+  top: 0px;
+  right: 0px; }
+
+header .header__icon a:hover {
+  padding: 5px; }
+
+header .header__navigation {
+  top: 0px;
+  position: sticky;
+  z-index: 1; }
+
+header .header__size {
+  font-size: 1.5rem; }
+
+header .header__boton {
+  background-color: grey !important; }
+
+main .main__titulo1 {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 100px;
+  text-decoration: none;
+  color: black;
+  padding-top: 30px; }
+
+main .main__titulo2 {
+  text-align: center;
+  font-size: 50px; }
+
+footer .footer__navigation {
+  text-align: right; }
+
+footer .footer__pago {
+  color: white; }
+
+footer .footer__mediodepago {
+  text-align: center; }
+
+footer .footer__iconos {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none; }
+
+footer .footer__size {
+  font-size: 1rem !important; }
+
+footer .footer__iconos a {
+  text-decoration: none; }
+
+.decoration {
+  text-decoration: none;
+  color: black; }
+
+.bg-azulmarino {
+  background-color: #252440; }
+
+.color {
+  color: white !important; }
+
+.font-3rem {
+  font-size: 3rem; }
+
+.font-14px {
+  font-size: 14px; }
+
+.font-20px {
+  font-size: 20px; }
+
+.font-45px {
+  font-size: 45px; }
+
+.font-25px {
+  font-size: 25px; }
+
+.font-50px {
+  font-size: 50px; }
+
+.font-30px {
+  font-size: 30px; }
+
+.font-1rem {
+  font-size: 1rem; }

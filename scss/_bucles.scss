@@ -1,0 +1,5 @@
+@each $size in 3rem, 14px, 20px, 45px, 25px, 50px, 30px, 1rem {
+    .font-#{$size}{
+        font-size: $size;
+    }
+}
