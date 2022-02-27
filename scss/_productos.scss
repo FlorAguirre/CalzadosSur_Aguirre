@@ -4,11 +4,12 @@
 main {
     .accesorio {
         padding-bottom: 40px;
-    }
 
+}
     .imagen__accesorio {
         @include sizes(100%,250px);
     }
+    
 
     @supports(object-fit: cover) {
         .imagen__accesorio {
@@ -34,6 +35,8 @@ main {
         }
     }
 
+   
+
     @media (min-width:768px) {
         .hombres {
             padding-bottom: 193px;
@@ -46,18 +49,12 @@ main {
         justify-content: center;
     }
     
-      .imagen__accesorio__billeteras,
-      .imagen__accesorio__carteras {
-
-        width: 100%;
-         height: 250px;
-     }
+  
 
     @supports(object-fit: cover) {
-
         .imagen__accesorio__billeteras,
         .imagen__accesorio__carteras {
-            height: 250px;
+            height: 300px;
             object-fit: cover;
             object-position: center center;
         }
@@ -87,4 +84,28 @@ main {
         padding-top: 70px;
     }
 }
+    .imagen__calzados{
+        width: 100%;
+        height: 300px;
+    }
+
+    @media only screen and (min-width: 0px) and (max-width: 480px) {
+        .imagen__calzados{
+            width: 100%;
+            height: 200px;
+        }
+    }
+
+    .col:hover{
+     -webkit-transform:scale(1.1);
+     transform:scale(1.1);
+    overflow:hidden;
+    }
+   
+    .col__accesorio:hover{
+        -webkit-transform:scale(1.07);
+        transform:scale(1.07);
+       overflow:hidden;
+    }
+
 }

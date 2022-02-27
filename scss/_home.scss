@@ -1,4 +1,7 @@
+@import "mixins";
+
 /*HTML - HOME*/
+
 main {
     .main__section2__titulo {
         text-align: center;
@@ -42,8 +45,7 @@ main {
     }
 
     .main__imagenhome {
-        width: 100%;
-        height: $alto + 150px;
+        @include sizes(100%,250px);
     }
 
      .main__base {
