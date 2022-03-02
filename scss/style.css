@@ -17,7 +17,7 @@ main .main__imagen {
 
 @supports ((-o-object-fit: cover) or (object-fit: cover)) {
   main .main__imagen {
-    height: 600px;
+    height: 700px;
     -o-object-fit: cover;
        object-fit: cover;
     -o-object-position: center center;
@@ -70,23 +70,91 @@ main .contenedor {
 
 main .texto-encima {
   position: absolute;
-  top: 30%;
-  left: 10%;
+  top: 10%;
+  left: 5%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  font-size: 4rem;
+  font-size: 3.5rem;
   color: white;
+  border: 1px;
+  border: solid;
+  padding: 5px;
+  background-color: black;
 }
 
 @media only screen and (min-width: 0px) and (max-width: 480px) {
   main .texto-encima {
     position: absolute;
-    top: 30%;
+    top: 20%;
     left: 10%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     font-size: 2rem;
-    color: black;
+    color: white;
+  }
+}
+
+main .flecha-encima {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  height: 75px;
+}
+
+main .boton__ofertas {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 2rem;
+  padding: 10px;
+  font-weight: bold;
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#252440), color-stop(#26254e), color-stop(#27265c), color-stop(#28276b), to(#2f2ba0));
+  background-image: linear-gradient(to right top, #252440, #26254e, #27265c, #28276b, #2f2ba0);
+  color: white;
+  -webkit-animation: gradient 5s linear infinite;
+          animation: gradient 5s linear infinite;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 480px) {
+  main .boton__ofertas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    border-radius: 2rem;
+    padding: 10px;
+    font-weight: bold;
+    background-image: transparent;
+    color: white;
+    -webkit-animation: gradient 5s linear infinite;
+            animation: gradient 5s linear infinite;
   }
 }
 
@@ -431,18 +499,6 @@ main .col__accesorio:hover {
   background-size: 400% 400%;
   -webkit-animation: gradient 15s linear infinite;
           animation: gradient 15s linear infinite;
-}
-
-@-webkit-keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
 }
 
 @keyframes gradient {

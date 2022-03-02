@@ -1,71 +1,117 @@
 /*maps*/
 /*HTML - HOME*/
-main .main__section2__titulo {
-  text-align: center;
-  padding: 20px;
-  padding-bottom: 50px; }
-
-main .main__imagen {
-  width: 100%;
-  height: 700px;
-  overflow: hidden;
-  position: relative;
-  margin-bottom: 50px;
-  margin-top: 50px; }
-
-@supports (object-fit: cover) {
-  main .main__imagen {
-    height: 600px;
-    object-fit: cover;
-    object-position: center center; } }
-
-@media only screen and (min-width: 0px) and (max-width: 480px) {
+main {
+  /*Hero temporada */
+  /*Hero Ofertas*/ }
+  main .main__section2__titulo {
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 50px; }
   main .main__imagen {
     width: 100%;
-    height: 300px;
+    height: 500px;
     overflow: hidden;
-    position: relative; }
+    position: relative;
+    margin-bottom: 50px;
+    margin-top: 50px; }
   @supports (object-fit: cover) {
     main .main__imagen {
-      height: 300px;
+      height: 500px;
       object-fit: cover;
-      object-position: center center; } } }
-
-main .main__imagenhome {
-  height: 250px;
-  width: 100%; }
-
-main .main__base {
-  margin-bottom: 30px; }
-
-main .main__card-center {
-  text-align: center; }
-
-main video {
-  width: 100%;
-  height: 300px;
-  object-fit: cover; }
-
-main .contenedor {
-  position: relative;
-  text-align: center; }
-
-main .texto-encima {
-  position: absolute;
-  top: 30%;
-  left: 10%;
-  transform: translate(-50%, -50%);
-  font-size: 4rem;
-  color: white; }
-
-@media only screen and (min-width: 0px) and (max-width: 480px) {
+      object-position: center center; } }
+  @media only screen and (min-width: 0px) and (max-width: 480px) {
+    main .main__imagen {
+      width: 100%;
+      height: 300px;
+      overflow: hidden;
+      position: relative; }
+    @supports (object-fit: cover) {
+      main .main__imagen {
+        height: 300px;
+        object-fit: cover;
+        object-position: center center; } } }
+  main .main__imagenhome {
+    height: 250px;
+    width: 100%; }
+  main .main__base {
+    margin-bottom: 30px; }
+  main .main__card-center {
+    text-align: center; }
+  main .contenedor {
+    position: relative;
+    text-align: center; }
   main .texto-encima {
     position: absolute;
-    top: 30%;
-    left: 10%;
+    top: 10%;
+    left: 5%;
     transform: translate(-50%, -50%);
-    font-size: 2rem;
-    color: black; } }
+    font-size: 3rem;
+    color: white;
+    border: 1px;
+    border: solid;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.388235); }
+  @media only screen and (min-width: 0px) and (max-width: 480px) {
+    main .texto-encima {
+      position: absolute;
+      top: 20%;
+      left: 10%;
+      transform: translate(-50%, -50%);
+      font-size: 2rem;
+      color: white; } }
+  main .flecha-encima {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    height: 75px; }
+  main .imagen__ofertas {
+    position: absolute;
+    right: 0%;
+    height: 500px;
+    width: 50%; }
+  main .imagen__ofertas--zapatos {
+    position: absolute;
+    left: 0%;
+    height: 500px;
+    width: 50%; }
+  main .texto__oferta {
+    position: absolute;
+    color: white;
+    border: 2px;
+    border: solid;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.458824); }
+  main .boton__ofertas {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 2rem;
+    padding: 10px;
+    font-weight: bold;
+    background-image: linear-gradient(to right top, #252440, #26254e, #27265c, #28276b, #2f2ba0);
+    color: white;
+    animation: gradient 5s linear infinite; }
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+  @media only screen and (min-width: 0px) and (max-width: 480px) {
+    main .boton__ofertas {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 2rem;
+      padding: 10px;
+      font-weight: bold;
+      background-image: transparent;
+      color: white;
+      animation: gradient 5s linear infinite; } }
 
 /*HTML- SOBRE NOSOTROS*/
 @media (min-width: 480px) {
