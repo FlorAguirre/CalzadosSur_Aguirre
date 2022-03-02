@@ -2,7 +2,7 @@
 
 main {
     .form {
-        background-color: #252440;
+        background-image: linear-gradient(to right top, #252440, #26254e, #27265c, #28276b, #2a2779);
         width: 40%;
         margin: 0 auto 150px;
         border-radius: 1rem;
@@ -16,7 +16,7 @@ main {
 
     @media only screen and (min-width: 0px) and (max-width: 480px) {
         .form {
-            background-color: #252440;
+            background-image: linear-gradient(to right top, #252440, #26254e, #27265c, #28276b, #2a2779);
             width: 80%;
             margin: 0 auto 150px;
             border-radius: 1rem;

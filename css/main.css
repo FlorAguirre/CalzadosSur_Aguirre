@@ -5,31 +5,31 @@ main .main__section2__titulo {
   padding: 20px;
   padding-bottom: 50px; }
 
-@supports (object-fit: cover) {
-  main .main__imagen {
-    height: 100%;
-    object-fit: cover;
-    object-position: center center; } }
-
 main .main__imagen {
   width: 100%;
-  height: 500px;
+  height: 700px;
   overflow: hidden;
   position: relative;
   margin-bottom: 50px;
   margin-top: 50px; }
 
+@supports (object-fit: cover) {
+  main .main__imagen {
+    height: 600px;
+    object-fit: cover;
+    object-position: center center; } }
+
 @media only screen and (min-width: 0px) and (max-width: 480px) {
-  @supports (object-fit: cover) {
-    main .main__imagen {
-      height: 50%;
-      object-fit: cover;
-      object-position: center center; } }
   main .main__imagen {
     width: 100%;
-    height: 400px;
+    height: 300px;
     overflow: hidden;
-    position: relative; } }
+    position: relative; }
+  @supports (object-fit: cover) {
+    main .main__imagen {
+      height: 300px;
+      object-fit: cover;
+      object-position: center center; } } }
 
 main .main__imagenhome {
   height: 250px;
@@ -40,6 +40,32 @@ main .main__base {
 
 main .main__card-center {
   text-align: center; }
+
+main video {
+  width: 100%;
+  height: 300px;
+  object-fit: cover; }
+
+main .contenedor {
+  position: relative;
+  text-align: center; }
+
+main .texto-encima {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  font-size: 4rem;
+  color: white; }
+
+@media only screen and (min-width: 0px) and (max-width: 480px) {
+  main .texto-encima {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: black; } }
 
 /*HTML- SOBRE NOSOTROS*/
 @media (min-width: 480px) {
@@ -118,7 +144,7 @@ main td {
 /*******/
 /*HTML - CONTACTANOS*/
 main .form {
-  background-color: #252440;
+  background-image: linear-gradient(to right top, #252440, #26254e, #27265c, #28276b, #2a2779);
   width: 40%;
   margin: 0 auto 150px;
   border-radius: 1rem;
@@ -129,7 +155,7 @@ main .form {
 
 @media only screen and (min-width: 0px) and (max-width: 480px) {
   main .form {
-    background-color: #252440;
+    background-image: linear-gradient(to right top, #252440, #26254e, #27265c, #28276b, #2a2779);
     width: 80%;
     margin: 0 auto 150px;
     border-radius: 1rem;
@@ -280,8 +306,18 @@ main .col__accesorio:hover {
 /*Globales - en todos los HTML*/
 .body__color {
   /* background-image: linear-gradient(to right bottom, #e7f336, #edda1f, #f0c10d, #efa809, #eb9012); */
-  background-color: bisque;
-  margin: 0; }
+  background: linear-gradient(-45deg, #ffe4c4, #facb91, #e6ac66, #df963e);
+  margin: 0;
+  background-size: 400% 400%;
+  animation: gradient 15s linear infinite; }
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
 
 h1,
 h2,
@@ -364,10 +400,37 @@ footer .footer__iconos a {
   color: black; }
 
 .bg-azulmarino {
-  background-color: #252440; }
+  background-image: linear-gradient(to right top, #252440, #26254e, #27265c, #28276b, #2f2ba0);
+  animation: gradient 15s linear infinite; }
 
 .color {
   color: white !important; }
+
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 100px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100; }
+
+.float:hover {
+  text-decoration: none;
+  color: #25d366;
+  background-color: #fff; }
+
+.my-float {
+  margin-top: 16px; }
+
+@media (max-width: 480px) {
+  .float {
+    visibility: hidden; } }
 
 .font-3rem {
   font-size: 3rem; }

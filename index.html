@@ -19,8 +19,8 @@
 
 <body class="body__color">
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-azulmarino space fixed-top">
-      <div class="container-fluid ">
+    <nav class="navbar navbar-expand-lg navbar-light bg-azulmarino  fixed-top">
+      <div class="container-fluid space ">
         <a class="navbar-brand" href="index.html">
           <img class="header__logo" src="imagenes/Logo.jpg" alt="Calzados Sur Logo">
         </a>
@@ -43,7 +43,7 @@
                 <li><a class="dropdown-item" href="./vistas/accesorios.html">Accesorios</a></li>
                 <li><a class="dropdown-item" href="./vistas/marroquineria.html">Marroquinería</a></li>
 
-                <li><a class="dropdown-item" href="./vistas/mochilas.html">Mochilas</a></li>
+                <li><a class="dropdown-item" href="./vistas/escolares.html">Artículos Escolares</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
@@ -56,6 +56,9 @@
                 <li><a class="dropdown-item" href="./vistas/hombres.html">Hombres</a></li>
                 <li><a class="dropdown-item" href="./vistas/niños.html">Niños</a></li>
               </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link color header__size" href="../vistas/nosotros.html">Ofertas</a>
             </li>
             <li class="nav-item">
               <a class="nav-link color header__size" href="./vistas/nosotros.html">Sobre Nosotros</a>
@@ -84,19 +87,20 @@
   </header>
   <main>
     <section class=" main__section1 ">
-      <h1 class="main__titulo1 "></h1>
+      <h1 class="main__titulo1 animate__animated animate__bounce ">Tienda de Calzados y Accesorios</h1>
       <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="2000">
+          <div class="carousel-item active contenedor" data-bs-interval="2000">
             <img src="./imagenes/WhatsApp Image 2022-01-31 at 7.44.26 AM (1).jpeg" class="d-block w-100 main__imagen"
               alt="...">
           </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img src="./imagenes/WhatsApp Image 2022-01-31 at 7.44.25 AM.jpeg" class="d-block w-100 main__imagen"
+          <div class="carousel-item contenedor" data-bs-interval="2000">
+            <img src="./imagenes/shutterstock-13_0_42_1000_622.jpg" class="d-block w-100 main__imagen"
               alt="...">
+              <h1 class="texto-encima animate__animated animate__fadeInRight ">Temporada Otoño - Invierno 2022</h1>
           </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img src="./imagenes/WhatsApp Image 2022-01-31 at 7.44.25 AM (1).jpeg" class="d-block w-100 main__imagen"
+          <div class="carousel-item contenedor" data-bs-interval="2000">
+            <img src="./imagenes/Ofertas.jpg" class="d-block w-100 main__imagen"
               alt="...">
           </div>
         </div>
@@ -110,9 +114,10 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
-      </div>
+      </div>    
     </section>
-    <section class="container mb-4">
+
+    <section class="container mb-4">  
       <h2 class="main__section2__titulo font-3rem">Nuestros <span>productos</span></h2>
       <div class="row justify-content-center">
         <div class="col-md-10">
@@ -176,12 +181,12 @@
             </div>
             <div class="col">
               <div class="card h-100">
-                <a href="./vistas/mochilas.html"><img
+                <a href="./vistas/escolares.html"><img
                     src="./imagenes/Mochilas/Mochilas 2.jpeg"
                     class="card-img-top main__imagenhome" alt="..."></a>
                 <div class="card-body main__card-center">
-                  <a class="decoration" href="./vistas/mochilas.html">
-                    <h5 class="card-title">Mochilas</h5>
+                  <a class="decoration" href="./vistas/escolares.html">
+                    <h5 class="card-title">Artículos Escolares</h5>
                   </a>
                 </div>
               </div>
@@ -191,6 +196,10 @@
       </div>
     </section>
   </main>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <a href="https://api.whatsapp.com/send?phone=+5491131852008&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20los productos" class="float" target="_blank">
+  <i class="fa fa-whatsapp my-float"></i>
+  </a>
   <footer>
     <nav class="navbar navbar-light bg-azulmarino">
       <div class="container-fluid">

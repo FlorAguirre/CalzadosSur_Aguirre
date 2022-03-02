@@ -6,9 +6,18 @@ main .main__section2__titulo {
   padding-bottom: 50px;
 }
 
+main .main__imagen {
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
 @supports ((-o-object-fit: cover) or (object-fit: cover)) {
   main .main__imagen {
-    height: 100%;
+    height: 600px;
     -o-object-fit: cover;
        object-fit: cover;
     -o-object-position: center center;
@@ -16,30 +25,21 @@ main .main__section2__titulo {
   }
 }
 
-main .main__imagen {
-  width: 100%;
-  height: 500px;
-  overflow: hidden;
-  position: relative;
-  margin-bottom: 50px;
-  margin-top: 50px;
-}
-
 @media only screen and (min-width: 0px) and (max-width: 480px) {
+  main .main__imagen {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+  }
   @supports ((-o-object-fit: cover) or (object-fit: cover)) {
     main .main__imagen {
-      height: 50%;
+      height: 300px;
       -o-object-fit: cover;
          object-fit: cover;
       -o-object-position: center center;
          object-position: center center;
     }
-  }
-  main .main__imagen {
-    width: 100%;
-    height: 400px;
-    overflow: hidden;
-    position: relative;
   }
 }
 
@@ -54,6 +54,40 @@ main .main__base {
 
 main .main__card-center {
   text-align: center;
+}
+
+main video {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main .contenedor {
+  position: relative;
+  text-align: center;
+}
+
+main .texto-encima {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 4rem;
+  color: white;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 480px) {
+  main .texto-encima {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: black;
+  }
 }
 
 /*HTML- SOBRE NOSOTROS*/
@@ -163,7 +197,8 @@ main td {
 /*******/
 /*HTML - CONTACTANOS*/
 main .form {
-  background-color: #252440;
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#252440), color-stop(#26254e), color-stop(#27265c), color-stop(#28276b), to(#2a2779));
+  background-image: linear-gradient(to right top, #252440, #26254e, #27265c, #28276b, #2a2779);
   width: 40%;
   margin: 0 auto 150px;
   border-radius: 1rem;
@@ -177,7 +212,8 @@ main .form .form fieldset {
 
 @media only screen and (min-width: 0px) and (max-width: 480px) {
   main .form {
-    background-color: #252440;
+    background-image: -webkit-gradient(linear, left bottom, right top, from(#252440), color-stop(#26254e), color-stop(#27265c), color-stop(#28276b), to(#2a2779));
+    background-image: linear-gradient(to right top, #252440, #26254e, #27265c, #28276b, #2a2779);
     width: 80%;
     margin: 0 auto 150px;
     border-radius: 1rem;
@@ -390,8 +426,35 @@ main .col__accesorio:hover {
 /*Globales - en todos los HTML*/
 .body__color {
   /* background-image: linear-gradient(to right bottom, #e7f336, #edda1f, #f0c10d, #efa809, #eb9012); */
-  background-color: bisque;
+  background: linear-gradient(-45deg, #ffe4c4, #facb91, #e6ac66, #df963e);
   margin: 0;
+  background-size: 400% 400%;
+  -webkit-animation: gradient 15s linear infinite;
+          animation: gradient 15s linear infinite;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 h1,
@@ -493,11 +556,46 @@ footer .footer__iconos a {
 }
 
 .bg-azulmarino {
-  background-color: #252440;
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#252440), color-stop(#26254e), color-stop(#27265c), color-stop(#28276b), to(#2f2ba0));
+  background-image: linear-gradient(to right top, #252440, #26254e, #27265c, #28276b, #2f2ba0);
+  -webkit-animation: gradient 15s linear infinite;
+          animation: gradient 15s linear infinite;
 }
 
 .color {
   color: white !important;
+}
+
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 100px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  -webkit-box-shadow: 2px 2px 3px #999;
+          box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.float:hover {
+  text-decoration: none;
+  color: #25d366;
+  background-color: #fff;
+}
+
+.my-float {
+  margin-top: 16px;
+}
+
+@media (max-width: 480px) {
+  .float {
+    visibility: hidden;
+  }
 }
 
 .font-3rem {
