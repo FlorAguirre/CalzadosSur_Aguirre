@@ -40,7 +40,7 @@ header {
     }
 
     .header__carrito {
-        color: white;
+        color: black;
         padding-right: 20px;
         font-size: 45px;
     }
@@ -69,28 +69,12 @@ header {
     }
 
     .header__boton {
-        background-color: grey !important;
-        color:black;
+        background-color: #252440 !important;
+        color:white;
         border-color: black;
     }
 }
 
-main {
-    .main__titulo1 {
-        text-align: map-get($estilos, centro);
-        font-size: 50px;
-        margin-top: 100px;
-        text-decoration: none;
-        color: black;
-        padding-top: 30px;
-
-    }
-
-    .main__titulo2 {
-        text-align: map-get($estilos, centro);
-        font-size: 50px;
-    }
-}
 
 
 footer {
@@ -120,6 +104,9 @@ footer {
     .footer__iconos a {
         text-decoration: none;
     }
+    .footer__color{
+        color:white !important;
+    }
 }
 
 .decoration {
@@ -132,8 +119,16 @@ footer {
     
 }
 
+.azulmarino{
+    color: linear-gradient(to right top, #252440, #26254e, #27265c, #28276b, #2f2ba0);
+}
+
+.bg-amarillo{
+    background-image: linear-gradient(to right bottom, #fbcc90, #fbc57b, #fbbd65, #fab64e, #f8af34);;
+}
+
 .color {
-    color: white !important;
+    color: black !important;
 }
 
 .float{

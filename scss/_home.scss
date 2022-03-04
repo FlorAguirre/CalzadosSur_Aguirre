@@ -2,7 +2,24 @@
 
 /*HTML - HOME*/
 
-main {
+main { 
+    .main__section1{
+        margin-top: 50px;
+    }
+    .main__titulo1 {
+        text-align: map-get($estilos, centro);
+        font-size: 50px;
+        margin-top: 100px;
+        text-decoration: none;
+        color: black;
+        padding-top: 30px;
+
+    }
+
+    .main__titulo2 {
+        text-align: map-get($estilos, centro);
+        font-size: 50px;
+    }
     .main__section2__titulo {
         text-align: center;
         padding: 20px;
@@ -21,7 +38,7 @@ main {
     
     @supports(object-fit: cover) {
         .main__imagen {
-            height: 500px;
+            height: 600px;
             object-fit: cover;
             object-position: center center;
         }
@@ -102,84 +119,82 @@ main {
 
     
 
-    .imagen__ofertas{
-        position:absolute;
-        right:0%;
-        height:500px;
-        width:50%;
+    // .imagen__ofertas{
+    //     position:absolute;
+    //     right:0%;
+    //     height:600px;
+    //     width:50%;
 
-    }
+    // }
 
     .imagen__ofertas--zapatos{
         position:absolute;
         left:0%;
-        height:500px;
-        width:50%;
+        height:600px;
+        width:100%;
     }
 
-    // .texto__ofertas{
-    //     position: absolute;
-    //     color: white;
-    //     top:10%;
-    //     left:2%;
-
-    // }
-
-    // .texto__liquidacion{
-    //     position: absolute;
-    //     color:white;
-    //     top:20%;
-    //     left:2%;
-    // }
+    @supports(object-fit: cover) {
+        .imagen__ofertas--zapatos {
+            height: 600px;
+            object-fit: cover;
+            object-position: center top;
+        }
+    }
 
     .texto__oferta{
         position:absolute;
         color:white;
+        top: 3%;
+        left:5%;
         border:2px;
         border:solid;
         padding:10px;
         background-color: opacify($color: #00000075, $amount: 0);
     }
-    .boton__ofertas{
-        position: absolute;
-        top: 90%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        border-radius: 2rem;
-        padding:10px;
-        font-weight: bold;
-        background-image: linear-gradient(to right top, #252440, #26254e, #27265c, #28276b, #2f2ba0);
-        color:white;
-        animation: gradient 5s linear infinite;
-    }
 
-    @keyframes gradient {
+    .boton__oferta {
+        position:absolute;
+        top:50%;
+        background-image: linear-gradient(-45deg, #3f00b5, #9f69fe, #27c8b7, #3f00b5);
+        background-size: 800% 400%;
+        padding: 1em 4em;
+        display: inline-block;
+        border: none;
+        border-radius: 10px;
+        font-size: 17px;
+        font-weight: 700;
+        color: white;
+        transition: all .5s ease-in-out;
+        animation: gradient 10s infinite cubic-bezier(.62, .28, .23, .99) both;
+        box-shadow: 5px 5px rgba(0,0,0,0.5);
+       }
+       
+       .boton__oferta:hover {
+        animation: gradient 3s infinite;
+        transform: scale(1.05);
+       }
+       
+       .boton__oferta:active {
+        animation: gradient 3s infinite;
+        transform: scale(0.8);
+       }
+       
+       @keyframes gradient {
         0% {
-            background-position: 0% 50%;
+         background-position: 0% 50%;
         }
+       
         50% {
-            background-position: 100% 50%;
+         background-position: 100% 50%;
         }
+       
         100% {
-            background-position: 0% 50%;
+         background-position: 0% 50%;
         }
-    } 
+       }
 
-    @media only screen and (min-width: 0px) and (max-width: 480px){
-        .boton__ofertas{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            border-radius: 2rem;
-            padding:10px;
-            font-weight: bold;
-            background-image: transparent;
-            color:white;
-            animation: gradient 5s linear infinite;
-        }
-      
-    }
-
-
+       .card{
+           box-shadow: 5px 5px rgba(0,0,0,0.3);
+       }
 }

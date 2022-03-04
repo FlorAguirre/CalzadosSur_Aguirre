@@ -3,6 +3,18 @@
 main {
   /*Hero temporada */
   /*Hero Ofertas*/ }
+  main .main__section1 {
+    margin-top: 50px; }
+  main .main__titulo1 {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 100px;
+    text-decoration: none;
+    color: black;
+    padding-top: 30px; }
+  main .main__titulo2 {
+    text-align: center;
+    font-size: 50px; }
   main .main__section2__titulo {
     text-align: center;
     padding: 20px;
@@ -16,7 +28,7 @@ main {
     margin-top: 50px; }
   @supports (object-fit: cover) {
     main .main__imagen {
-      height: 500px;
+      height: 600px;
       object-fit: cover;
       object-position: center center; } }
   @media only screen and (min-width: 0px) and (max-width: 480px) {
@@ -64,34 +76,46 @@ main {
     bottom: 10%;
     left: 50%;
     height: 75px; }
-  main .imagen__ofertas {
-    position: absolute;
-    right: 0%;
-    height: 500px;
-    width: 50%; }
   main .imagen__ofertas--zapatos {
     position: absolute;
     left: 0%;
-    height: 500px;
-    width: 50%; }
+    height: 600px;
+    width: 100%; }
+  @supports (object-fit: cover) {
+    main .imagen__ofertas--zapatos {
+      height: 600px;
+      object-fit: cover;
+      object-position: center top; } }
   main .texto__oferta {
     position: absolute;
     color: white;
+    top: 3%;
+    left: 5%;
     border: 2px;
     border: solid;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.458824); }
-  main .boton__ofertas {
+  main .boton__oferta {
     position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 2rem;
-    padding: 10px;
-    font-weight: bold;
-    background-image: linear-gradient(to right top, #252440, #26254e, #27265c, #28276b, #2f2ba0);
+    top: 50%;
+    background-image: linear-gradient(-45deg, #3f00b5, #9f69fe, #27c8b7, #3f00b5);
+    background-size: 800% 400%;
+    padding: 1em 4em;
+    display: inline-block;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 700;
     color: white;
-    animation: gradient 5s linear infinite; }
+    transition: all .5s ease-in-out;
+    animation: gradient 10s infinite cubic-bezier(0.62, 0.28, 0.23, 0.99) both;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.5); }
+  main .boton__oferta:hover {
+    animation: gradient 3s infinite;
+    transform: scale(1.05); }
+  main .boton__oferta:active {
+    animation: gradient 3s infinite;
+    transform: scale(0.8); }
 
 @keyframes gradient {
   0% {
@@ -100,18 +124,8 @@ main {
     background-position: 100% 50%; }
   100% {
     background-position: 0% 50%; } }
-  @media only screen and (min-width: 0px) and (max-width: 480px) {
-    main .boton__ofertas {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      border-radius: 2rem;
-      padding: 10px;
-      font-weight: bold;
-      background-image: transparent;
-      color: white;
-      animation: gradient 5s linear infinite; } }
+  main .card {
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.3); }
 
 /*HTML- SOBRE NOSOTROS*/
 @media (min-width: 480px) {
@@ -352,7 +366,7 @@ main .col__accesorio:hover {
 /*Globales - en todos los HTML*/
 .body__color {
   /* background-image: linear-gradient(to right bottom, #e7f336, #edda1f, #f0c10d, #efa809, #eb9012); */
-  background: linear-gradient(-45deg, #ffe4c4, #facb91, #e6ac66, #df963e);
+  background: linear-gradient(to right bottom, #fbbd6f, #fbb962, #fab654, #f9b245, #f8af34);
   margin: 0;
   background-size: 400% 400%;
   animation: gradient 15s linear infinite; }
@@ -382,7 +396,7 @@ header .header__logo {
   height: 75px; }
 
 header .header__carrito {
-  color: white;
+  color: black;
   padding-right: 20px;
   font-size: 45px; }
 
@@ -404,21 +418,9 @@ header .header__size {
   font-size: 1.3rem; }
 
 header .header__boton {
-  background-color: grey !important;
-  color: black;
+  background-color: #252440 !important;
+  color: white;
   border-color: black; }
-
-main .main__titulo1 {
-  text-align: center;
-  font-size: 50px;
-  margin-top: 100px;
-  text-decoration: none;
-  color: black;
-  padding-top: 30px; }
-
-main .main__titulo2 {
-  text-align: center;
-  font-size: 50px; }
 
 footer .footer__navigation {
   text-align: right; }
@@ -441,6 +443,9 @@ footer .footer__size {
 footer .footer__iconos a {
   text-decoration: none; }
 
+footer .footer__color {
+  color: white !important; }
+
 .decoration {
   text-decoration: none;
   color: black; }
@@ -449,8 +454,14 @@ footer .footer__iconos a {
   background-image: linear-gradient(to right top, #252440, #26254e, #27265c, #28276b, #2f2ba0);
   animation: gradient 15s linear infinite; }
 
+.azulmarino {
+  color: linear-gradient(to right top, #252440, #26254e, #27265c, #28276b, #2f2ba0); }
+
+.bg-amarillo {
+  background-image: linear-gradient(to right bottom, #fbcc90, #fbc57b, #fbbd65, #fab64e, #f8af34); }
+
 .color {
-  color: white !important; }
+  color: black !important; }
 
 .float {
   position: fixed;

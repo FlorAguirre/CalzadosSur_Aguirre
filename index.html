@@ -6,7 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Venta de accesorios y calzados para hombres, mujeres y niños">
-  <meta name="keywords"  content="CALZADOS, CALZADO, AROS, COLLARES, ZAPATILLAS, ZAPATOS, CARTERAS, MOCHILAS, BILLETERAS">
+  <meta name="keywords"
+    content="CALZADOS, CALZADO, AROS, COLLARES, ZAPATILLAS, ZAPATOS, CARTERAS, MOCHILAS, BILLETERAS">
   <link rel="shortcut icon" href="./imagenes/favicon png.jpg">
   <title>Calzados Sur</title>
   <link rel="stylesheet" href="./css/main.css">
@@ -19,10 +20,10 @@
 
 <body class="body__color">
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-azulmarino  fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-amarillo  fixed-top">
       <div class="container-fluid space ">
         <a class="navbar-brand" href="index.html">
-          <img class="header__logo" src="imagenes/Logo.jpg" alt="Calzados Sur Logo">
+          <img class="header__logo" src="imagenes/Logo-removebg-preview.png" alt="Calzados Sur Logo">
         </a>
         <button class="navbar-toggler header__boton" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -32,7 +33,7 @@
         <div class="collapse navbar-collapse " id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 color">
             <li class="nav-item ">
-              <a class="nav-link active color header__size" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link active color header__size azulmarino" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle color header__size" href="#" id="navbarDropdown" role="button"
@@ -72,7 +73,7 @@
               <ion-icon class="header__carrito" name="cart-outline"></ion-icon>
             </a>
           </div>
-          <nav class="navbar navbar-light bg-azulmarino">
+          <nav class="navbar navbar-light bg-amarillo">
             <div class="container-fluid">
               <form class="d-flex">
                 <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
@@ -80,60 +81,69 @@
               </form>
             </div>
           </nav>
-        </div>    
-    
+        </div>
       </div>
     </nav>
   </header>
   <main>
     <section class=" main__section1 ">
-      <h1 class="main__titulo1 animate__animated animate__bounce ">Tienda de Calzados y Accesorios</h1>
-      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+      <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
         <div class="carousel-inner">
           <div class="carousel-item active contenedor" data-bs-interval="2000">
-            <img src="./imagenes/WhatsApp Image 2022-01-31 at 7.44.26 AM (1).jpeg" class="d-block w-100 main__imagen"
-              alt="...">
-          </div>
-          <div class="carousel-item contenedor" data-bs-interval="2000">
-            <img src="./imagenes/shutterstock-13_0_42_1000_622.jpg" class="d-block w-100 main__imagen"
-              alt="...">
-              <h1 class="texto-encima animate__animated animate__fadeInRight ">Temporada Otoño - Invierno 2022</h1>
-              <a href="#page-temporada"><img class="flecha-encima" src="./imagenes/iconos/down-arrow (3).png" alt=""></a> 
+            <img src="./imagenes/shutterstock-13_0_42_1000_622.jpg" class="d-block w-100 main__imagen" alt="...">
+            <h1 class="texto-encima animate__animated animate__fadeInRight ">Temporada Otoño - Invierno 2022</h1>
+            <a href="#page-temporada"><img class="flecha-encima" src="./imagenes/iconos/down-arrow (3).png" alt=""></a>
           </div>
           <div class="carousel-item contenedor main__imagen" data-bs-interval="2000">
-            
-             
-              <img class="imagen__ofertas" src="./imagenes/istockphoto-1204428300-612x612.jpg" alt="">
-              <img class="imagen__ofertas--zapatos" src="./imagenes/zapatos-mujer-verano.jpeg" alt="">
-              <div class="texto__oferta">
+            <img class="imagen__ofertas--zapatos" src="./imagenes/zapatos-mujer-verano.jpeg" alt="">
+            <div class="texto__oferta animate__animated animate__fadeInRight ">
               <h1 class="texto__ofertas">50% de Descuento en el segundo par</h1>
-              <h2 class="texto__liquidacion">Liquidación Verano</h2> 
+              <h2 class="texto__liquidacion">Liquidación Verano</h2>
             </div>
-            <a href="vistas/ofertas.html"><button " class="boton__ofertas">Click para acceder a las ofertas</button></a>
-           
+            <a href="vistas/ofertas.html">
+              <button class="boton__oferta">
+                <span>OFERTAS</span>
+                <div class="liquid"></div>
+              </button>
+              ofertas</button></a>
           </div>
+          <div class="carousel-item contenedor main__imagen" data-bs-interval="2000">
+            <img class="imagen__ofertas--zapatos"
+              src="./imagenes/Escolares/back-to-school-banner-with-realistic-school-supplies-on-chalkboard-background-vector.jpg"
+              alt="">
+            <div class="texto__oferta animate__animated animate__fadeInRight ">
+              <h1 class="texto__ofertas">Artículos Escolares</h1>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
-          data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-          data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>    
     </section>
-
-    <section class="container mb-4">  
+    <section class="container mb-4">
       <h2 class="main__section2__titulo font-3rem">Nuestros <span>productos</span></h2>
       <div class="row justify-content-center">
         <div class="col-md-10">
           <div class="row row-cols-1 row-cols-md-3 g-4 main__base">
             <div class="col">
               <div class="card h-80">
-                <a href="./vistas/mujeres.html"><img src="./imagenes/Mujeres/Ojotas-Sandalias/PHOTO-2021-12-26-14-21-42 (1).jpg"
+                <a href="./vistas/mujeres.html"><img
+                    src="./imagenes/Mujeres/Ojotas-Sandalias/PHOTO-2021-12-26-14-21-42 (1).jpg"
                     class="card-img-top main__imagenhome" alt="..."></a>
                 <div class="card-body main__card-center">
                   <a class="decoration" href="./vistas/mujeres.html">
@@ -166,8 +176,7 @@
             </div>
             <div class="col">
               <div class="card h-100">
-                <a href="./vistas/accesorios.html"><img
-                    src="./imagenes/Accesorios/Bijouterie/2256560504402101.jpg"
+                <a href="./vistas/accesorios.html"><img src="./imagenes/Accesorios/Bijouterie/2256560504402101.jpg"
                     class="card-img-top main__imagenhome" alt="..."></a>
                 <div class="card-body main__card-center">
                   <a class="decoration" href="./vistas/accesorios.html">
@@ -190,8 +199,7 @@
             </div>
             <div class="col">
               <div class="card h-100">
-                <a href="./vistas/escolares.html"><img
-                    src="./imagenes/Mochilas/Mochilas 2.jpeg"
+                <a href="./vistas/escolares.html"><img src="./imagenes/Mochilas/Mochilas 2.jpeg"
                     class="card-img-top main__imagenhome" alt="..."></a>
                 <div class="card-body main__card-center">
                   <a class="decoration" href="./vistas/escolares.html">
@@ -212,13 +220,14 @@
     </section>
   </main>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <a href="https://api.whatsapp.com/send?phone=+5491131852008&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20los productos" class="float" target="_blank">
-  <i class="fa fa-whatsapp my-float"></i>
+  <a href="https://api.whatsapp.com/send?phone=+5491131852008&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20los productos"
+    class="float" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
   </a>
   <footer>
     <nav class="navbar navbar-light bg-azulmarino">
       <div class="container-fluid">
-        <h5 class="navbar-brand color footer__size ">Todos los derechos reservados 2022.</h5>
+        <h5 class="navbar-brand footer__color footer__size ">Todos los derechos reservados 2022.</h5>
         <div class="footer__mediodepago">
           <h5 class="footer__pago">Medios de pago</h5>
           <img src="./imagenes/iconos/icons8-mercado-pago-48.png" alt="">
