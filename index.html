@@ -25,7 +25,7 @@
         <a class="navbar-brand" href="index.html">
           <img class="header__logo" src="imagenes/Logo-removebg-preview.png" alt="Calzados Sur Logo">
         </a>
-        <button class="navbar-toggler header__boton" type="button" data-bs-toggle="collapse"
+        <button class="navbar-toggler header__boton-grey" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
           aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -98,12 +98,13 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active contenedor" data-bs-interval="2000">
-            <img src="./imagenes/shutterstock-13_0_42_1000_622.jpg" class="d-block w-100 main__imagen" alt="...">
+            <img src="./imagenes/Temporadas/shutterstock-13_0_42_1000_622.jpg" class="d-block w-100 main__imagen"
+              alt="...">
             <h1 class="texto-encima animate__animated animate__fadeInRight ">Temporada Otoño - Invierno 2022</h1>
             <a href="#page-temporada"><img class="flecha-encima" src="./imagenes/iconos/down-arrow (3).png" alt=""></a>
           </div>
-          <div class="carousel-item contenedor main__imagen" data-bs-interval="2000">
-            <img class="imagen__ofertas--zapatos" src="./imagenes/zapatos-mujer-verano.jpeg" alt="">
+          <div class="carousel-item contenedor  " data-bs-interval="2000">
+            <img class=" main__imagen  d-block w-100 " src="./imagenes/zapatos-mujer-verano.jpeg" alt="">
             <div class="texto__oferta animate__animated animate__fadeInRight ">
               <h1 class="texto__ofertas">50% de Descuento en el segundo par</h1>
               <h2 class="texto__liquidacion">Liquidación Verano</h2>
@@ -113,15 +114,12 @@
                 <span>OFERTAS</span>
                 <div class="liquid"></div>
               </button>
-              ofertas</button></a>
+            </a>
           </div>
-          <div class="carousel-item contenedor main__imagen" data-bs-interval="2000">
-            <img class="imagen__ofertas--zapatos"
-              src="./imagenes/Escolares/back-to-school-banner-with-realistic-school-supplies-on-chalkboard-background-vector.jpg"
-              alt="">
-            <div class="texto__oferta animate__animated animate__fadeInRight ">
-              <h1 class="texto__ofertas">Artículos Escolares</h1>
-            </div>
+          <div class="carousel-item contenedor " data-bs-interval="2000">
+            <img src="./imagenes/Escolares/back-to-school-banner-with-realistic-school-supplies-on-chalkboard-background-vector.jpg" class="d-block w-100 main__imagen main__imagen-escolares" alt="...">
+            <h1 class="texto-encima animate__animated animate__fadeInRight ">Artículos Escolares</h1>
+            <a href="#page-temporada"><img class="flecha-encima" src="./imagenes/iconos/down-arrow (3).png" alt=""></a>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
             data-bs-slide="prev">
@@ -134,6 +132,7 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
+      </div>
     </section>
     <section class="container mb-4">
       <h2 class="main__section2__titulo font-3rem">Nuestros <span>productos</span></h2>
@@ -213,11 +212,82 @@
       </div>
     </section>
     <section>
-      <h2 id="page-temporada" class="main__section2__titulo font-3rem">Temporada<span></span></h2>
+        <scroll-container>
+          <scroll-page class="main__section2__titulo font-3rem" id="page-temporada"></scroll-page>
+          <h2 class="main__section2__titulo font-3rem"><span>Temporada</span></h2>
+        </scroll-container>
+      <div id="carouselExampleDark1" class="carousel slide temporada__margin" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark1" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark1" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark1" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active contenedor" data-bs-interval="2000">
+            <a href="./vistas/mujeres-botas.html"><img src="./imagenes/Temporadas/Cuál-es-la-diferencia-entre-bota-y-botín-portada-87b7d16f.jpeg" class="d-block w-100 main__imagen__temporada"
+              alt="...">
+            <h1 class="texto-encima animate__animated animate__fadeInRight ">Botas - Mujer</h1></a>
+          </div>
+          <div class="carousel-item contenedor" data-bs-interval="2000">
+            <a href="./vistas/hombres-botas.html"><img class="main__imagen__temporada d-block w-100" src="./imagenes/Temporadas/Botas Hombres.jpg" alt="">
+            <h1 class="texto-encima animate__animated animate__fadeInRight ">Botas - Hombre</h1></a>
+          </div>
+          <div class="carousel-item contenedor" data-bs-interval="2000">
+            <a href="./vistas/niños-botas.html"><img src="./imagenes/Temporadas/tNk_gk6AIFg19g98Yt7F-3jhHiowYIW0QJDjBzG60UiQNUTwMP3AAdALKWlhdqoCOgGwRsnhet7o3C3E_2JXfE3Rt4-bQ5mAYg9ta3IhnyiBokFHNp_4Mavafzsin8cB_aHclKsClgU53SiaKQ-yZz11e.tmp_.jpeg" class="d-block w-100 main__imagen__temporada-niño"
+              alt="...">
+            <h1 class="texto-encima animate__animated animate__fadeInRight ">Botas - Niños</h1></a>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark1"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark1"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- <section>
+      <h2 id="page-escolares" class="main__section2__titulo font-3rem">Artículos Escolares<span></span></h2>
       <scroll-container>
         <scroll-page id="page-temporada"></scroll-page>
       </scroll-container>
-    </section>
+      <div class="row justify-content-center hombres">
+        <div class="col-md-10">
+          <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col col__accesorio">
+              <div class="card h-100">
+                <a href="../vistas/mochilas-escolares.html"><img class="imagen__accesorio"
+                    src="../imagenes/Mochilas/Escolares/DCIMOR-New-Waterproof-Nylon-Backpack-Men-and-Women-Large-Capacity-Multi-pocket-Travel-Bag-College-Couples_600x.jpg"
+                    class="card-img-top" alt="..."></a>
+                <div class="card-body card-center">
+                  <a class="decoration" href="../vistas/mochilas-escolares.html">
+                    <h5 class="card-title">Mochilas Escolares</h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col col__accesorio">
+              <div class="card h-80">
+                <a href="../vistas/mochilas-cuero.html"><img class="imagen__accesorio"
+                    src="../imagenes/Mochilas/Mochilas/5fa2f6d48998c.jpeg" class="card-img-top" alt="..."></a>
+                <div class="card-body card-center">
+                  <a class="decoration" href="../vistas/mochilas-cuero.html">
+                    <h5 class="card-title">Calzados Escolares</h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
   </main>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <a href="https://api.whatsapp.com/send?phone=+5491131852008&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20los productos"

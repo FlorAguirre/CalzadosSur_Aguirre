@@ -1,8 +1,11 @@
+@charset "UTF-8";
 /*maps*/
 /*HTML - HOME*/
 main {
   /*Hero temporada */
-  /*Hero Ofertas*/ }
+  /*Hero Ofertas*/
+  /*TEMPORADA*/
+  /*ESCOLARES*/ }
   main .main__section1 {
     margin-top: 50px; }
   main .main__titulo1 {
@@ -17,8 +20,7 @@ main {
     font-size: 50px; }
   main .main__section2__titulo {
     text-align: center;
-    padding: 20px;
-    padding-bottom: 50px; }
+    margin-bottom: 40px; }
   main .main__imagen {
     width: 100%;
     height: 500px;
@@ -63,19 +65,25 @@ main {
     border: solid;
     padding: 5px;
     background-color: rgba(0, 0, 0, 0.388235); }
-  @media only screen and (min-width: 0px) and (max-width: 480px) {
-    main .texto-encima {
-      position: absolute;
-      top: 20%;
-      left: 10%;
-      transform: translate(-50%, -50%);
-      font-size: 2rem;
-      color: white; } }
   main .flecha-encima {
     position: absolute;
     bottom: 10%;
     left: 50%;
     height: 75px; }
+  @media only screen and (min-width: 0px) and (max-width: 480px) {
+    main .flecha-encima {
+      position: absolute;
+      bottom: 15%;
+      left: 45%;
+      height: 50px; } }
+  @media only screen and (min-width: 0px) and (max-width: 480px) {
+    main .texto-encima {
+      position: absolute;
+      top: 20%;
+      right: 5%;
+      transform: translate(-50%, -50%);
+      font-size: 1.8rem;
+      color: white; } }
   main .imagen__ofertas--zapatos {
     position: absolute;
     left: 0%;
@@ -89,15 +97,26 @@ main {
   main .texto__oferta {
     position: absolute;
     color: white;
-    top: 3%;
+    top: 10%;
     left: 5%;
     border: 2px;
     border: solid;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.458824); }
+  @media only screen and (min-width: 0px) and (max-width: 480px) {
+    main .texto__oferta {
+      position: absolute;
+      color: white;
+      top: 20%;
+      right: 5%;
+      border: 2px;
+      border: solid;
+      padding: 10px;
+      background-color: rgba(0, 0, 0, 0.458824); } }
   main .boton__oferta {
     position: absolute;
-    top: 50%;
+    top: 40%;
+    left: 20%;
     background-image: linear-gradient(-45deg, #3f00b5, #9f69fe, #27c8b7, #3f00b5);
     background-size: 800% 400%;
     padding: 1em 4em;
@@ -124,8 +143,47 @@ main {
     background-position: 100% 50%; }
   100% {
     background-position: 0% 50%; } }
+  @media only screen and (min-width: 0px) and (max-width: 480px) {
+    main .boton__oferta {
+      padding: 0.5em 1em;
+      position: absolute;
+      top: 70%;
+      left: 37%; } }
   main .card {
     box-shadow: 5px 5px rgba(0, 0, 0, 0.3); }
+  main .main__imagen__temporada {
+    height: 500px; }
+  @supports (object-fit: cover) {
+    main .main__imagen__temporada {
+      height: 600px;
+      object-fit: cover;
+      object-position: center center; } }
+  @supports (object-fit: cover) {
+    main .main__imagen__temporada-niño {
+      height: 600px;
+      object-fit: cover;
+      object-position: center bottom; } }
+  @media only screen and (min-width: 0px) and (max-width: 480px) {
+    main .main__imagen__temporada, main .main__imagen__temporada-niño {
+      width: 100%;
+      height: 300px;
+      overflow: hidden;
+      position: relative; }
+    main .temporada__margin {
+      margin-bottom: 50px; }
+    @supports (object-fit: cover) {
+      main .main__imagen__temporada, main .main__imagen__temporada-niño {
+        height: 300px;
+        object-fit: cover;
+        object-position: center center; } } }
+  main .temporada__margin {
+    margin-bottom: 5%; }
+  @media only screen and (min-width: 0px) and (max-width: 480px) {
+    @supports (object-fit: cover) {
+      main .main__imagen-escolares {
+        height: 300px;
+        object-fit: cover;
+        object-position: 80%; } } }
 
 /*HTML- SOBRE NOSOTROS*/
 @media (min-width: 480px) {
@@ -419,6 +477,11 @@ header .header__size {
 
 header .header__boton {
   background-color: #252440 !important;
+  color: white;
+  border-color: black; }
+
+header .header__boton-grey {
+  background-color: grey !important;
   color: white;
   border-color: black; }
 
