@@ -44,9 +44,12 @@ main {
         height: 300px;
         object-fit: cover;
         object-position: center center; } } }
-  main .main__imagenhome {
-    height: 250px;
-    width: 100%; }
+  @supports (object-fit: cover) {
+    main .main__imagenhome {
+      height: 250px;
+      width: 100%;
+      object-fit: cover;
+      object-position: center center; } }
   @media only screen and (min-width: 460px) and (max-width: 768px) {
     @supports (object-fit: cover) {
       main .main__imagenhome {
@@ -198,6 +201,8 @@ main {
         height: 300px;
         object-fit: cover;
         object-position: 80%; } } }
+  main .escolares {
+    padding-bottom: 20px; }
 
 /*HTML- SOBRE NOSOTROS*/
 @media (min-width: 480px) {

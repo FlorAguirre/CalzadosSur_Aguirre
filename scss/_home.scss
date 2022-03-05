@@ -64,9 +64,13 @@ main {
         }
     }
 
+
+    @supports(object-fit: cover){
     .main__imagenhome {
         @include sizes(100%, 250px);
-    }
+        object-fit: cover;
+        object-position: center center;
+    }}
 
     @media only screen and (min-width: 460px) and (max-width: 768px){
         @supports(object-fit: cover){
@@ -308,4 +312,9 @@ main {
         object-position: 80%;
 
 }}}
+
+    .escolares{
+        padding-bottom: 20px;
+    }
+
 }
