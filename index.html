@@ -112,7 +112,6 @@
             <a href="vistas/ofertas.html">
               <button class="boton__oferta">
                 <span>OFERTAS</span>
-                <div class="liquid"></div>
               </button>
             </a>
           </div>
@@ -142,7 +141,7 @@
         <div class="col-md-10 ">
           <div class="row row-cols-1 row-cols-md-3 g-4 main__base ">
             <div class="col">
-              <div class="card h-80">
+              <div class="card h-80 card__size">
                 <a href="./vistas/mujeres.html"><img
                     src="./imagenes/Mujeres/Ojotas-Sandalias/PHOTO-2021-12-26-14-21-42 (1).jpg"
                     class="card-img-top main__imagenhome" alt="..."></a>
@@ -154,7 +153,7 @@
               </div>
             </div>
             <div class="col">
-              <div class="card h-100">
+              <div class="card h-100 card__size">
                 <a href="./vistas/hombres.html"><img src="./imagenes/Hombres/Zapatillas/PHOTO-2021-12-26-14-23-42.jpg"
                     class="card-img-top main__imagenhome" alt="..."></a>
                 <div class="card-body main__card-center">
@@ -165,7 +164,7 @@
               </div>
             </div>
             <div class="col">
-              <div class="card h-80">
+              <div class="card h-80 card__size">
                 <a href="./vistas/niños.html"><img src="./imagenes/Niños/Zapatillas/PHOTO-2021-12-26-14-23-38 (1).jpg"
                     class="card-img-top main__imagenhome" alt="..."></a>
                 <div class="card-body main__card-center">
@@ -176,7 +175,7 @@
               </div>
             </div>
             <div class="col">
-              <div class="card h-100">
+              <div class="card h-100 card__size">
                 <a href="./vistas/accesorios.html"><img src="./imagenes/Accesorios/Bijouterie/2256560504402101.jpg"
                     class="card-img-top main__imagenhome" alt="..."></a>
                 <div class="card-body main__card-center">
@@ -187,7 +186,7 @@
               </div>
             </div>
             <div class="col">
-              <div class="card h-100">
+              <div class="card h-100 card__size">
                 <a href="./vistas/marroquineria.html"><img
                     src="./imagenes/Marroquineria/Billeteras/WhatsApp Image 2021-12-26 at 2.23.39 PM (1).jpeg"
                     class="card-img-top main__imagenhome" alt="..."></a>
@@ -199,7 +198,7 @@
               </div>
             </div>
             <div class="col">
-              <div class="card h-100">
+              <div class="card h-100 card__size">
                 <a href="./vistas/escolares.html"><img src="./imagenes/Mochilas/Mochilas 2.jpeg"
                     class="card-img-top main__imagenhome" alt="..."></a>
                 <div class="card-body main__card-center">
@@ -213,12 +212,9 @@
         </div>
       </div>
     </section>
-    <scroll-container>
-      <scroll-page class="main__section2__titulo font-3rem" id="page-temporada">
-        <h2 class="main__section2__titulo font-3rem"><span>Temporada</span></h2>
-      </scroll-page>
-    </scroll-container>
     <section>
+      
+        <h2  id="page-temporada" class="main__section2__titulo font-3rem"><span>Temporada</span></h2>
       <div id="carouselExampleDark1" class="carousel slide temporada__margin" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleDark1" data-bs-slide-to="0" class="active"
@@ -235,11 +231,21 @@
                 class="d-block w-100 main__imagen__temporada" alt="...">
               <h1 class="texto-encima animate__animated animate__fadeInRight ">Botas - Mujer</h1>
             </a>
+            <a href="./vistas/mujeres-botas.html">
+              <button class="boton__oferta">
+                <span>ACCEDER</span>
+              </button>
+            </a>
           </div>
           <div class="carousel-item contenedor" data-bs-interval="2000">
             <a href="./vistas/hombres-botas.html"><img class="main__imagen__temporada d-block w-100"
                 src="./imagenes/Temporadas/Botas Hombres.jpg" alt="">
               <h1 class="texto-encima animate__animated animate__fadeInRight ">Botas - Hombre</h1>
+            </a>
+            <a href="./vistas/hombres-botas.html">
+              <button class="boton__oferta">
+                <span>ACCEDER</span>
+              </button>
             </a>
           </div>
           <div class="carousel-item contenedor" data-bs-interval="2000">
@@ -247,6 +253,11 @@
                 src="./imagenes/Temporadas/tNk_gk6AIFg19g98Yt7F-3jhHiowYIW0QJDjBzG60UiQNUTwMP3AAdALKWlhdqoCOgGwRsnhet7o3C3E_2JXfE3Rt4-bQ5mAYg9ta3IhnyiBokFHNp_4Mavafzsin8cB_aHclKsClgU53SiaKQ-yZz11e.tmp_.jpeg"
                 class="d-block w-100 main__imagen__temporada-niño" alt="...">
               <h1 class="texto-encima animate__animated animate__fadeInRight ">Botas - Niños</h1>
+            </a>
+            <a href="./vistas/niños-botas.html">
+              <button class="boton__oferta">
+                <span>ACCEDER</span>
+              </button>
             </a>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark1"
@@ -262,16 +273,13 @@
         </div>
       </div>
     </section>
-    <scroll-container>
-      <scroll-page class="main__section2__titulo font-3rem" id="page-escolares"><h2 class="main__section2__titulo font-3rem">Artículos <span>Escolares</span></h2>
-      </scroll-page>
-    </scroll-container>
-    <section class="container mb-4">
+    <section class="container mb-4"> 
+      <h2 id="page-escolares" class="main__section2__titulo font-3rem">Artículos <span>Escolares</span></h2>
       <div class="row justify-content-center escolares">
         <div class="col-md-10 ">
           <div class="row row-cols-1 row-cols-md-2 g-4 ">
             <div class="col col__accesorio">
-              <div class="card h-100">
+              <div class="card h-100 card__size">
                 <a href="./vistas/mochilas-escolares.html"><img
                     src="./imagenes/Escolares/file-20210913-20-15fgcgz.jpg"
                     class="card-img-top main__imagenhome" alt="..."></a>
@@ -283,7 +291,7 @@
               </div>
             </div>
             <div class="col col__accesorio">
-              <div class="card h-100">
+              <div class="card h-100 card__size">
                 <a href="./vistas/calzados-escolares.html"><img src="./imagenes/Escolares/le2r_zapato1_20_1.jpg_1359985867.jpg"
                     class="card-img-top main__imagenhome" alt="..."></a>
                 <div class="card-body main__card-center">

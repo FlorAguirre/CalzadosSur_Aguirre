@@ -24,8 +24,8 @@ main {
 
     .main__section2__titulo {
         text-align: center;
-        margin-bottom:40px;
-        
+        margin-bottom: 40px;
+
     }
 
 
@@ -65,31 +65,54 @@ main {
     }
 
 
-    @supports(object-fit: cover){
-    .main__imagenhome {
-        @include sizes(100%, 250px);
-        object-fit: cover;
-        object-position: center center;
-    }}
-
-    @media only screen and (min-width: 460px) and (max-width: 768px){
-        @supports(object-fit: cover){
-        .main__imagenhome{
-            height:200px;
-            width:100%;
+    @supports(object-fit: cover) {
+        .main__imagenhome {
+            @include sizes(100%, 250px);
             object-fit: cover;
             object-position: center center;
-        }}
+        }
     }
 
-    @media only screen and (min-width: 768px) and (max-width: 991px){
-        @supports(object-fit: cover){
-        .main__imagenhome{
-            height:200px;
-            width:100%;
-            object-fit: cover;
-            object-position: center center;
-        }}
+    @media only screen and (min-width: 0px) and (max-width: 460px) {
+        @supports(object-fit: cover) {
+            .main__imagenhome {
+                height: 200px;
+                width: 100%;
+                object-fit: cover;
+                object-position: center center;
+            }
+
+            .card__size{
+                width: 80%;
+                left:10%
+            }
+        }
+    }
+
+
+    @media only screen and (min-width: 460px) and (max-width: 768px) {
+        @supports(object-fit: cover) {
+            .main__imagenhome {
+                height: 200px;
+                width: 100%;
+                object-fit: cover;
+                object-position: center center;
+            }
+            .card__size{
+                width: 100%;
+        }
+
+    }}
+
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+        @supports(object-fit: cover) {
+            .main__imagenhome {
+                height: 200px;
+                width: 100%;
+                object-fit: cover;
+                object-position: center center;
+            }
+        }
     }
 
     .main__base {
@@ -129,7 +152,7 @@ main {
         height: 75px;
     }
 
-    @media only screen and (min-width: 0px) and (max-width: 480px){
+    @media only screen and (min-width: 0px) and (max-width: 480px) {
         .flecha-encima {
             position: absolute;
             bottom: 15%;
@@ -143,7 +166,7 @@ main {
         .texto-encima {
             position: absolute;
             top: 20%;
-            right:5%;
+            right: 5%;
             transform: translate(-50%, -50%);
             font-size: 1.8rem;
             color: white;
@@ -182,7 +205,7 @@ main {
         background-color: opacify($color: #00000075, $amount: 0);
     }
 
-    @media only screen and (min-width: 0px) and (max-width: 480px){
+    @media only screen and (min-width: 0px) and (max-width: 480px) {
         .texto__oferta {
             position: absolute;
             color: white;
@@ -237,8 +260,8 @@ main {
         }
     }
 
-    @media only screen and (min-width: 0px) and (max-width: 480px){
-        .boton__oferta{
+    @media only screen and (min-width: 0px) and (max-width: 480px) {
+        .boton__oferta {
             padding: 0.5em 1em;
             position: absolute;
             top: 70%;
@@ -253,67 +276,74 @@ main {
 
     /*TEMPORADA*/
 
-.main__imagen__temporada{
-    height:500px;
-    
-}
-
-
-@supports(object-fit: cover) {
     .main__imagen__temporada {
-        height: 600px;
-        object-fit: cover;
-        object-position: center center;
-    }
-}
-
-@supports(object-fit: cover) {
-    .main__imagen__temporada-niño {
-        height: 600px;
-        object-fit: cover;
-        object-position: center bottom;
-    }
-}
-
-@media only screen and (min-width: 0px) and (max-width: 480px) {
-    .main__imagen__temporada, .main__imagen__temporada-niño {
-        width: 100%;
-        height: ($alto * 3);
-        overflow: hidden;
-        position: relative;
+        height: 500px;
 
     }
 
-   .temporada__margin{
-    margin-bottom: 50px;
-    }
 
     @supports(object-fit: cover) {
-        .main__imagen__temporada, .main__imagen__temporada-niño{
-            height: 300px;
+        .main__imagen__temporada {
+            height: 600px;
             object-fit: cover;
             object-position: center center;
         }
     }
- 
-}
-.temporada__margin{
-    margin-bottom: 5%;
 
-}
+    @supports(object-fit: cover) {
+        .main__imagen__temporada-niño {
+            height: 600px;
+            object-fit: cover;
+            object-position: center bottom;
+        }
+    }
 
-/*ESCOLARES*/
+    @media only screen and (min-width: 0px) and (max-width: 480px) {
 
-@media only screen and (min-width: 0px) and (max-width: 480px){
-    @supports(object-fit: cover){
-    .main__imagen-escolares{
-        height: 300px;
-        object-fit: cover;
-        object-position: 80%;
+        .main__imagen__temporada,
+        .main__imagen__temporada-niño {
+            width: 100%;
+            height: ($alto * 3);
+            overflow: hidden;
+            position: relative;
 
-}}}
+        }
 
-    .escolares{
+        .temporada__margin {
+            margin-bottom: 50px;
+        }
+
+        @supports(object-fit: cover) {
+
+            .main__imagen__temporada,
+            .main__imagen__temporada-niño {
+                height: 300px;
+                object-fit: cover;
+                object-position: center center;
+            }
+        }
+
+    }
+
+    .temporada__margin {
+        margin-bottom: 5%;
+
+    }
+
+    /*ESCOLARES*/
+
+    @media only screen and (min-width: 0px) and (max-width: 480px) {
+        @supports(object-fit: cover) {
+            .main__imagen-escolares {
+                height: 300px;
+                object-fit: cover;
+                object-position: 80%;
+
+            }
+        }
+    }
+
+    .escolares {
         padding-bottom: 20px;
     }
 
