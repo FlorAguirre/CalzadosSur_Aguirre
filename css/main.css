@@ -47,6 +47,20 @@ main {
   main .main__imagenhome {
     height: 250px;
     width: 100%; }
+  @media only screen and (min-width: 460px) and (max-width: 768px) {
+    @supports (object-fit: cover) {
+      main .main__imagenhome {
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+        object-position: center center; } } }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    @supports (object-fit: cover) {
+      main .main__imagenhome {
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+        object-position: center center; } } }
   main .main__base {
     margin-bottom: 30px; }
   main .main__card-center {
@@ -63,7 +77,7 @@ main {
     color: white;
     border: 1px;
     border: solid;
-    padding: 5px;
+    padding: 20px;
     background-color: rgba(0, 0, 0, 0.388235); }
   main .flecha-encima {
     position: absolute;
@@ -101,7 +115,7 @@ main {
     left: 5%;
     border: 2px;
     border: solid;
-    padding: 10px;
+    padding: 20px;
     background-color: rgba(0, 0, 0, 0.458824); }
   @media only screen and (min-width: 0px) and (max-width: 480px) {
     main .texto__oferta {
@@ -368,6 +382,13 @@ main .imagen__accesorio {
     object-fit: fit;
     object-position: center center; } }
 
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  @supports (object-fit: fit) {
+    main .imagen__accesorio {
+      height: 200px;
+      object-fit: fit;
+      object-position: center center; } } }
+
 @media (min-width: 768px) {
   main .hombres {
     padding-bottom: 193px;
@@ -424,7 +445,7 @@ main .col__accesorio:hover {
 /*Globales - en todos los HTML*/
 .body__color {
   /* background-image: linear-gradient(to right bottom, #e7f336, #edda1f, #f0c10d, #efa809, #eb9012); */
-  background: linear-gradient(to right bottom, #fbbd6f, #fbb962, #fab654, #f9b245, #f8af34);
+  background: linear-gradient(to right bottom, #f8c07c, #fabc6b, #fab654, #f9b245, #f8af34);
   margin: 0;
   background-size: 400% 400%;
   animation: gradient 15s linear infinite; }
@@ -455,8 +476,8 @@ header .header__logo {
 
 header .header__carrito {
   color: black;
-  padding-right: 20px;
-  font-size: 45px; }
+  padding-right: 15px;
+  font-size: 40px; }
 
 header .header__icon {
   text-align: right;

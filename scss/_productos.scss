@@ -35,6 +35,15 @@ main {
         }
     }
 
+    @media only screen and (min-width: 480px) and (max-width: 768px){
+        @supports(object-fit: fit) {
+            .imagen__accesorio {
+                height: 200px;
+                object-fit: fit;
+                object-position: center center;
+            }
+        }
+    }
    
 
     @media (min-width:768px) {

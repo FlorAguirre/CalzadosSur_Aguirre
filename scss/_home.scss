@@ -68,6 +68,26 @@ main {
         @include sizes(100%, 250px);
     }
 
+    @media only screen and (min-width: 460px) and (max-width: 768px){
+        @supports(object-fit: cover){
+        .main__imagenhome{
+            height:200px;
+            width:100%;
+            object-fit: cover;
+            object-position: center center;
+        }}
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 991px){
+        @supports(object-fit: cover){
+        .main__imagenhome{
+            height:200px;
+            width:100%;
+            object-fit: cover;
+            object-position: center center;
+        }}
+    }
+
     .main__base {
         margin-bottom: 30px;
     }
@@ -94,7 +114,7 @@ main {
         color: white;
         border: 1px;
         border: solid;
-        padding: 5px;
+        padding: 20px;
         background-color: opacify($color: #00000063, $amount: 0);
     }
 
@@ -154,7 +174,7 @@ main {
         left: 5%;
         border: 2px;
         border: solid;
-        padding: 10px;
+        padding: 20px;
         background-color: opacify($color: #00000075, $amount: 0);
     }
 
