@@ -543,10 +543,6 @@ footer ion-icon:hover {
 footer .whatsapp:hover {
   color: #84f784; }
 
-footer .instagram:hover {
-  background: linear-gradient(90deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%);
-  -webkit-background: text; }
-
 footer .facebook:hover {
   color: #1cb7ff; }
 
