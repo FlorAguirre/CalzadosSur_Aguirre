@@ -3,20 +3,37 @@
 main {
     @media (min-width:480px) {
         .main__sobrenosotros {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            padding: 10px;
+            display:flex;
+            flex-direction: column;
+            padding: 30px;
             column-gap: 2rem;
         }
     }
 
+    @media only screen and (min-width: 480px) and (max-width: 768px) {
+        .main__sobrenosotros {
+            display:flex;
+            flex-direction: column;
+            text-align:  center; 
+            justify-content: center;
+        }
+        .main__sobrenosotros__imagen{
+            margin-left: 150px;
+            
+        }
+
+        .imagen__nosotros{
+            margin-right: 500px;
+        }
+   
+    }
     .main__sobrenosotros {
         padding: 10px;
         margin-top: 50px;
     }
 
     .main__sobrenosotros__imagen {
-        margin-left: 300px;
+        
         width: 500px;
         height: 300px;
     }
@@ -54,46 +71,46 @@ main {
         text-align: center;
     }
 
-    .main__table {
-        margin-bottom: 100px;
-        padding: 20px;
-    }
+    // .main__table {
+    //     margin-bottom: 100px;
+    //     padding: 20px;
+    // }
 
-    @media only screen and (min-width: 0px) and (max-width: 480px) {
-        .main__table {
-            margin-bottom: 100px;
-            padding: 10px;
-            font-size: .9rem;
-            text-align: center;
-        }
-    }
+    // @media only screen and (min-width: 0px) and (max-width: 480px) {
+    //     .main__table {
+    //         margin-bottom: 100px;
+    //         padding: 10px;
+    //         font-size: .9rem;
+    //         text-align: center;
+    //     }
+    // }
 
-    table {
-        border: solid;
-        /* border-radius: 2rem; */
-        background-color: grey;
-        margin-top: 50px;
-    }
+    // table {
+    //     border: solid;
+    //     /* border-radius: 2rem; */
+    //     background-color: grey;
+    //     margin-top: 50px;
+    // }
 
-    @media only screen and (min-width: 0px) and (max-width: 480px) {
-        table {
-            border: solid;
-            background-color: grey;
-            align-items: center;
-        }
-    }
+    // @media only screen and (min-width: 0px) and (max-width: 480px) {
+    //     table {
+    //         border: solid;
+    //         background-color: grey;
+    //         align-items: center;
+    //     }
+    // }
 
-    td {
-        border-radius: 1rem;
-        padding: 5px;
-    }
+    // td {
+    //     border-radius: 1rem;
+    //     padding: 5px;
+    // }
 
-    @media only screen and (min-width: 0px) and (max-width: 480px) {
-        td {
-            border-radius: 1rem;
-            padding-left: 4px;
-        }
-    }
+    // @media only screen and (min-width: 0px) and (max-width: 480px) {
+    //     td {
+    //         border-radius: 1rem;
+    //         padding-left: 4px;
+    //     }
+    // }
 }
 
 /*******/

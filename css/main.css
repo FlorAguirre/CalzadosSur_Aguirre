@@ -77,7 +77,7 @@ main {
         object-fit: cover;
         object-position: center center; } } }
   main .main__base {
-    margin-bottom: 30px; }
+    margin-bottom: 50px; }
   main .main__card-center {
     text-align: center; }
   main .contenedor {
@@ -218,81 +218,6 @@ main {
   main .escolares {
     padding-bottom: 20px; }
 
-/*HTML- SOBRE NOSOTROS*/
-@media (min-width: 480px) {
-  main .main__sobrenosotros {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 10px;
-    column-gap: 2rem; } }
-
-main .main__sobrenosotros {
-  padding: 10px;
-  margin-top: 50px; }
-
-main .main__sobrenosotros__imagen {
-  margin-left: 300px;
-  width: 500px;
-  height: 300px; }
-
-@media only screen and (min-width: 0px) and (max-width: 480px) {
-  main .main__sobrenosotros__imagen {
-    width: 300px;
-    height: 200px;
-    padding: 25px;
-    margin: 10px; } }
-
-@media (min-width: 480px) {
-  main .main__sobrenosotros__texto {
-    margin-right: 100px; } }
-
-@media only screen and (min-width: 0px) and (max-width: 480px) {
-  main .main__sobrenosotros__texto {
-    margin-left: 10px;
-    margin-right: 10px; } }
-
-main .mapa {
-  display: flex;
-  justify-content: center;
-  padding: 20px;
-  gap: 5px; }
-
-main .mapa__parrafo {
-  text-align: center; }
-
-main .main__table {
-  margin-bottom: 100px;
-  padding: 20px; }
-
-@media only screen and (min-width: 0px) and (max-width: 480px) {
-  main .main__table {
-    margin-bottom: 100px;
-    padding: 10px;
-    font-size: .9rem;
-    text-align: center; } }
-
-main table {
-  border: solid;
-  /* border-radius: 2rem; */
-  background-color: grey;
-  margin-top: 50px; }
-
-@media only screen and (min-width: 0px) and (max-width: 480px) {
-  main table {
-    border: solid;
-    background-color: grey;
-    align-items: center; } }
-
-main td {
-  border-radius: 1rem;
-  padding: 5px; }
-
-@media only screen and (min-width: 0px) and (max-width: 480px) {
-  main td {
-    border-radius: 1rem;
-    padding-left: 4px; } }
-
-/*******/
 /*HTML - CONTACTANOS*/
 main .form {
   background-image: linear-gradient(to right top, #252440, #26254e, #27265c, #28276b, #2a2779);
@@ -408,10 +333,9 @@ main .imagen__accesorio {
       object-fit: fit;
       object-position: center center; } } }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   main .hombres {
-    padding-bottom: 193px;
-    padding-top: 70px; } }
+    margin-bottom: 113px; } }
 
 main .center {
   display: flex;
@@ -557,8 +481,15 @@ footer ion-icon:hover {
 footer .whatsapp:hover {
   color: #84f784; }
 
-footer .facebook:hover {
-  color: #1cb7ff; }
+footer .instagram:hover {
+  color: #833ab4;
+  color: linear-gradient(90deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%);
+  background: linear-gradient(90deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%);
+  -webkit-background: text;
+  border-radius: 1rem; }
+
+footer .email:hover {
+  color: red; }
 
 .decoration {
   text-decoration: none;
@@ -626,3 +557,57 @@ footer .facebook:hover {
 
 .font-1rem {
   font-size: 1rem; }
+
+main .main__sobrenosotros {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  column-gap: 2rem;
+  margin-top: 50px; }
+
+main .main__sobrenosotros__imagen {
+  display: flex;
+  justify-content: center;
+  width: 500px;
+  height: 300px;
+  padding-bottom: 40px; }
+
+main .imagen__nosotros {
+  display: flex;
+  justify-content: center; }
+
+main .main__sobrenosotros__texto {
+  padding-right: 200px;
+  padding-left: 200px; }
+
+main .mapa {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  gap: 5px; }
+
+main .mapa__parrafo {
+  text-align: center; }
+
+@media only screen and (min-width: 0px) and (max-width: 480px) {
+  main {
+    /*vista mobile*/ }
+    main .main__sobrenosotros__texto {
+      padding-right: 30px;
+      padding-left: 30px; }
+    main .main__sobrenosotros__imagen {
+      width: 400px;
+      height: 300px;
+      padding: 25px;
+      margin: 10px; }
+    main .main__sobrenosotros {
+      padding: 5px;
+      margin-top: 25px; } }
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  main {
+    /*vista Ipad*/ }
+    main .main__sobrenosotros__texto {
+      padding-right: 100px;
+      padding-left: 100px; } }
