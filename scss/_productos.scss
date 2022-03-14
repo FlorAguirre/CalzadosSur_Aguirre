@@ -35,16 +35,16 @@ main {
         }
     }
 
-    @media only screen and (min-width: 480px) and (max-width: 768px){
-        @supports(object-fit: fit) {
+     @media only screen and (min-width: 480px) and (max-width: 768px){
+         
             .imagen__accesorio {
-                height: 200px;
+               height: 200px;
                 object-fit: fit;
                 object-position: center center;
-            }
-        }
+          }
+         
     
-    }
+     }
    
 
     @media (max-width:768px) {

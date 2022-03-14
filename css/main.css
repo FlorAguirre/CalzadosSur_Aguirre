@@ -240,6 +240,16 @@ main .form {
     font-family: 'Open Sans', sans-serif;
     margin-top: 45px; } }
 
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  main .form {
+    width: 80%;
+    margin: 0 auto 150px;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-family: 'Domine', serif;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 45px; } }
+
 main .campo {
   margin-bottom: 1rem; }
 
@@ -327,11 +337,10 @@ main .imagen__accesorio {
     object-position: center center; } }
 
 @media only screen and (min-width: 480px) and (max-width: 768px) {
-  @supports (object-fit: fit) {
-    main .imagen__accesorio {
-      height: 200px;
-      object-fit: fit;
-      object-position: center center; } } }
+  main .imagen__accesorio {
+    height: 200px;
+    object-fit: fit;
+    object-position: center center; } }
 
 @media (max-width: 768px) {
   main .hombres {
