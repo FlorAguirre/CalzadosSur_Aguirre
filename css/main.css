@@ -330,17 +330,19 @@ main .imagen__accesorio {
     width: 100%;
     height: 150px; } }
 
-@supports (object-fit: fit) {
+@supports (object-fit: cover) {
   main .imagen__accesorio {
     height: 300px;
-    object-fit: fit;
+    object-fit: cover;
     object-position: center center; } }
 
 @media only screen and (min-width: 480px) and (max-width: 768px) {
   main .imagen__accesorio {
-    height: 200px;
-    object-fit: fit;
-    object-position: center center; } }
+    height: 150px;
+    object-fit: cover;
+    object-position: center center; }
+  main .imagen__accesorio-principal {
+    height: 280px; } }
 
 @media (max-width: 768px) {
   main .hombres {
@@ -362,13 +364,6 @@ main .center {
   main .imagen__accesorio__carteras {
     width: 100%;
     height: 150px; } }
-
-@supports (object-fit: fit) {
-  main .imagen__accesorio__billeteras,
-  main .imagen__accesorio__carteras {
-    height: 300px;
-    object-fit: fit;
-    object-position: center center; } }
 
 @media (min-width: 768px) {
   main .hombres {

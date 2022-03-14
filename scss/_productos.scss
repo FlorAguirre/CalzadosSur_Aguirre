@@ -27,10 +27,10 @@ main {
         }
     }
 
-    @supports(object-fit: fit) {
+    @supports(object-fit: cover) {
         .imagen__accesorio {
             height: 300px;
-            object-fit: fit;
+            object-fit: cover;
             object-position: center center;
         }
     }
@@ -38,15 +38,17 @@ main {
      @media only screen and (min-width: 480px) and (max-width: 768px){
          
             .imagen__accesorio {
-               height: 200px;
-                object-fit: fit;
+               height: 150px;
+                object-fit: cover;
                 object-position: center center;
           }
+          .imagen__accesorio-principal{
+              height:280px;
+          }
+
          
-    
      }
    
-
     @media (max-width:768px) {
         .hombres {
             margin-bottom:113px;
@@ -78,15 +80,6 @@ main {
         }
     }
 
-    @supports(object-fit: fit) {
-
-        .imagen__accesorio__billeteras,
-        .imagen__accesorio__carteras {
-            height: 300px;
-            object-fit: fit;
-            object-position: center center;
-        }
-    }
     @media (min-width:768px) {
     .hombres {
         padding-bottom: 193px;
