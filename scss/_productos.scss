@@ -27,10 +27,10 @@ main {
         }
     }
 
-    @supports(object-fit: cover) {
+    @supports(object-fit: fit) {
         .imagen__accesorio {
             height: 300px;
-            object-fit: cover;
+            object-fit: fit;
             object-position: center center;
         }
     }
