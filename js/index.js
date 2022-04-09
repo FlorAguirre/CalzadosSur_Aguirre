@@ -61,7 +61,29 @@ console.log(precioFinal) */
 
 /*CARRITO DE COMPRAS*/
 
-class articulo {
+/*Agregando array - filtro en busqueda de productos*/
+
+let dato = [
+    {nombre: "bota", precio: 1000, disponible: true},
+    {nombre: "zapatillas", precio: 2800, disponible: true},
+    {nombre: "ojotas", precio: 800, disponible: true}
+  ]
+  
+  let result = dato.filter(x => x.nombre == "bota"); /*Filtra el producto que estoy buscando*/
+  let result1 = dato.filter(x => x.precio > 900); /*Filtrar productos que sean mayores a 900*/
+  console.log(result);
+  console.log(result1);
+  
+  console.log(dato.map(x => x.precio)); /* me da como resultado solamente los precios del arreglo*/
+  console.log(dato.some(x => x.precio > 3000)); 
+  
+  let productosDisponibles = dato.filter(x => x.disponible === true);
+  console.log(productosDisponibles);
+
+
+/* 
+
+class Articulo {
     constructor(producto, precio){
         this.producto =  producto;
         this.precio = parseInt(precio);
@@ -71,10 +93,10 @@ class articulo {
     }
 }
 
-const producto1 = new articulo("Bota", 1500);
-const producto2 = new articulo("Zapatillas", 2000);
-const producto3 = new articulo("Aritos", 500);
-const producto4 = new articulo("Medias Escolares", 500);
+const producto1 = new Articulo("Bota", 1500);
+const producto2 = new Articulo("Zapatillas", 2000);
+const producto3 = new Articulo("Aritos", 500);
+const producto4 = new Articulo("Medias Escolares", 500);
 
 let productosSeleccionados = [
     producto1,
@@ -112,6 +134,75 @@ function eleccionProducto(){
 
 eleccionProducto();
 
+function pagar(){
+
+    let formaPago = parseInt(prompt(`${nombre}, el monto a pagar es ${total}, ¿que forma de pago deseas?
+    1 para Debito
+    2 para Credito: `))
+
+    if(formaPago === 1){
+        
+        let pago = prompt('Ingresa el numero de la tarjeta debito: ');
+
+        alert(`${nombre}, tu pago fue exitoso, gracias por comprar en la tienda de ropa Gucci
+        Detalles de la compra: 
+        Compra a nombre de ${nombre} ${apellido}
+        Total abonado ${total}`);
+
+    }else if(formaPago === 2){
+            
+            let pago = prompt('Ingresa el numero de la tarjeta credito: ');
+    
+            let cuotas = parseInt(prompt(`${nombre}, cuantas cuotas deseas?
+            1 para 3 cuotas con un recargo del 10%,
+            2 para 6 cuotas con un recargo del 15%,
+            3 para 12 cuotas con un recargo del 20%`));
+
+            let recargo = 0;
+            let cuota = 0;
+
+            switch(cuotas){
+                case 1:
+                    recargo = total * 0.10;
+                    total += recargo;
+
+                    cuota = total / 3;
+
+                    alert(`${nombre}, tu pago fue exitoso, gracias por comprar en la tienda de ropa Gucci
+                    Detalles de la compra: 
+                    Compra a nombre de ${nombre} ${apellido}
+                    Total abonado ${total}`);
+                    break;
+                case 2:
+                    recargo = total * 0.15;
+                    total += recargo;
+                
+                    cuota = total / 6;
+
+                    alert(`${nombre}, tu pago fue exitoso, gracias por comprar en la tienda de ropa Gucci
+                    Detalles de la compra: 
+                    Compra a nombre de ${nombre} ${apellido}
+                    Total abonado ${total}`);
+                    break;
+                case 3:
+                    recargo = total * 0.20;
+                    total += recargo;
+    
+                    cuota = total / 12;
+
+                    alert(`${nombre}, tu pago fue exitoso, gracias por comprar en la tienda de ropa Gucci
+                    Detalles de la compra: 
+                    Compra a nombre de ${nombre} ${apellido}
+                    Total abonado ${total}`);
+                    break;
+            }
+    
+    }else{
+        alert("No se pudo realizar el pago, intente nuevamente");
+    }
+}
 
 
 
+
+ */
