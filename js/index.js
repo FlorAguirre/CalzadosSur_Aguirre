@@ -81,7 +81,7 @@ let dato = [
   console.log(productosDisponibles);
 
 
-/* 
+/*Carrito de compra*/
 
 class Articulo {
     constructor(producto, precio){
@@ -133,6 +133,9 @@ function eleccionProducto(){
 }
 
 eleccionProducto();
+
+
+/*Agregando la funcion pagar*/
 
 function pagar(){
 
@@ -205,4 +208,4 @@ function pagar(){
 
 
 
- */
+ 
