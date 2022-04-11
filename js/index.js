@@ -27,6 +27,15 @@ function login(usuario, contrasenia, intentos){
 
 login(usuario,password,intentos) */
 
+
+//Agregando evento al boton submit del formulario en contactanos. Seleccionar un elemento del HTML y asociarle un evento
+const btnEnviar = document.querySelector('.boton--primario'); // querySelector solo se limita a buscar un solo elemento del html
+btnEnviar.addEventListener('click',function(evento){
+    console.log(evento);
+    evento.preventDefault();
+    console.log('enviando formulario...');
+});
+
 /*Calcular el precio final de un producto*/
 
 
