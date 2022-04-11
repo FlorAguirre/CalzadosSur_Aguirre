@@ -311,6 +311,16 @@ main .boton__enviar-estilo:hover {
 main .campo textarea {
   height: 10rem; }
 
+.error {
+  color: white;
+  text-align: center;
+  padding-top: 20px; }
+
+.correcto {
+  color: white;
+  text-align: center;
+  padding-top: 20px; }
+
 /* HTML - PRODUCTOS - CALZADOS*/
 main .accesorio {
   padding-bottom: 40px; }

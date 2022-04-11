@@ -30,15 +30,23 @@ login(usuario,password,intentos) */
 
 //Agregando evento al boton submit del formulario en contactanos. Seleccionar un elemento del HTML y asociarle un evento
 
+/* const btnEnviar = document.querySelector('.boton--primario'); // querySelector solo se limita a buscar un solo elemento del html
+btnEnviar.addEventListener('click',function(evento){
+    console.log(evento);
+    evento.preventDefault();
+    console.log('enviando formulario...');
+}); 
+ */
 const datos = {
-    nombreFormulario: '',
-    apellidoFormulario: '',
+    nombre: '',
+    apellido: '',
     email: '',
     mensaje: ''
 }
 
+//Evento de Submit del formulario
 
-const formulario = document.querySelector('.boton--primario');
+const formulario = document.querySelector('.form');
 
 formulario.addEventListener('submit', function(e) {
     e.preventDefault();
@@ -51,9 +59,9 @@ formulario.addEventListener('submit', function(e) {
 
     // Validar el Formulario...
 
-    const { nombreFormulario, apellidoFormulario, email, mensaje } = datos;
+    const { nombre, apellido, email, mensaje } = datos;
 
-    if(nombreFormulario === '' || apellidoFormulario === '' || email === '' || mensaje === '' ) {
+    if(nombre === '' || apellido === '' || email === '' || mensaje === '' ) {
         console.log('Al menos un campo esta vacio');
         mostrarError('Todos los campos son obligatorios');
         return; // Detiene la ejecución de esta función
@@ -63,9 +71,37 @@ formulario.addEventListener('submit', function(e) {
 
     mostrarMensaje('Mensaje enviado correctamente');
 });
+
+function mostrarError(mensaje) {
+    const alerta = document.createElement('p');
+    alerta.textContent = mensaje;
+    alerta.classList.add('error');
+
+    formulario.appendChild(alerta);
+
+    //que desaparezca el cartel despues de 3 segundos
+    setTimeout(() => {
+        alerta.remove();
+    }, 3000);
+}
+
+function mostrarMensaje(mensaje) {
+    const alerta = document.createElement('p');
+    alerta.textContent = mensaje;
+    alerta.classList.add('correcto');
+    formulario.appendChild(alerta);
+
+    setTimeout(() => {
+        alerta.remove();
+    }, 3000);
+}
+
+
+
+
 //Eventos de los Inputs y textera
 
-// Eventos de los Inputs...
+
 const nombreFormulario = document.querySelector('#nombre');
 const apellidoFormulario = document.querySelector('#apellido');
 const email = document.querySelector('#email');
@@ -83,7 +119,7 @@ function leerTexto(e) {
 
     datos[e.target.id] = e.target.value;
 
-    console.log(datos);
+     console.log(datos); 
 }
 
 
