@@ -98,7 +98,7 @@ main {
         }
     }
 
-    .col:hover{
+/*     .col:hover{
      -webkit-transform:scale(1.1);
      transform:scale(1.1);
     overflow:hidden;
@@ -108,7 +108,26 @@ main {
         -webkit-transform:scale(1.07);
         transform:scale(1.07);
        overflow:hidden;
+    } */
+
+    .card__button{
+     margin-top: 20px;
+     text-align: center;
     }
 
-    
+    .card__button-estilo{
+        background-color: #252440 !important;
+        color: white;
+        border-color: black;
+         
+    }
+}
+
+.borrar-producto {
+    background-color: red;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
 }

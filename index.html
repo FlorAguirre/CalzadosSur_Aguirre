@@ -68,19 +68,46 @@
               <a class="nav-link color header__size" href="./vistas/contactanos.html">Contáctanos</a>
             </li>
           </ul>
-          <div class="header__carrito">
-            <a href="">
-              <ion-icon class="header__carrito" name="cart-outline"></ion-icon>
-            </a>
-          </div>
-          <nav class="navbar navbar-light bg-amarillo">
-            <div class="container-fluid">
-              <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+         
+          <nav class="navbar navbar-light bg-amarillo ">
+            <div class="container-fluid ">
+              <form class="d-flex ">
+                <input class="form-control me-2 header__buscar" type="search" placeholder="Buscar" aria-label="Search">
                 <button class="btn btn-outline-success header__boton" type="submit">Buscar</button>
               </form>
             </div>
           </nav>
+
+
+            <div class="two columns u-pull-right">
+              <ul>
+                <li class="submenu">
+                  <a href="">
+                    <ion-icon class="header__carrito" name="cart-outline"></ion-icon>
+                  </a>
+                  <div id="carrito">
+
+                    <table id="lista-carrito" class="u-full-width">
+                      <thead>
+                        <tr>
+                          <th>Imagen</th>
+                          <th>Nombre</th>
+                          <th>Precio</th>
+                          <th>Cantidad</th>
+                          <th></th>
+                        </tr>
+                      </thead>
+                      <tbody></tbody>
+                    </table>
+                    <div class="boton__carrito">
+                    <a href="#" id="vaciar-carrito" class="button__carrito u-full-width">Vaciar Carrito</a>
+                  </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          
+    
         </div>
       </div>
     </nav>
@@ -101,7 +128,8 @@
             <img src="./imagenes/Temporadas/shutterstock-13_0_42_1000_622.jpg" class="d-block w-100 main__imagen"
               alt="...">
             <h1 class="texto-encima animate__animated animate__fadeInRight ">Temporada Otoño - Invierno 2022</h1>
-            <a href="#page-temporada"><img class="flecha-encima" src="./imagenes/iconos/down-arrow (3).png" alt="flecha"></a>
+            <a href="#page-temporada"><img class="flecha-encima" src="./imagenes/iconos/down-arrow (3).png"
+                alt="flecha"></a>
           </div>
           <div class="carousel-item contenedor  " data-bs-interval="2000">
             <img class=" main__imagen  d-block w-100 " src="./imagenes/zapatos-mujer-verano.jpeg" alt="img Liquidación">
@@ -120,7 +148,8 @@
               src="./imagenes/Escolares/back-to-school-banner-with-realistic-school-supplies-on-chalkboard-background-vector.jpg"
               class="d-block w-100 main__imagen main__imagen-escolares" alt="escolares">
             <h1 class="texto-encima animate__animated animate__fadeInRight ">Artículos Escolares</h1>
-            <a href="#page-escolares"><img class="flecha-encima" src="./imagenes/iconos/down-arrow (3).png" alt="flecha"></a>
+            <a href="#page-escolares"><img class="flecha-encima" src="./imagenes/iconos/down-arrow (3).png"
+                alt="flecha"></a>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
             data-bs-slide="prev">
@@ -213,8 +242,8 @@
       </div>
     </section>
     <section>
-      
-        <h2  id="page-temporada" class="main__section2__titulo font-3rem"><span>Temporada</span></h2>
+
+      <h2 id="page-temporada" class="main__section2__titulo font-3rem"><span>Temporada</span></h2>
       <div id="carouselExampleDark1" class="carousel slide temporada__margin" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleDark1" data-bs-slide-to="0" class="active"
@@ -273,15 +302,14 @@
         </div>
       </div>
     </section>
-    <section class="container mb-4"> 
+    <section class="container mb-4">
       <h2 id="page-escolares" class="main__section2__titulo font-3rem">Artículos <span>Escolares</span></h2>
       <div class="row justify-content-center escolares">
         <div class="col-md-10 ">
           <div class="row row-cols-1 row-cols-md-2 g-4 ">
             <div class="col col__accesorio">
               <div class="card h-100 card__size">
-                <a href="./vistas/mochilas-escolares.html"><img
-                    src="./imagenes/Escolares/file-20210913-20-15fgcgz.jpg"
+                <a href="./vistas/mochilas-escolares.html"><img src="./imagenes/Escolares/file-20210913-20-15fgcgz.jpg"
                     class="card-img-top main__imagenhome" alt="mochilasescolares"></a>
                 <div class="card-body main__card-center">
                   <a class="decoration" href="./vistas/mochilas-escolares.html">
@@ -292,7 +320,8 @@
             </div>
             <div class="col col__accesorio">
               <div class="card h-100 card__size">
-                <a href="./vistas/calzados-escolares.html"><img src="./imagenes/Escolares/le2r_zapato1_20_1.jpg_1359985867.jpg"
+                <a href="./vistas/calzados-escolares.html"><img
+                    src="./imagenes/Escolares/le2r_zapato1_20_1.jpg_1359985867.jpg"
                     class="card-img-top main__imagenhome" alt="calzadosescolares"></a>
                 <div class="card-body main__card-center">
                   <a class="decoration" href="./vistas/calzados-escolares.html">
@@ -323,7 +352,8 @@
         </div>
         <div class="footer__iconos">
           <h5 class="footer__pago">Medios de contacto</h5>
-          <a href="https://api.whatsapp.com/send?phone=+5491131852008&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20los productos" target="_blank">
+          <a href="https://api.whatsapp.com/send?phone=+5491131852008&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20los productos"
+            target="_blank">
             <ion-icon class="footer__iconos whatsapp" name="logo-whatsapp"></ion-icon>
           </a>
           <a href="https://www.instagram.com/calzadossur/?hl=es">
@@ -342,7 +372,8 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script src="./js/index.js"></script>
-  <script src="./js/carrito.js"></script>
+  <!--  <script src="./js/carrito.js"></script> -->
+  <script src="./js/carrito2.js"></script>
 </body>
 
 </html>

@@ -322,82 +322,87 @@ main .campo textarea {
   padding-top: 20px; }
 
 /* HTML - PRODUCTOS - CALZADOS*/
-main .accesorio {
-  padding-bottom: 40px; }
-
-main .imagen__accesorio {
-  height: 250px;
-  width: 100%; }
-
-@supports (object-fit: cover) {
+main {
+  /*     .col:hover{
+     -webkit-transform:scale(1.1);
+     transform:scale(1.1);
+    overflow:hidden;
+    }
+   
+    .col__accesorio:hover{
+        -webkit-transform:scale(1.07);
+        transform:scale(1.07);
+       overflow:hidden;
+    } */ }
+  main .accesorio {
+    padding-bottom: 40px; }
   main .imagen__accesorio {
-    height: 300px;
-    object-fit: cover;
-    object-position: center bottom; } }
-
-@media only screen and (min-width: 0px) and (max-width: 480px) {
-  main .imagen__accesorio {
-    width: 100%;
-    height: 100px; } }
-
-@supports (object-fit: fit) {
-  main .imagen__accesorio {
-    height: 300px;
-    object-fit: fit;
-    object-position: center center; } }
-
-@media only screen and (min-width: 480px) and (max-width: 768px) {
-  main .imagen__accesorio {
-    height: 150px;
-    object-fit: cover;
-    object-position: center center; }
-  main .imagen__accesorio-principal {
-    height: 280px; } }
-
-@media (max-width: 768px) {
-  main .hombres {
-    margin-bottom: 113px; } }
-
-main .center {
-  display: flex;
-  justify-content: center; }
-
-@supports (object-fit: cover) {
-  main .imagen__accesorio__billeteras,
-  main .imagen__accesorio__carteras {
-    height: 300px;
-    object-fit: cover;
-    object-position: center center; } }
-
-@media only screen and (min-width: 0px) and (max-width: 480px) {
-  main .imagen__accesorio__billeteras,
-  main .imagen__accesorio__carteras {
-    width: 100%;
-    height: 150px; } }
-
-@media (min-width: 768px) {
-  main .hombres {
-    padding-bottom: 193px;
-    padding-top: 70px; } }
-
-main .imagen__calzados {
-  width: 100%;
-  height: 300px; }
-
-@media only screen and (min-width: 0px) and (max-width: 480px) {
+    height: 250px;
+    width: 100%; }
+  @supports (object-fit: cover) {
+    main .imagen__accesorio {
+      height: 300px;
+      object-fit: cover;
+      object-position: center bottom; } }
+  @media only screen and (min-width: 0px) and (max-width: 480px) {
+    main .imagen__accesorio {
+      width: 100%;
+      height: 100px; } }
+  @supports (object-fit: fit) {
+    main .imagen__accesorio {
+      height: 300px;
+      object-fit: fit;
+      object-position: center center; } }
+  @media only screen and (min-width: 480px) and (max-width: 768px) {
+    main .imagen__accesorio {
+      height: 150px;
+      object-fit: cover;
+      object-position: center center; }
+    main .imagen__accesorio-principal {
+      height: 280px; } }
+  @media (max-width: 768px) {
+    main .hombres {
+      margin-bottom: 113px; } }
+  main .center {
+    display: flex;
+    justify-content: center; }
+  @supports (object-fit: cover) {
+    main .imagen__accesorio__billeteras,
+    main .imagen__accesorio__carteras {
+      height: 300px;
+      object-fit: cover;
+      object-position: center center; } }
+  @media only screen and (min-width: 0px) and (max-width: 480px) {
+    main .imagen__accesorio__billeteras,
+    main .imagen__accesorio__carteras {
+      width: 100%;
+      height: 150px; } }
+  @media (min-width: 768px) {
+    main .hombres {
+      padding-bottom: 193px;
+      padding-top: 70px; } }
   main .imagen__calzados {
     width: 100%;
-    height: 200px; } }
+    height: 300px; }
+  @media only screen and (min-width: 0px) and (max-width: 480px) {
+    main .imagen__calzados {
+      width: 100%;
+      height: 200px; } }
+  main .card__button {
+    margin-top: 20px;
+    text-align: center; }
+  main .card__button-estilo {
+    background-color: #252440 !important;
+    color: white;
+    border-color: black; }
 
-main .col:hover {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-  overflow: hidden; }
-
-main .col__accesorio:hover {
-  -webkit-transform: scale(1.07);
-  transform: scale(1.07);
-  overflow: hidden; }
+.borrar-producto {
+  background-color: red;
+  border-radius: 50%;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold; }
 
 /*Globales - en todos los HTML*/
 .body__color {
@@ -433,7 +438,7 @@ header .header__logo {
 
 header .header__carrito {
   color: black;
-  padding-right: 15px;
+  padding-top: 10px !important;
   font-size: 40px; }
 
 header .header__icon {
@@ -451,12 +456,17 @@ header .header__navigation {
   z-index: 1; }
 
 header .header__size {
-  font-size: 1.3rem; }
+  font-size: 1.3rem !important; }
 
 header .header__boton {
   background-color: #252440 !important;
   color: white;
-  border-color: black; }
+  border-color: black;
+  width: 50%; }
+
+header .header__buscar {
+  width: 400px;
+  padding-left: 10px; }
 
 header .header__boton-grey {
   background-color: grey !important;
@@ -547,6 +557,112 @@ footer .email:hover {
 @media (max-width: 480px) {
   .float {
     visibility: hidden; } }
+
+.submenu {
+  position: relative; }
+
+.submenu #carrito {
+  display: none; }
+
+.submenu:hover #carrito {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  z-index: 1;
+  background-color: white;
+  padding: 20px;
+  min-height: 400px;
+  min-width: 300px; }
+
+.columns {
+  width: 100%;
+  float: left;
+  box-sizing: border-box; }
+
+.two.columns {
+  width: 13.3333333333%; }
+
+th,
+td {
+  padding: 15px 15px !important;
+  text-align: left;
+  border-bottom: 1px solid #E1E1E1 !important; }
+
+th:first-child,
+td:first-child {
+  padding-left: 0; }
+
+th:last-child,
+td:last-child {
+  padding-right: 0; }
+
+.u-full-width {
+  width: 100%;
+  box-sizing: border-box; }
+
+.u-max-full-width {
+  max-width: 100%;
+  box-sizing: border-box; }
+
+.u-pull-left {
+  float: left; }
+
+.columns:first-child {
+  margin-left: 0; }
+
+ul {
+  list-style: circle inside; }
+
+ol {
+  list-style: decimal inside; }
+
+ol,
+ul {
+  padding-left: 0;
+  margin-top: 0; }
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin: 1.5rem 0 1.5rem 3rem;
+  font-size: 90%; }
+
+li {
+  margin-bottom: 1rem; }
+
+ul {
+  list-style: none; }
+
+.button__carrito {
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: #555;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  box-sizing: border-box;
+  margin-bottom: 1rem; }
+
+.button__carrito:hover,
+.button__carrito:focus {
+  color: #333;
+  border-color: #888;
+  outline: 0; }
+
+.boton__carrito {
+  padding-top: 20px; }
 
 .font-3rem {
   font-size: 3rem; }
