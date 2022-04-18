@@ -14,7 +14,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Domine&family=Open+Sans&display=swap" rel="stylesheet">
-  <link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link href="../bootstrap/css/bootstrap.css" 
+  rel="stylesheet">
+
 </head>
 
 <body class="body__color">
@@ -75,28 +77,58 @@
               </form>
             </div>
           </nav>
+         <!--  <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <img src="../imagenes/iconos/cart.jpeg" class="nav-link dropdown-toggle img-fluid" height="70px"
+                        width="70px" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false"></img>
+                    <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
+                        <table id="lista-carrito" class="table">
+                            <thead>
+                                <tr>
+                                    <th>Imagen</th>
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+
+                        <a href="#" id="vaciar-carrito" class="btn btn-primary btn-block">Vaciar Carrito</a>
+                        <a href="#" id="procesar-pedido" class="btn btn-danger btn-block">Procesar
+                            Compra</a>
+                    </div>
+                </li>
+            </ul>
+        </div> -->
           <div class="two columns u-pull-right">
             <ul>
               <li class="submenu">
                 <a href="">
                   <ion-icon class="header__carrito" name="cart-outline"></ion-icon>
                 </a>
-                <div id="carrito">
+                <div id="carrito" style="width:450px; height:300px; overflow-y: scroll">
                   <table id="lista-carrito" class="u-full-width">
                     <thead>
                       <tr>
                         <th>Imagen</th>
                         <th>Nombre</th>
                         <th>Precio</th>
-                        <th>Cantidad</th>
+
                         <th></th>
                       </tr>
                     </thead>
-                    <tbody></tbody>
+                    <tbody id="items"></tbody>
+                   
                   </table>
-                  <div class="boton__carrito">
-                    <a href="#" id="vaciar-carrito" class="button__carrito u-full-width">Vaciar Carrito</a>
-                  </div>
+
+            
+                  <a href="#" id="vaciar-carrito" class="btn btn-primary btn-block">Vaciar Carrito</a>
+                  <a href="#" id="procesar-pedido" class="btn btn-danger btn-block">Procesar
+                      Compra</a>
+
                 </div>
               </li>
             </ul>
@@ -115,16 +147,15 @@
           <div class="row row-cols-2 row-cols-md-3 g-4">
             <div class="col">
               <div class="card h-80">
-                <a href=""><img class="imagen__accesorio" src="../imagenes/Accesorios/Bijouterie/1107699003.jpg"
-                    alt="bijouterie"></a>
+                <img class="imagen__accesorio" src="../imagenes/Accesorios/Bijouterie/1107699003.jpg"
+                    alt="bijouterie">
                 <div class="card-body">
-                  <a class="decoration" href="">
                     <h5 class="card-title">Collar</h5>
-                    <h6 class="card-subtitle">$ 300</h6>
-                  </a>
+                    <h6 class="card-subtitle precio">$ <span>300</span></h6>
+                  
                   <div class="card__button">
-                    <button class="btn btn-outline-success card__button-estilo agregar-carrito" data-id="1">Agregar al
-                      Carrito</button>
+                    <a href="#" class="btn btn-outline-success card__button-estilo agregar-carrito" data-id ="1">Agregar al
+                      Carrito</a>
 
                   </div>
                 </div>
@@ -132,16 +163,17 @@
             </div>
             <div class="col">
               <div class="card h-100">
-                <a href=""><img class="imagen__accesorio" src="../imagenes/Accesorios/Bijouterie/aritos-oro.jpg"
-                    class="card-img-top" alt="bijouterie"></a>
+                <img class="imagen__accesorio" src="../imagenes/Accesorios/Bijouterie/aritos-oro.jpg"
+                    class="card-img-top" alt="bijouterie">
                 <div class="card-body">
-                  <a class="decoration" href="">
+                 
                     <h5 class="card-title">Aritos</h5>
-                    <h6 class="card-subtitle">$ 300</h6>
-                  </a>
+                    <h6 class="card-subtitle precio">$ <span> 300</span></h6>
+                 
                   <div class="card__button">
-                    <button href ="#" class="btn btn-outline-success card__button-estilo agregar-carrito" data-id="2">Agregar al
-                      Carrito</button>
+                    <a href="#" class="btn btn-outline-success card__button-estilo agregar-carrito"
+                      data-id="2">Agregar al
+                      Carrito</a>
 
                   </div>
                 </div>
@@ -149,35 +181,17 @@
             </div>
             <div class="col">
               <div class="card h-80">
-                <a href=""><img class="imagen__accesorio"
+                <img class="imagen__accesorio"
                     src="../imagenes/Accesorios/Bijouterie/collar-CINCO_MARIPOSAS-oro.jpg" class="card-img-top"
-                    alt="bijouterie"></a>
+                    alt="bijouterie">
                 <div class="card-body">
-                  <a class="decoration" href="">
+                  
                     <h5 class="card-title">Collar</h5>
-                    <h6 class="card-subtitle">$ 1300</h6>
-                  </a>
+                    <h6 class="card-subtitle precio">$ <span>1300 </span></h6>
+                 
                   <div class="card__button">
-                    <button class="btn btn-outline-success card__button-estilo agregar-carrito " data-id="3">Agregar al
-                      Carrito</button>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100">
-                <a href=""><img class="imagen__accesorio"
-                    src="../imagenes/Accesorios/Bijouterie/image-8be487d4a91141968e999d08740a45ca.jpg"
-                    class="card-img-top" alt="bijouterie"></a>
-                <div class="card-body">
-                  <a class="decoration" href="">
-                    <h5 class="card-title">Collar</h5>
-                    <h6 class="card-subtitle">$ 1300</h6>
-                  </a>
-                  <div class="card__button">
-                    <button class="btn btn-outline-success card__button-estilo agregar-carrito " data-id="4">Agregar al
-                      Carrito</button>
+                    <a href="#" class="btn btn-outline-success card__button-estilo agregar-carrito " data-id="3">Agregar al
+                      Carrito</a>
 
                   </div>
                 </div>
@@ -185,16 +199,34 @@
             </div>
             <div class="col">
               <div class="card h-80">
-                <a href=""><img class="imagen__accesorio" src="../imagenes/Accesorios/Bijouterie/images (1).jfif"
-                    class="card-img-top" alt="bijouterie"></a>
+                <img class="imagen__accesorio"
+                    src="../imagenes/Accesorios/Bijouterie/image-8be48.jpg" class="card-img-top"
+                    alt="bijouterie">
                 <div class="card-body">
-                  <a class="decoration" href="">
-                    <h5 class="card-title">Anillo</h5>
-                    <h6 class="card-subtitle">$ 2000</h6>
-                  </a>
+                  
+                    <h5 class="card-title">Collar</h5>
+                    <h6 class="card-subtitle precio">$ <span>1300 </span></h6>
+                 
                   <div class="card__button">
-                    <button class="btn btn-outline-success card__button-estilo agregar-carrito " data-id="5">Agregar al
-                      Carrito</button>
+                    <a href="#" class="btn btn-outline-success card__button-estilo agregar-carrito " data-id="4">Agregar al
+                      Carrito</a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-80">
+                <img class="imagen__accesorio" src="../imagenes/Accesorios/Bijouterie/images (1).jfif"
+                    class="card-img-top" alt="bijouterie">
+                <div class="card-body">
+                  
+                    <h5 class="card-title">Anillo</h5>
+                    <h6 class="card-subtitle precio">$ <span>1300</span></h6>
+                 
+                  <div class="card__button">
+                    <a href="#" class="btn btn-outline-success card__button-estilo agregar-carrito " data-id="5">Agregar al
+                      Carrito</a>
 
                   </div>
                 </div>
@@ -202,16 +234,16 @@
             </div>
             <div class="col">
               <div class="card h-100">
-                <a href=""><img class="imagen__accesorio" src="../imagenes/Accesorios/Bijouterie/images.jfif"
-                    class="card-img-top" alt="bijouterie"></a>
+                <img class="imagen__accesorio" src="../imagenes/Accesorios/Bijouterie/images.jfif"
+                    class="card-img-top" alt="bijouterie">
                 <div class="card-body">
-                  <a class="decoration" href="">
+                 
                     <h5 class="card-title">Aritos</h5>
-                    <h6 class="card-subtitle">$ 300</h6>
-                  </a>
+                    <h6 class="card-subtitle precio">$ <span>1300</span></h6>
+                  
                   <div class="card__button">
-                    <button class="btn btn-outline-success card__button-estilo agregar-carrito " data-id="6">Agregar al
-                      Carrito</button>
+                    <a href="#" class="btn btn-outline-success card__button-estilo agregar-carrito " data-id="6">Agregar al
+                      Carrito</a>
 
                   </div>
                 </div>
@@ -219,33 +251,36 @@
             </div>
             <div class="col">
               <div class="card h-80">
-                <a href=""><img class="imagen__accesorio" src="../imagenes/Accesorios/Bijouterie/IMG_8931_600x.jpg"
-                    class="card-img-top" alt="bijouterie"></a>
+                <img class="imagen__accesorio" src="../imagenes/Accesorios/Bijouterie/IMG_8931_600x.jpg"
+                    class="card-img-top" alt="bijouterie">
                 <div class="card-body">
-                  <a class="decoration" href="">
+                  
                     <h5 class="card-title">Anillo</h5>
-                    <h6 class="card-subtitle">$ 1300</h6>
-                  </a>
+                    <h6 class="card-subtitle precio">$ <span>1300</span></h6>
+              
+                 
                   <div class="card__button">
-                    <button class="btn btn-outline-success card__button-estilo agregar-carrito " data-id="7">Agregar al
-                      Carrito</button>
+                    <a href="#" class="btn btn-outline-success card__button-estilo agregar-carrito " data-id="8">Agregar al
+                      Carrito</a>
 
                   </div>
+
+                  
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card h-100">
-                <a href=""><img class="imagen__accesorio" src="../imagenes/Accesorios/Bijouterie/Bijouterie1.jfif"
-                    class="card-img-top" alt="bijouterie"></a>
+                <img class="imagen__accesorio" src="../imagenes/Accesorios/Bijouterie/Bijouterie1.jfif"
+                    class="card-img-top" alt="bijouterie">
                 <div class="card-body">
-                  <a class="decoration" href="">
+                 
                     <h5 class="card-title">Collar</h5>
-                    <h6 class="card-subtitle">$ 2000</h6>
-                  </a>
+                    <h6 class="card-subtitle precio">$ <span>1300</span></h6>
+                  
                   <div class="card__button">
-                    <button class="btn btn-outline-success card__button-estilo agregar-carrito " data-id="8">Agregar al
-                      Carrito</button>
+                    <a href="#" class="btn btn-outline-success card__button-estilo agregar-carrito " data-id="8">Agregar al
+                      Carrito</a>
 
                   </div>
                 </div>
@@ -253,16 +288,16 @@
             </div>
             <div class="col">
               <div class="card h-80">
-                <a href=""><img class="imagen__accesorio" src="../imagenes/Accesorios/Bijouterie/j03120-01-gd.jpg"
-                    class="card-img-top" alt="bijouterie"></a>
+                <img class="imagen__accesorio" src="../imagenes/Accesorios/Bijouterie/j03120-01-gd.jpg"
+                    class="card-img-top" alt="bijouterie">
                 <div class="card-body">
-                  <a class="decoration" href="">
+                
                     <h5 class="card-title">Anillo</h5>
-                    <h6 class="card-subtitle">$ 2300</h6>
-                  </a>
+                    <h6 class="card-subtitle precio">$ <span>1300</span></h6>
+                  
                   <div class="card__button">
-                    <button class="btn btn-outline-success card__button-estilo agregar-carrito " data-id="9">Agregar al
-                      Carrito</button>
+                    <a href="#" class="btn btn-outline-success card__button-estilo agregar-carrito " data-id="9">Agregar al
+                      Carrito</a>
 
                   </div>
                 </div>
@@ -291,6 +326,7 @@
         </ul>
       </nav>
     </section> -->
+
   </main>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <a href="https://api.whatsapp.com/send?phone=+5491131852008&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20los productos"
@@ -328,7 +364,11 @@
   </script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <script src="../js/carrito2.js"></script>
+  <script src="../js/carrito.js"></script>
+  <script src="../js/pedido.js"></script>
+  <script src="../js/jquery-3.4.1.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </body>
 
 </html>
