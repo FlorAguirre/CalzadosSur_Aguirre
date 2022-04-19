@@ -8,22 +8,25 @@
     <meta name="description" content="Venta de accesorios y calzados para hombres, mujeres y niños">
     <meta name="keywords"
         content="CALZADOS, CALZADO, AROS, COLLARES, ZAPATILLAS, ZAPATOS, CARTERAS, MOCHILAS, BILLETERAS">
-    <link rel="shortcut icon" href="./imagenes/favicon png.jpg">
+    <link rel="shortcut icon" href="../imagenes/favicon png.jpg">
     <title>Calzados Sur</title>
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Domine&family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link href="./bootstrap/css/bootstrap.css" rel="stylesheet">
+
+
+    <!--  <link href="../bootstrap/css/bootstrap.css" rel="stylesheet"> -->
 </head>
 
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-amarillo  fixed-top">
             <div class="container-fluid space ">
-                <a class="navbar-brand" href="index.html">
-                    <img class="header__logo" src="imagenes/Logo-removebg-preview.png" alt="Calzados Sur Logo">
+                <a class="navbar-brand" href="../index.html">
+                    <img class="header__logo" src="../imagenes/Logo-removebg-preview.png" alt="Calzados Sur Logo">
                 </a>
                 <button class="navbar-toggler header__boton-grey" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -34,7 +37,7 @@
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 color">
                         <li class="nav-item ">
                             <a class="nav-link active color header__size azulmarino" aria-current="page"
-                                href="index.html">Home</a>
+                                href="../index.html">Home</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle color header__size" href="#" id="navbarDropdown"
@@ -42,10 +45,11 @@
                                 Productos
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="./vistas/accesorios.html">Accesorios</a></li>
-                                <li><a class="dropdown-item" href="./vistas/marroquineria.html">Marroquinería</a></li>
+                                <li><a class="dropdown-item" href="../vistas/accesorios.html">Accesorios</a></li>
+                                <li><a class="dropdown-item" href="../vistas/marroquineria.html">Marroquinería</a></li>
 
-                                <li><a class="dropdown-item" href="./vistas/escolares.html">Artículos Escolares</a></li>
+                                <li><a class="dropdown-item" href="../vistas/escolares.html">Artículos Escolares</a>
+                                </li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -54,19 +58,19 @@
                                 Calzados
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="./vistas/mujeres.html">Mujeres</a></li>
-                                <li><a class="dropdown-item" href="./vistas/hombres.html">Hombres</a></li>
-                                <li><a class="dropdown-item" href="./vistas/niños.html">Niños</a></li>
+                                <li><a class="dropdown-item" href="../vistas/mujeres.html">Mujeres</a></li>
+                                <li><a class="dropdown-item" href="../vistas/hombres.html">Hombres</a></li>
+                                <li><a class="dropdown-item" href="../vistas/niños.html">Niños</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link color header__size" href="../vistas/ofertas.html">Ofertas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link color header__size" href="./vistas/nosotros.html">Sobre Nosotros</a>
+                            <a class="nav-link color header__size" href="../vistas/nosotros.html">Sobre Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link color header__size" href="./vistas/contactanos.html">Contáctanos</a>
+                            <a class="nav-link color header__size" href="../vistas/contactanos.html">Contáctanos</a>
                         </li>
                     </ul>
 
@@ -81,41 +85,13 @@
                     </nav>
 
 
-                    <div class="two columns u-pull-right">
-                        <ul>
-                            <li class="submenu">
-                                <a href="">
-                                    <ion-icon class="header__carrito" name="cart-outline"></ion-icon>
-                                </a>
-                                <div id="carrito">
-
-                                    <table id="lista-carrito" class="u-full-width">
-                                        <thead>
-                                            <tr>
-                                                <th>Imagen</th>
-                                                <th>Nombre</th>
-                                                <th>Precio</th>
-                                                <th>Cantidad</th>
-                                                <th></th>
-                                            </tr>
-                                        </thead>
-                                        <tbody></tbody>
-                                    </table>
-                                    <div class="boton__carrito">
-                                        <a href="#" id="vaciar-carrito" class="button__carrito u-full-width">Vaciar
-                                            Carrito</a>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-
-
                 </div>
             </div>
         </nav>
     </header>
 
+    <br>
+    <br>
     <br>
     <br>
     <br>
@@ -136,7 +112,7 @@
                                     placeholder="Ingresa nombre cliente" name="destinatario">
                             </div>
                         </div>
-                        <div class="form-group row">
+                        <div class="form-group row compra__correo">
                             <label for="email" class="col-12 col-md-2 col-form-label h2">Correo :</label>
                             <div class="col-12 col-md-10">
                                 <input type="text" class="form-control" id="correo" placeholder="Ingresa tu correo"
@@ -144,7 +120,7 @@
                             </div>
                         </div>
 
-                        <div id="carrito" class="form-group table-responsive">
+                        <div id="carrito" class="form-group table-responsive table__compra">
                             <table class="table" id="lista-compra">
                                 <thead>
                                     <tr>
@@ -187,12 +163,13 @@
                         </div>
 
                         <div class="row justify-content-center" id="loaders">
-                            <img id="cargando" src="img/cargando.gif" width="220">
+                            <img id="cargando" src="../imagenes/iconos/cargando.gif" width="220">
                         </div>
 
                         <div class="row justify-content-between">
                             <div class="col-md-4 mb-2">
-                                <a href="index.html" class="btn btn-info btn-block">Seguir comprando</a>
+                                <a href="../index.html" class="btn btn-info btn-block boton__comprando">Seguir
+                                    comprando</a>
                             </div>
                             <div class="col-xs-12 col-md-4">
                                 <button href="#" class="btn btn-success btn-block" id="procesar-compra">Realizar
@@ -215,6 +192,16 @@
 
 
     </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <br>
     <br>
 
@@ -245,22 +232,23 @@
         </nav>
     </footer>
 
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/sweetalert2.min.js"></script>
+
 
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-  </script>
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <script src="./js/index.js"></script>
-  <!--  <script src="./js/carrito.js"></script> -->
-  <script src="./js/carrito2.js"></script>
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!--     <script src="./js/index.js"></script>
 
-    <script src="js/compra.js"></script>
+    <script src="./js/carrito2.js"></script> --> <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/carrito.js"></script>
+    <script src="../js/compra.js"></script>
+   
+
+    <!--   <script src="../bootstrap/js/bootstrap.min.js"></script> -->
 
 
 </body>
