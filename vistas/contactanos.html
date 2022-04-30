@@ -78,33 +78,33 @@
           </nav>
 
 
-            <div class="two columns u-pull-right">
-              <ul>
-                <li class="submenu">
-                  <a href="">
-                    <ion-icon class="header__carrito" name="cart-outline"></ion-icon>
-                  </a>
-                  <div id="carrito">
+          <div class="two columns u-pull-right">
+            <ul>
+              <li class="submenu">
+                <a href="">
+                  <ion-icon class="header__carrito" name="cart-outline"></ion-icon>
+                </a>
+                <div id="carrito">
 
-                    <table id="lista-carrito" class="u-full-width">
-                      <thead>
-                        <tr>
-                          <th>Imagen</th>
-                          <th>Nombre</th>
-                          <th>Precio</th>
-                          <th>Cantidad</th>
-                          <th></th>
-                        </tr>
-                      </thead>
-                      <tbody></tbody>
-                    </table>
-                    <div class="boton__carrito">
+                  <table id="lista-carrito" class="u-full-width">
+                    <thead>
+                      <tr>
+                        <th>Imagen</th>
+                        <th>Nombre</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody></tbody>
+                  </table>
+                  <div class="boton__carrito">
                     <a href="#" id="vaciar-carrito" class="button__carrito u-full-width">Vaciar Carrito</a>
                   </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
@@ -112,31 +112,30 @@
   <main>
     <section class="animate__animated animate__zoomIn">
       <h1 class="main__titulo1">Contáctanos</h1>
-      <form class="form" action="">
-        
-          <div class="contenedor-campos font-20px">
-            <div class="campo">
-              <label  for="nombre">Nombre</label>
-              <input  class="input-text" type="text" id="nombre"  placeholder=" Tu nombre" required>
-            </div>
-            <div class="campo">
-              <label for="apellido">Apellido</label>
-              <input class="input-text" type="text" name="apellido" id="apellido" placeholder=" Tu apellido">
-            </div>
-            <div class="campo">
-              <label for="email">Email</label>
-              <input class="input-text" type="email"  placeholder="Email" id="email">
-            </div>
-            <div class="campo">
-              <label for="mensaje">Mensaje</label>
-              <textarea class="input-text"id="mensaje" cols="15" rows="6"
-                placeholder="Tu mensaje o consulta"></textarea>
-            </div>
+      <form class="form" action="" id="form">
+
+        <div class="contenedor-campos font-20px">
+          <div class="campo">
+            <label for="nombre">Nombre</label>
+            <input class="input-text" type="text" id="nombre" placeholder=" Tu nombre" required name="name">
           </div>
-          <div class="boton__enviar boton--primario">
-            <input class="boton__enviar-estilo font-20px" type="submit" value="Enviar" placeholder="Enviar">
+          <div class="campo">
+            <label for="apellido">Apellido</label>
+            <input class="input-text" type="text" id="apellido" placeholder=" Tu apellido" name="last">
           </div>
-        
+          <div class="campo">
+            <label for="email">Email</label>
+            <input class="input-text" type="email" placeholder="Email" id="email" name="email">
+          </div>
+          <div class="campo">
+            <label for="mensaje">Mensaje</label>
+            <textarea class="input-text" id="mensaje" cols="15" rows="6" placeholder="Tu mensaje o consulta" name="mensaje"></textarea>
+          </div>
+        </div>
+        <div class="boton__enviar boton--primario">
+          <input id="button"class="boton__enviar-estilo font-20px" type="submit" value="Enviar" placeholder="Enviar">
+        </div>
+
       </form>
     </section>
   </main>
@@ -157,7 +156,8 @@
         </div>
         <div class="footer__iconos">
           <h5 class="footer__pago">Medios de contacto</h5>
-          <a href="https://api.whatsapp.com/send?phone=+5491131852008&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20los productos" target="_blank">
+          <a href="https://api.whatsapp.com/send?phone=+5491131852008&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20los productos"
+            target="_blank">
             <ion-icon class="footer__iconos whatsapp" name="logo-whatsapp"></ion-icon>
           </a>
           <a href="https://www.instagram.com/calzadossur/?hl=es" target="_blank">
@@ -176,5 +176,33 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script src="../js/login.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+  <script type="text/javascript">
+    emailjs.init('CCgkkJ8bJlYYZTP9V')
+  </script>
+  <script>
+    const btn = document.getElementById('button');
+
+    document.getElementById('form')
+      .addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        btn.value = 'Enviando...';
+
+        const serviceID = 'default_service';
+        const templateID = 'template_auugr74';
+
+        emailjs.sendForm(serviceID, templateID, this)
+          .then(() => {
+            btn.value = 'Enviar';
+            alert('El mensaje fue enviado correctamente!');
+          }, (err) => {
+            btn.value = 'Enviar';
+            alert(JSON.stringify(err));
+          });
+      });
+  </script>
 </body>
+
 </html>

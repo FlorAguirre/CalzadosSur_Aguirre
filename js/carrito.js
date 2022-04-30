@@ -19,8 +19,9 @@ class Carrito {
             cantidad: 1
         }
 
+
         //evitar que se agregen mas cantidades del mismo producto
-        let productosLS;
+    let productosLS;
         productosLS = this.obtenerProductosLocalStorage();
         productosLS.forEach(function (productoLS) {
             if (productoLS.id === infoProducto.id) {
@@ -38,8 +39,9 @@ class Carrito {
             })
         } else {
             this.insertarCarrito(infoProducto);
-        }
+        } 
     }
+
 
     insertarCarrito(producto) {
         const row = document.createElement('tr');
@@ -49,6 +51,7 @@ class Carrito {
         </td>
         <td>${producto.titulo}</td>
         <td>${producto.precio}</td>
+       
         <td>
             <a href ="#" class ="borrar-producto" data-id="$producto.id}"> X </a>
         </td>
@@ -175,7 +178,8 @@ class Carrito {
             <td>${producto.titulo}</td>
             <td>${producto.precio}</td>
             <td>
-                <input type ="number" class="form-control cantidad" min="1" value= ${producto.cantidad}>
+           
+                <input type ="number" class="form-control cantidad" min="1" value= ${producto.cantidad}
             </td>
             <td id='subtotales'> ${producto.precio * producto.cantidad}</td>
             <td>

@@ -11,19 +11,25 @@ cargarEventos();
 function cargarEventos() {
     document.addEventListener('DOMContentLoaded', compra.leerLocalStorageCompra());
 
-    carrito.addEventListener('click', (e) => {compra.eliminarProducto(e)});
+    carrito.addEventListener('click', (e) => {
+        compra.eliminarProducto(e)
+    });
 
     compra.calcularTotal();
 
     procesarCompraBtn.addEventListener('click', procesarCompra);
 
-    
-    carrito.addEventListener('change', (e) => { compra.obtenerEvento(e) });
-    carrito.addEventListener('keyup', (e) => { compra.obtenerEvento(e) });
+
+    carrito.addEventListener('change', (e) => {
+        compra.obtenerEvento(e)
+    });
+    carrito.addEventListener('keyup', (e) => {
+        compra.obtenerEvento(e)
+    });
 
 }
 
-function procesarCompra(e){
+function procesarCompra(e) {
     e.preventDefault();
 
     if (compra.obtenerProductosLocalStorage().length === 0) {
@@ -36,8 +42,7 @@ function procesarCompra(e){
         }).then(function () {
             window.location = "../index.html";
         })
-    }
-    else if(cliente .value === '' || correo.value === ''){
+    } else if (cliente.value === '' || correo.value === '') {
         Swal.fire({
             icon: 'error',
             title: 'Oops...',
@@ -45,8 +50,11 @@ function procesarCompra(e){
             showConfirmButton: false,
             timer: 2000,
         })
-    } else{
-        const cargandoGif = document.querySelector('#cargando');
+    } else {
+
+       
+
+      /*   const cargandoGif = document.querySelector('#cargando');
         cargandoGif.style.display = 'block';
 
         const enviado = document.createElement('img');
@@ -54,7 +62,7 @@ function procesarCompra(e){
         enviado.style.display = 'block';
         enviado.style.width = '150px';
 
-        setTimeout(()=>{
+        setTimeout(() => {
             cargandoGif.style.display = 'none';
             document.querySelector('#loaders').appendChild(enviado);
             setTimeout(() => {
@@ -62,6 +70,6 @@ function procesarCompra(e){
                 compra.vaciarLocalStorage();
                 window.location = "../index.html"
             }, 2000);
-        }, 3000);
+        }, 3000); */
     }
 }

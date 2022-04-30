@@ -59,9 +59,9 @@ formulario.addEventListener('submit', function(e) {
 
     // Validar el Formulario...
 
-    const { nombre, apellido, email, mensaje } = datos;
+    const { nombre, apellido, email, mensaje } = datos; //Destructuracion
 
-    if(nombre === '' || apellido === '' || email === '' || mensaje === '' ) {
+    if(nombre === '' || apellido === '' || email === '' || mensaje === '' ) { // condicionales OR
         console.log('Al menos un campo esta vacio');
         mostrarError('Todos los campos son obligatorios');
         return; // Detiene la ejecución de esta función
