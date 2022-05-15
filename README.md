@@ -6,7 +6,7 @@ Descripción: Venta de productos. Calzados y accesorios.
 
 # Curso JavaScript:
 
-##Proyecto Final – JavaScript
+## Proyecto Final – JavaScript
 
 -	Local Storage: carrito de compra. Cuando se agregan productos y se actualiza la pagina, los mismo siguen estando. Al hacer click en el botón “vaciar carrito” o en la cruz de cada uno de los productos, los mismos se eliminan del Local Storage también.
 -	Archivos JS: 
@@ -77,5 +77,6 @@ Funcionamiento del carrito de compras
 
 
 **Envío de formulario:**
+
 En la sección de Contáctanos, inclui un formulario. 
 El mismo se encuentra en la sección de “Contáctanos” (Section del HTML"Contactanos"). Una vez que se llena el formulario y se realiza el click en el botón de ENVIAR, se envía un email a mi casilla de correo "floraguirre1598@gmail.com". En caso de que lo quieras probar, te estaré enviando la prueba mediante el chat de Coder.
