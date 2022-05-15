@@ -4,9 +4,8 @@ Propietario : Florencia Aguirre
 Sitio Web: Calzados Sur
 Descripción: Venta de productos. Calzados y accesorios.
 
-# Curso JavaScript
 
-## Proyecto Final – JavaScript
+# Proyecto Final – JavaScript
 
 -	Local Storage: carrito de compra. Cuando se agregan productos y se actualiza la pagina, los mismo siguen estando. Al hacer click en el botón “vaciar carrito” o en la cruz de cada uno de los productos, los mismos se eliminan del Local Storage también.
 -	Archivos JS: 
@@ -16,7 +15,7 @@ o	Login.js
 o	Pedido.js
 -	Se utilizo EmailJs para el envio de mail desde el formulario y el proceso de compra desde la sección de compras.
 
-###### Carrito de Compras
+## Carrito de Compras
 
 -	Optimización del código
 -	Utilización de sweetalert para cuando se agrega un mismo producto mas de una vez al carrito de compra
@@ -76,7 +75,7 @@ Funcionamiento del carrito de compras
 -	Con EmailJS, me llegara un correo con los datos ingresados en el formulario. (En caso de querer recibirlo para corroborar el funcionamiento, deberá poner su email)
 
 
-###### Envío de formulario
+## Envío de formulario
 
 En la sección de Contáctanos, inclui un formulario. 
 El mismo se encuentra en la sección de “Contáctanos” (Section del HTML"Contactanos"). Una vez que se llena el formulario y se realiza el click en el botón de ENVIAR, se envía un email a mi casilla de correo "floraguirre1598@gmail.com". En caso de que lo quieras probar, te estaré enviando la prueba mediante el chat de Coder.
