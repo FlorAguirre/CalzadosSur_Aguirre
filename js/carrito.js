@@ -21,7 +21,7 @@ class Carrito {
 
 
         //evitar que se agregen mas cantidades del mismo producto
-    let productosLS;
+        let productosLS;
         productosLS = this.obtenerProductosLocalStorage();
         productosLS.forEach(function (productoLS) {
             if (productoLS.id === infoProducto.id) {
@@ -39,7 +39,7 @@ class Carrito {
             })
         } else {
             this.insertarCarrito(infoProducto);
-        } 
+        }
     }
 
 
@@ -53,7 +53,7 @@ class Carrito {
         <td>${producto.precio}</td>
        
         <td>
-            <a href ="#" class ="borrar-producto" data-id="$producto.id}"> X </a>
+            <a href ="#" class ="borrar-producto" data-id="${producto.id}"> X </a>
         </td>
         `;
         listaProductos.appendChild(row);
@@ -80,6 +80,9 @@ class Carrito {
         this.vaciarLocalStorage();
         return false;
     }
+
+
+
 
     //Almacenar en el LS
     guardarProductosLocalStorage(producto) {
@@ -126,8 +129,51 @@ class Carrito {
         });
     }
 
-    
-    
+
+
+
+
+
+    procesarPedido(e) {
+        e.preventDefault();
+        if (this.obtenerProductosLocalStorage().length === 0) {
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'El carrito esta vacío, agrega algún producto',
+                timer: 2000,
+                showConfirmButton: false,
+            })
+        } else {
+            location.href = "compra.html";
+        }
+    }
+
+    leerLocalStorageCompra() {
+        let productosLS;
+        productosLS = this.obtenerProductosLocalStorage();
+        productosLS.forEach(function (producto) {
+            //Construir plantilla
+            const row = document.createElement('tr');
+            row.innerHTML = `
+            <td>
+                <img src="${producto.imagen}" width=100>
+            </td>
+            <td>${producto.titulo}</td>
+            <td>${producto.precio}</td>
+            <td>
+           
+                <input type ="number" class="form-control cantidad" min="1" value= ${producto.cantidad}
+            </td>
+            <td id="subtotales"> ${producto.precio * producto.cantidad}</td>
+            <td>
+                <a href="#" class="borrar-producto" style="font-size:20px" data-id="${producto.id}">X</a>
+            </td>
+        `;
+            listaCompra.appendChild(row);
+        });
+
+    }
 
     //Eliminar producto por ID del LS
     eliminarProductoLocalStorage(productoID) {
@@ -149,63 +195,23 @@ class Carrito {
         localStorage.clear();
     }
 
-
-    procesarPedido(e){
-        e.preventDefault();
-        if(this.obtenerProductosLocalStorage().length === 0){
-            Swal.fire({
-                icon: 'error',
-                title: 'Oops...',
-                text: 'El carrito esta vacío, agrega algún producto',
-                timer: 2000,
-                showConfirmButton: false,
-            })
-        }
-        else{
-            location.href = "compra.html";
-    }}
-
-    leerLocalStorageCompra() {
-        let productosLS;
-        productosLS = this.obtenerProductosLocalStorage();
-        productosLS.forEach(function (producto) {
-            //Construir plantilla
-            const row = document.createElement('tr');
-            row.innerHTML = `
-            <td>
-                <img src="${producto.imagen}" width=100>
-            </td>
-            <td>${producto.titulo}</td>
-            <td>${producto.precio}</td>
-            <td>
-           
-                <input type ="number" class="form-control cantidad" min="1" value= ${producto.cantidad}
-            </td>
-            <td id='subtotales'> ${producto.precio * producto.cantidad}</td>
-            <td>
-                <a href="#" class="borrar-producto" style="font-size:20px" data-id="${producto.id}">X</a>
-            </td>
-        `;
-            listaCompra.appendChild(row);
-        });
-
-    }
-  
     //Calcular el total
-    calcularTotal(){
+    calcularTotal() {
         let productoLS;
-        let total = 0, subtotal = 0, igv = 0;
+        let total = 0,
+            subtotal = 0,
+            igv = 0;
         productoLS = this.obtenerProductosLocalStorage();
-        for(let i = 0; i<productoLS.length; i++ ){
+        for (let i = 0; i < productoLS.length; i++) {
             let element = Number(productoLS[i].precio * productoLS[i].cantidad);
             total = total + element;
         }
-        igv = parseFloat(total * 0.21). toFixed(2);
+        igv = parseFloat(total * 0.21).toFixed(2);
         subtotal = parseFloat(total - igv).toFixed(2);
 
-        document.getElementById('subtotal').innerHTML = "S/. " + subtotal;
-        document.getElementById('igv').innerHTML = "S/. " + igv;
-        document.getElementById('total').value ="S/. " + total.toFixed(2);
+        document.getElementById('subtotal').innerHTML = " $ " + subtotal;
+        document.getElementById('igv').innerHTML = " $ " + igv;
+        document.getElementById('total').value = " $ " + total.toFixed(2);
     }
 
     obtenerEvento(e) {
@@ -219,16 +225,16 @@ class Carrito {
             productosLS = this.obtenerProductosLocalStorage();
             productosLS.forEach(function (productoLS, index) {
                 if (productoLS.id === id) {
-                    productoLS.cantidad = cantidad;                    
+                    productoLS.cantidad = cantidad;
                     actualizarMontos[index].innerHTML = Number(cantidad * productosLS[index].precio);
-                }    
+                }
             });
             localStorage.setItem('productos', JSON.stringify(productosLS));
-            
-        }
-        else {
+
+        } else {
             console.log("click afuera");
         }
     }
-    }
 
+    
+}

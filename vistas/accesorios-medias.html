@@ -67,168 +67,223 @@
               <a class="nav-link color header__size" href="../vistas/contactanos.html">Contáctanos</a>
             </li>
           </ul>
-          <nav class="navbar navbar-light bg-amarillo ">
+     <!--      <nav class="navbar navbar-light bg-amarillo ">
             <div class="container-fluid ">
               <form class="d-flex ">
                 <input class="form-control me-2 header__buscar" type="search" placeholder="Buscar" aria-label="Search">
                 <button class="btn btn-outline-success header__boton" type="submit">Buscar</button>
               </form>
             </div>
-          </nav>
+          </nav>  -->
+ <!--         <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <img src="../imagenes/iconos/cart.jpeg" class="nav-link dropdown-toggle img-fluid" height="70px"
+                        width="70px" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false"></img>
+                    <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
+                        <table id="lista-carrito" class="table">
+                            <thead>
+                                <tr>
+                                    <th>Imagen</th>
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
 
-
-            <div class="two columns u-pull-right">
-              <ul>
-                <li class="submenu">
-                  <a href="">
-                    <ion-icon class="header__carrito" name="cart-outline"></ion-icon>
-                  </a>
-                  <div id="carrito">
-
-                    <table id="lista-carrito" class="u-full-width">
-                      <thead>
-                        <tr>
-                          <th>Imagen</th>
-                          <th>Nombre</th>
-                          <th>Precio</th>
-                          <th>Cantidad</th>
-                          <th></th>
-                        </tr>
-                      </thead>
-                      <tbody></tbody>
-                    </table>
-                    <div class="boton__carrito">
-                    <a href="#" id="vaciar-carrito" class="button__carrito u-full-width">Vaciar Carrito</a>
-                  </div>
-                  </div>
+                        <a href="#" id="vaciar-carrito" class="btn btn-primary btn-block">Vaciar Carrito</a>
+                        <a href="#" id="procesar-pedido" class="btn btn-danger btn-block">Procesar
+                            Compra</a>
+                    </div>
                 </li>
-              </ul>
-            </div>
+            </ul>
+        </div>  -->
+         
+      </div><div class="two columns u-pull-right">
+            <ul>
+              <li class="submenu">
+                <a href="">
+                  <ion-icon class="header__carrito" name="cart-outline"></ion-icon>
+                </a>
+                <div id="carrito" style="width:520px; height:300px; overflow-y: scroll">
+                  <table id="lista-carrito" class="u-full-width">
+                    <thead>
+                      <tr>
+                        <th>Imagen</th>
+                        <th>Nombre</th>
+                        <th>Precio</th>
+                     
+
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody id="items"></tbody>
+                   
+                  </table>
+
+            
+                  <a href="#" id="vaciar-carrito" class="btn btn-primary btn-block">Vaciar Carrito</a>
+                  <a href="#" id="procesar-pedido" class="btn btn-danger btn-block">Procesar
+                      Compra</a>
+
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+    </nav> 
   </header>
   <main>
     <section class="container mb-4">
       <a class="main__titulo1" href="../vistas/accesorios.html"><h1 class="main__titulo1 accesorio">Medias</h1></a>
-      <div class="row justify-content-center">
+      <div id="lista-productos" class="row justify-content-center">
         <div class="col-md-10">
           <div class="row row-cols-2 row-cols-md-3 g-4">
             <div class="col">
               <div class="card h-80">
-                <a href=""><img class="imagen__accesorio"
+                <img class="imagen__accesorio"
                     src="../imagenes/Accesorios/Medias/44980018-10_1.jpg" class="card-img-top"
-                    alt="medias"></a>
-                <div class="card-body">
-                  <a class="decoration" href="">
-                    <h5 class="card-title">Medias</h5>
-                    <h6 class="card-subtitle">$ 50</h6>
-                  </a>
-                </div>
+                    alt="medias">
+                    <div class="card-body">
+                      <h5 class="card-title">Medias</h5>
+                      <h6 class="card-subtitle precio">$ <span>300</span></h6>
+                    
+                    <div class="card__button">
+                      <a href="#" class="btn btn-outline-success card__button-estilo agregar-carrito" data-id ="10">Agregar al
+                        Carrito</a>
+                    </div>
+                  </div>
               </div>
             </div>
             <div class="col">
               <div class="card h-100">
-                <a href=""><img class="imagen__accesorio"
+                <img class="imagen__accesorio"
                     src="../imagenes/Accesorios/Medias/medias-deportivas-egle-estampadas-3-pares.jpg" class="card-img-top"
-                    alt="medias"></a>
-                <div class="card-body">
-                  <a class="decoration" href="">
-                    <h5 class="card-title">Medias</h5>
-                    <h6 class="card-subtitle">$ 100</h6>
-                  </a>
-                </div>
+                    alt="medias">
+                    <div class="card-body">
+                      <h5 class="card-title">Medias</h5>
+                      <h6 class="card-subtitle precio">$ <span>100</span></h6>
+                    
+                    <div class="card__button">
+                      <a href="#" class="btn btn-outline-success card__button-estilo agregar-carrito" data-id="11">Agregar al
+                        Carrito</a>
+                    </div>
+                  </div>
               </div>
             </div>
             <div class="col">
               <div class="card h-80">
-                <a href=""><img class="imagen__accesorio"
+               <img class="imagen__accesorio"
                     src="../imagenes/Accesorios/Medias/MODA03945043-M.jpg" class="card-img-top"
-                    alt="medias"></a>
-                <div class="card-body">
-                  <a class="decoration" href="">
-                    <h5 class="card-title">Medias</h5>
-                    <h6 class="card-subtitle">$ 200</h6>
-                  </a>
-                </div>
+                    alt="medias">
+                    <div class="card-body">
+                      <h5 class="card-title">Medias</h5>
+                      <h6 class="card-subtitle precio">$ <span>200</span></h6>
+                    
+                    <div class="card__button">
+                      <a href="#" class="btn btn-outline-success card__button-estilo agregar-carrito" data-id ="12">Agregar al
+                        Carrito</a>
+                    </div>
+                  </div>
               </div>
             </div>
             <div class="col">
               <div class="card h-100">
-                <a href=""><img class="imagen__accesorio"
+                <img class="imagen__accesorio"
                     src="../imagenes/Accesorios/Medias/NI_SX6871-901-1.jfif" class="card-img-top"
-                    alt="medias"></a>
-                <div class="card-body">
-                  <a class="decoration" href="">
-                    <h5 class="card-title">Medias</h5>
-                    <h6 class="card-subtitle">$ 300</h6>
-                  </a>
-                </div>
+                    alt="medias">
+                    <div class="card-body">
+                      <h5 class="card-title">Medias</h5>
+                      <h6 class="card-subtitle precio">$ <span>300</span></h6>
+                    
+                    <div class="card__button">
+                      <a href="#" class="btn btn-outline-success card__button-estilo agregar-carrito" data-id ="13">Agregar al
+                        Carrito</a>
+                    </div>
+                  </div>
               </div>
             </div>
             <div class="col">
               <div class="card h-80">
-                <a href=""><img class="imagen__accesorio"
+                <img class="imagen__accesorio"
                     src="../imagenes/Accesorios/Medias/P_809093001FM.jpg" class="card-img-top"
-                    alt="medias"></a>
-                <div class="card-body">
-                  <a class="decoration" href="">
-                    <h5 class="card-title">Medias</h5>
-                    <h6 class="card-subtitle">$ 200</h6>
-                  </a>
-                </div>
+                    alt="medias">
+                    <div class="card-body">
+                      <h5 class="card-title">Medias</h5>
+                      <h6 class="card-subtitle precio">$ <span>200</span></h6>
+                    
+                    <div class="card__button">
+                      <a href="#" class="btn btn-outline-success card__button-estilo agregar-carrito" data-id="14">Agregar al
+                        Carrito</a>
+                    </div>
+                  </div>
               </div>
             </div>
             <div class="col">
               <div class="card h-100">
-                <a href=""><img class="imagen__accesorio"
+                <img class="imagen__accesorio"
                     src="../imagenes/Accesorios/Medias/medias-negras-mujer.jpg" class="card-img-top"
-                    alt="medias"></a>
-                <div class="card-body">
-                  <a class="decoration" href="">
-                    <h5 class="card-title">Medias</h5>
-                    <h6 class="card-subtitle">$ 300</h6>
-                  </a>
-                </div>
+                    alt="medias">
+                    <div class="card-body">
+                      <h5 class="card-title">Medias</h5>
+                      <h6 class="card-subtitle precio">$ <span>300</span></h6>
+                    
+                    <div class="card__button">
+                      <a href="#" class="btn btn-outline-success card__button-estilo agregar-carrito" data-id="15">Agregar al
+                        Carrito</a>
+                    </div>
+                  </div>
               </div>
             </div>
             <div class="col">
               <div class="card h-80">
-                <a href=""><img class="imagen__accesorio"
+                <img class="imagen__accesorio"
                     src="../imagenes/Accesorios/Medias/D_NQ_NP_978862-MLA45160298009_032021-V.jpg" class="card-img-top"
-                    alt="medias"></a>
-                <div class="card-body">
-                  <a class="decoration" href="">
-                    <h5 class="card-title">Medias</h5>
-                    <h6 class="card-subtitle">$ 100</h6>
-                  </a>
-                </div>
+                    alt="medias">
+                    <div class="card-body">
+                      <h5 class="card-title">Medias</h5>
+                      <h6 class="card-subtitle precio">$ <span>100</span></h6>
+                    
+                    <div class="card__button">
+                      <a href="#" class="btn btn-outline-success card__button-estilo agregar-carrito" data-id ="16">Agregar al
+                        Carrito</a>
+                    </div>
+                  </div>
               </div>
             </div>
             <div class="col">
               <div class="card h-100">
-                <a href=""><img class="imagen__accesorio"
+                <img class="imagen__accesorio"
                     src="../imagenes/Accesorios/Medias/SK0045-905_1.jpg" class="card-img-top"
-                    alt="medias"></a>
-                <div class="card-body">
-                  <a class="decoration" href="">
-                    <h5 class="card-title">Medias</h5>
-                    <h6 class="card-subtitle">$ 100</h6>
-                  </a>
-                </div>
+                    alt="medias">
+                    <div class="card-body">
+                      <h5 class="card-title">Medias</h5>
+                      <h6 class="card-subtitle precio">$ <span>100</span></h6>
+                    
+                    <div class="card__button">
+                      <a href="#" class="btn btn-outline-success card__button-estilo agregar-carrito" data-id ="17">Agregar al
+                        Carrito</a>
+                    </div>
+                  </div>
               </div>
             </div>
             <div class="col">
               <div class="card h-80">
-                <a href=""><img class="imagen__accesorio"
+                <img class="imagen__accesorio"
                     src="../imagenes/Accesorios/Medias/bc868a_37a7ea7d8c28499393397bc416693676_mv21-5a4f46210608be37da16199661748328-640-0.jpeg" class="card-img-top"
-                    alt="medias"></a>
-                <div class="card-body">
-                  <a class="decoration" href="">
-                    <h5 class="card-title">Billeteras</h5>
-                    <h6 class="card-subtitle">$ 300</h6>
-                  </a>
-                </div>
+                    alt="medias">
+                    <div class="card-body">
+                      <h5 class="card-title">Medias</h5>
+                      <h6 class="card-subtitle precio">$ <span>200</span></h6>
+                    
+                    <div class="card__button">
+                      <a href="#" class="btn btn-outline-success card__button-estilo agregar-carrito" data-id ="18">Agregar al
+                        Carrito</a>
+                    </div>
+                  </div>
               </div>
             </div>
           </div>
@@ -290,6 +345,10 @@
   </script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+   <script src="../js/carrito.js"></script>
+  <script src="../js/pedido.js"></script> 
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
+
 </body>
 
 </html>

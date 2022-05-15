@@ -68,46 +68,75 @@
               <a class="nav-link color header__size" href="../vistas/contactanos.html">Contáctanos</a>
             </li>
           </ul>
-          <nav class="navbar navbar-light bg-amarillo ">
+       <!--    <nav class="navbar navbar-light bg-amarillo ">
             <div class="container-fluid ">
               <form class="d-flex ">
                 <input class="form-control me-2 header__buscar" type="search" placeholder="Buscar" aria-label="Search">
                 <button class="btn btn-outline-success header__boton" type="submit">Buscar</button>
               </form>
             </div>
-          </nav>
+          </nav> -->
+         <!--  <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <img src="../imagenes/iconos/cart.jpeg" class="nav-link dropdown-toggle img-fluid" height="70px"
+                        width="70px" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false"></img>
+                    <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
+                        <table id="lista-carrito" class="table">
+                            <thead>
+                                <tr>
+                                    <th>Imagen</th>
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
 
-
-          <div class="two columns u-pull-right">
+                        <a href="#" id="vaciar-carrito" class="btn btn-primary btn-block">Vaciar Carrito</a>
+                        <a href="#" id="procesar-pedido" class="btn btn-danger btn-block">Procesar
+                            Compra</a>
+                    </div>
+                </li>
+            </ul>
+        </div> -->
+         
+      </div>
+      <div class="two columns u-pull-right">
             <ul>
               <li class="submenu">
                 <a href="">
                   <ion-icon class="header__carrito" name="cart-outline"></ion-icon>
                 </a>
-                <div id="carrito">
-
+                <div id="carrito" style="width:520px; height:300px; overflow-y: scroll">
                   <table id="lista-carrito" class="u-full-width">
                     <thead>
                       <tr>
                         <th>Imagen</th>
                         <th>Nombre</th>
                         <th>Precio</th>
-                        <th>Cantidad</th>
+                     
+
                         <th></th>
                       </tr>
                     </thead>
-                    <tbody></tbody>
+                    <tbody id="items"></tbody>
+                   
                   </table>
-                  <div class="boton__carrito">
-                    <a href="#" id="vaciar-carrito" class="button__carrito u-full-width">Vaciar Carrito</a>
-                  </div>
+
+            
+                  <a href="#" id="vaciar-carrito" class="btn btn-primary btn-block">Vaciar Carrito</a>
+                  <a href="#" id="procesar-pedido" class="btn btn-danger btn-block">Procesar
+                      Compra</a>
+
                 </div>
               </li>
             </ul>
           </div>
         </div>
-      </div>
-    </nav>
+    </nav> 
   </header>
   <main>
     <section class="animate__animated animate__zoomIn">
@@ -117,19 +146,19 @@
         <div class="contenedor-campos font-20px">
           <div class="campo">
             <label for="nombre">Nombre</label>
-            <input class="input-text" type="text" id="nombre" placeholder=" Tu nombre" required name="name">
+            <input class="input-text" type="text" id="nombre" placeholder=" Tu nombre" required name="name" required>
           </div>
           <div class="campo">
             <label for="apellido">Apellido</label>
-            <input class="input-text" type="text" id="apellido" placeholder=" Tu apellido" name="last">
+            <input class="input-text" type="text" id="apellido" placeholder=" Tu apellido" name="last" required>
           </div>
           <div class="campo">
             <label for="email">Email</label>
-            <input class="input-text" type="email" placeholder="Email" id="email" name="email">
+            <input class="input-text" type="email" placeholder="Email" id="email" name="email" required>
           </div>
           <div class="campo">
             <label for="mensaje">Mensaje</label>
-            <textarea class="input-text" id="mensaje" cols="15" rows="6" placeholder="Tu mensaje o consulta" name="mensaje"></textarea>
+            <textarea class="input-text" id="mensaje" cols="15" rows="6" placeholder="Tu mensaje o consulta" name="mensaje" required></textarea>
           </div>
         </div>
         <div class="boton__enviar boton--primario">

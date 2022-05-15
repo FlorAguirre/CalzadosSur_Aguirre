@@ -1,42 +1,5 @@
 /*LOGIN DE USUARIO*/
 
-/* let nombre = prompt("Ingrese su nombre");
-let usuario = prompt("Ingrese su usuario");
-let password = prompt("Ingrese su contraseña");
-
-alert(`${nombre} Corrobore los datos por favor`)
-
-let user = "";
-let pass = "";
-let intentos = 3;
-
-function login(usuario, contrasenia, intentos){
-    if(!(usuario === "" && contrasenia === "")){
-        while(intentos > 0 && (intentos != 0 && usuario !== user || contrasenia !== pass)){
-            user = prompt("Ingrese su usuario");
-            pass = prompt("Ingrese su contraseña");
-
-            if(user === usuario && pass === contrasenia){
-                alert("Bienvenido, acceso permitido");
-            }else{
-                alert(`Usuario o contraseña incorrectos, te quedan ${intentos--} intentos`);
-            }
-        }
-    }
-}
-
-login(usuario,password,intentos) */
-
-
-//Agregando evento al boton submit del formulario en contactanos. Seleccionar un elemento del HTML y asociarle un evento
-
-/* const btnEnviar = document.querySelector('.boton--primario'); // querySelector solo se limita a buscar un solo elemento del html
-btnEnviar.addEventListener('click',function(evento){
-    console.log(evento);
-    evento.preventDefault();
-    console.log('enviando formulario...');
-}); 
- */
 const datos = {
     nombre: '',
     apellido: '',
@@ -108,6 +71,7 @@ const email = document.querySelector('#email');
 const mensaje = document.querySelector('#mensaje');
 
 
+
 nombreFormulario.addEventListener('input', leerTexto);
 apellidoFormulario.addEventListener('input', leerTexto);
 email.addEventListener('input', leerTexto);
@@ -121,6 +85,7 @@ function leerTexto(e) {
 
      console.log(datos); 
 }
+
 
 
 
