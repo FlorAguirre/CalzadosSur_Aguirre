@@ -6,7 +6,7 @@ Descripción: Venta de productos. Calzados y accesorios.
 
 # Curso JavaScript:
 
-##**Proyecto Final – JavaScript**
+##Proyecto Final – JavaScript
 
 -	Local Storage: carrito de compra. Cuando se agregan productos y se actualiza la pagina, los mismo siguen estando. Al hacer click en el botón “vaciar carrito” o en la cruz de cada uno de los productos, los mismos se eliminan del Local Storage también.
 -	Archivos JS: 
@@ -47,27 +47,27 @@ Funcionamiento del carrito de compras
     - Accesorios: 
       - Bijouterie
 	  - Medias
-  -	Marroquinería:
-    - Billeteras
-    - Carteras
-	- Mochilas de Cuero
-  - Artículos Escolares:
-	        * Mochilas Escolares
-	        * Calzados Escolares
+    - Marroquinería:
+      - Billeteras
+      - Carteras
+	  - Mochilas de Cuero
+    - Artículos Escolares:
+	  - Mochilas Escolares
+	  - Calzados Escolares
 
-Calzados:
--	Mujeres:
-	        * Ojotas – Sandalias
-	        * Botas
-	        * Zapatillas
--	Hombres:
-	        * Ojotas – Sandalias
-	        * Botas
-	        * Zapatillas
--	Niños:
-	        * Ojotas – Sandalias
-	        * Botas
-	        * Zapatillas
+2.  Calzados:
+    - Mujeres:
+	  - Ojotas – Sandalias
+	  - Botas
+	  - Zapatillas
+    - Hombres:
+	  - Ojotas – Sandalias
+	  - Botas
+	  - Zapatillas
+    - Niños:
+	  - Ojotas – Sandalias
+	  - Botas
+	  - Zapatillas
 
 -	Al agregar los productos al carrito, se deberá hacer click en “Procesar Pago”.
 -	Cuando se abre la sección de compras, se podrá elegir las cantidades del producto que se desea (a medida que va aumentando las cantidades, cambia el precio).
