@@ -24,13 +24,13 @@ Carrito de Compras:
 
 **Aclaración: Andres, como te había comentado por chat te dejo el chat de mi tutor:**
 
-**“Buenas Florencia que tal? Esta tremendo el trabajo!
+***Buenas Florencia que tal? Esta tremendo el trabajo!
 
 Buenísimo lo de enviar por mail, de hecho es la primera vez que optan por este metodo, estoy seguro que al profe le va a gustar que innoven en cuanto a los trabajos
 
 Lo que si, cuando hagas la entrega final, aclárale que estas haciendo uso del envió de datos por medio del form y que se envía efectivamente a tú mail, por que quizás busque directamente el fetch y la carga de productos que es lo mas habitual
 
-Es excelente el trabajo que lograste, y la verdad muy pulido, estoy seguro que vas a lograr ser una gran programadora por que le pones muchisimo entusiasmo! A seguir así!”**
+Es excelente el trabajo que lograste, y la verdad muy pulido, estoy seguro que vas a lograr ser una gran programadora por que le pones muchisimo entusiasmo! A seguir así!***
 
 
 -	Se confecciono el carrito de compras, haciendo click en el icono se podrá observar los productos agregados.
