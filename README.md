@@ -8,11 +8,13 @@ Descripción: Venta de productos. Calzados y accesorios.
 # Proyecto Final – JavaScript
 
 -	Local Storage: carrito de compra. Cuando se agregan productos y se actualiza la pagina, los mismo siguen estando. Al hacer click en el botón “vaciar carrito” o en la cruz de cada uno de los productos, los mismos se eliminan del Local Storage también.
+
 -	Archivos JS: 
-o	Compra.js
-o	Carrito.js
-o	Login.js
-o	Pedido.js
+	- Compra.js
+	- Carrito.js
+	- Login.js
+	- Pedido.js
+
 -	Se utilizo EmailJs para el envio de mail desde el formulario y el proceso de compra desde la sección de compras.
 
 ## Carrito de Compras
@@ -38,8 +40,10 @@ o	Pedido.js
 -	A su vez, se agregó el Local Storage a la página, la cual lee los productos una vez que se haya actualizado la página.
 -	También, cuando se hace click en vaciar carrito se procede a eliminar los productos que están almacenados en el Local Storage.
 -	Todos los elementos están relacionados con el HTML (DOM).
+- 	En caso de que el carrito este vacío y se de click en el boton "Procesar Compra", aparecerá una alerta informando que se deberán agregar productos al carrito.
 
-Funcionamiento del carrito de compras
+**Funcionamiento del carrito de compras**
+
 -	Se deberá ingresar a las secciones:
 
 1.  Productos:
